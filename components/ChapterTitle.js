@@ -1,10 +1,10 @@
-function ChapterTitle({ babText, babNumber }) {
+function ChapterTitle({ subTitle, title }) {
   return (
     <div className="text-center">
 			<h1 className="mt-8 mb-8 font-bold text-3xl md:text-4xl">
-				{babNumber}
+				{title}
 				<br />
-				{babText}
+				{subTitle}
 			</h1>
 		</div>
   );

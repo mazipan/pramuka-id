@@ -1,7 +1,7 @@
 {
-  "name": "next-starter-tailwind",
+  "name": "buku-saku-pramuka",
   "version": "1.1.0",
-  "description": "Next.js starter styled with Tailwind CSS",
+  "description": "Buku saku pramuka digital",
   "main": "index.js",
   "scripts": {
     "analyze:tailwind-css-class-order": "rustywind --dry-run .",
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taylorbryant/next-starter-tailwind.git"
+    "url": "git+https://github.com/mazipan/buku-saku-pramuka.git"
   },
-  "author": "Taylor Bryant",
+  "author": "Irfan Maulana <https://mazipan.space/>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/taylorbryant/next-starter-tailwind/issues"
+    "url": "https://github.com/mazipan/buku-saku-pramuka/issues"
   },
-  "homepage": "https://github.com/taylorbryant/next-starter-tailwind#readme",
+  "homepage": "https://github.com/mazipan/buku-saku-pramuka#readme",
   "dependencies": {
     "next": "9.5.2",
     "react": "16.13.1",

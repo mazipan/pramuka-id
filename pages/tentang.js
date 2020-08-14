@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import Layout from "../components/MainLayout";
 
 function AboutPage() {
   return (
@@ -20,9 +20,9 @@ function AboutPage() {
 
         <div className="md:w-1/2">
           <img
-            alt="A one-eyed alien holding a broken cable connected between a server and a desktop computer"
-            className="w-full"
-            src="/assets/critter.svg"
+            alt="Berkemah"
+            className="w-full rounded"
+            src="/assets/5930.jpg"
           />
         </div>
       </div>

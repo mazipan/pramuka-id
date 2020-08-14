@@ -1,14 +1,14 @@
 import Link from "next/link";
-import Layout from "../components/layout";
+import Layout from "../components/MainLayout";
 
 function IndexPage() {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center text-center">
         <img
-          src="/assets/team-of-critters.svg"
-          className="mt-8 w-full max-w-xl"
-          alt="Four one-eyed aliens playing"
+          src="/assets/5930.jpg"
+          className="mt-8 w-full max-w-xl rounded"
+          alt="Para pramuka"
         />
 
 				<h2 className="mt-8 md:text-3xl sm:text-xl">Selamat datang di Buku Saku Pramuka</h2>

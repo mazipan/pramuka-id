@@ -1,5 +1,5 @@
-import Header from "./header";
-import Footer from "./footer";
+import Header from "./HeaderSection";
+import Footer from "./FooterSection";
 
 function Layout(props) {
   return (
