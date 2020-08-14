@@ -5,17 +5,17 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-teal-500">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:flex-no-wrap md:p-8">
+    <header className="bg-indigo-500">
+      <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:flex-no-wrap">
         <div className="flex items-center">
           <img
-            src="tailwind-logo.svg"
-            className="w-10 mr-3 text-white"
+            src="/assets/tunas-kelapa.svg"
+            className="h-10 mr-3 text-white"
           />
 
           <Link href="/">
             <a className="text-xl font-bold text-white">
-              Next.js Starter Tailwind
+              Buku Saku Pramuka
             </a>
           </Link>
         </div>
@@ -40,8 +40,8 @@ function Header() {
           } md:flex flex-col md:flex-row md:items-center md:justify-center text-sm w-full md:w-auto`}
         >
           {[
-            { title: "Home", route: "/" },
-            { title: "About", route: "/about" }
+            { title: "Daftar Isi", route: "/daftar-isi/" },
+            { title: "Tentang", route: "/tentang/" }
           ].map(navigationItem => (
             <li className="mt-3 md:mt-0 md:ml-6" key={navigationItem.title}>
               <Link href={navigationItem.route}>
