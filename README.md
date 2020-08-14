@@ -1,5 +1,8 @@
 # 👩‍🎨 Buku Saku Pramuka
 
+## Screenshots
+
+![Halaman daftar isi](screenshot.png)
 
 ## Credits
 
