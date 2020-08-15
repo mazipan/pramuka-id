@@ -1,11 +1,19 @@
 import Layout from '../components/MainLayout';
+import MetaHead from '../components/MetaHead';
 import ChapterNavigation from '../components/ChapterNavigation';
 import ChapterTitle from '../components/ChapterTitle';
 import TriSatyaData from '../data/tri-satya';
+import { BASE_PATH } from '../constants';
+
+const title = 'Tri Satya Pramuka | Buku Saku Pramuka Digital';
+const desc =
+  'Penjelasan lengkap mengenai Tri Satya Pramuka di Buku Saku Pramuka Digital';
+const url = BASE_PATH + '/tri-satya/';
 
 function TriSatyaPage() {
   return (
     <Layout>
+      <MetaHead title={title} desc={desc} url={url} />
       <ChapterNavigation nextLink="/dasa-dharma/" />
       <ChapterTitle subTitle="Tri Satya" title="Materi Pramuka" />
 

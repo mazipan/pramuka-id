@@ -1,11 +1,19 @@
 import Layout from '../components/MainLayout';
+import MetaHead from '../components/MetaHead';
 import ChapterNavigation from '../components/ChapterNavigation';
 import ChapterTitle from '../components/ChapterTitle';
 import DasaDharmaData from '../data/dasa-dharma';
+import { BASE_PATH } from '../constants';
+
+const title = 'Dasa Dharma Pramuka | Buku Saku Pramuka Digital';
+const desc =
+  'Penjelasan lengkap mengenai Dasa Dharma Pramuka di Buku Saku Pramuka Digital';
+const url = BASE_PATH + '/dasa-dharma/';
 
 function DasaDharmaPage() {
   return (
     <Layout>
+			<MetaHead title={title} desc={desc} url={url}/>
       <ChapterNavigation nextLink="/hymne-pramuka/" />
       <ChapterTitle subTitle="Dasa Dharma" title="Materi Pramuka" />
 
@@ -30,7 +38,9 @@ function DasaDharmaPage() {
               <p className="mt-4 mb-2">{DasaDharmaData.data.origin.preface}</p>
               <ol>
                 {DasaDharmaData.data.origin.data.map((li) => (
-                  <li className="ml-8 list-decimal" key={li}>{li}</li>
+                  <li className="ml-8 list-decimal" key={li}>
+                    {li}
+                  </li>
                 ))}
               </ol>
               <p className="mt-4 mb-2">
@@ -38,13 +48,18 @@ function DasaDharmaPage() {
               </p>
               <ol>
                 {DasaDharmaData.data.meanings.data.map((li, index) => (
-                  <li className="ml-8 list-decimal" key={DasaDharmaData.data.origin.data[index]}>
+                  <li
+                    className="ml-8 list-decimal"
+                    key={DasaDharmaData.data.origin.data[index]}
+                  >
                     <p>{DasaDharmaData.data.origin.data[index]}</p>
                     <ol className="mb-2">
                       {li.details &&
                         li.details.length > 0 &&
                         li.details.map((liChild) => (
-                          <li className="ml-4 list-disc" key={liChild}>{liChild}</li>
+                          <li className="ml-4 list-disc" key={liChild}>
+                            {liChild}
+                          </li>
                         ))}
                     </ol>
                   </li>

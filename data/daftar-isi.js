@@ -20,11 +20,11 @@ export default [
     text: 'Materi Pramuka',
     children: [
       {
-        text: 'Dwi Satya',
+        text: 'Dwi Satya (untuk Pramuka Siaga)',
         href: '/dwi-satya/',
       },
       {
-        text: 'Dwi Dharma',
+        text: 'Dwi Dharma (untuk Pramuka Siaga)',
         href: '/dwi-dharma/',
       },
       {

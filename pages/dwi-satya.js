@@ -1,11 +1,19 @@
 import Layout from '../components/MainLayout';
+import MetaHead from '../components/MetaHead';
 import ChapterNavigation from '../components/ChapterNavigation';
 import ChapterTitle from '../components/ChapterTitle';
 import DwiSatyaData from '../data/dwi-satya';
+import { BASE_PATH } from '../constants';
+
+const title = 'Dwi Satya Pramuka | Buku Saku Pramuka Digital';
+const desc =
+  'Penjelasan lengkap mengenai Dwi Satya Pramuka di Buku Saku Pramuka Digital';
+const url = BASE_PATH + '/dwi-satya/';
 
 function DwiSatyaPage() {
   return (
     <Layout>
+      <MetaHead title={title} desc={desc} url={url} />
       <ChapterNavigation nextLink="/dwi-dharma/" />
       <ChapterTitle subTitle="Dwi Satya" title="Materi Pramuka" />
 

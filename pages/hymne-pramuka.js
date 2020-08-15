@@ -1,11 +1,18 @@
 import Layout from '../components/MainLayout';
+import MetaHead from '../components/MetaHead';
 import ChapterNavigation from '../components/ChapterNavigation';
 import ChapterTitle from '../components/ChapterTitle';
 import HymneData from '../data/hymne-pramuka';
+import { BASE_PATH } from '../constants';
+
+const title = 'Hymne Pramuka | Buku Saku Pramuka Digital';
+const desc = 'Lirik beserta audio Hymne Pramuka di Buku Saku Pramuka Digital';
+const url = BASE_PATH + '/hymne-pramuka/';
 
 function HymnePramukaPage() {
   return (
     <Layout>
+      <MetaHead title={title} desc={desc} url={url} />
       <ChapterNavigation nextLink="/dwi-dharma/" />
       <ChapterTitle subTitle="Hymne Pramuka" title="Materi Pramuka" />
 

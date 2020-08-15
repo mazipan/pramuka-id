@@ -3,7 +3,7 @@ import Link from 'next/link';
 function Navigation({ nextLink }) {
   return (
     <nav className="flex items-center justify-between">
-      <Link href="/daftar-isi/">
+      <Link href="/">
         <button className="mt-8 bg-indigo-500 hover:bg-indigo-700 text-white py-2 px-4 rounded inline-flex items-center">
           <svg
             className="w-4 h-4 mr-2"
@@ -21,7 +21,7 @@ function Navigation({ nextLink }) {
             <line x1="19" y1="12" x2="5" y2="12"></line>
             <polyline points="12 19 5 12 12 5"></polyline>
           </svg>
-          Daftar Isi
+          Beranda
         </button>
       </Link>
       <Link href={nextLink}>
