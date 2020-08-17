@@ -53,7 +53,10 @@ function Layout(props) {
           href={`${url}/favicon-16x16.png`}
         />
         <link rel="manifest" href={`${url}/site.webmanifest`} />
-
+        <meta
+          content="u8olGi9rN_mzUhMWIqakLvCi-pQMluERfdUK_6bC4x4"
+          name="google-site-verification"
+        />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-25065548-9"
