@@ -39,6 +39,18 @@ export default [
         text: 'Hymne Pramuka',
         href: '/hymne-pramuka/',
       },
+      {
+        text: 'Lambang Pramuka',
+        href: '/lambang-pramuka/',
+      },
+      {
+        text: 'Salam Pramuka',
+        href: '/salam-pramuka/',
+      },
+      {
+        text: 'Pedoman Menyelesaikan SKU',
+        href: '/pedoman-sku/',
+      },
     ],
   },
 ];

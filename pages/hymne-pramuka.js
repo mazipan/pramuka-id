@@ -13,7 +13,7 @@ function HymnePramukaPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/dwi-dharma/" />
+      <ChapterNavigation nextLink="/lambang-pramuka/" />
       <ChapterTitle subTitle="Hymne Pramuka" title="Materi Pramuka" />
 
       <div className="text-left">
@@ -37,14 +37,14 @@ function HymnePramukaPage() {
               ))}
             </ol>
 
-            <audio controls>
+            <audio controls className="mt-8">
               <source src={HymneData.data.audio} type="audio/mpeg" />
             </audio>
           </div>
         </div>
       </div>
 
-      <ChapterNavigation nextLink="/dwi-dharma/" />
+      <ChapterNavigation nextLink="/lambang-pramuka/" />
     </Layout>
   );
 }

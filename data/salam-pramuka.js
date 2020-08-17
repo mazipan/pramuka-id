@@ -3,8 +3,10 @@ export default {
     'Salam Pramuka adalah suatu perwujudan dari penghargaan terhdap orang lain atas dasar tata susila yang sesuai dengan kepribadian bangsa indonesia. Salam Pramuka merupakan tanda penghormatan untuk orang yang berbudi, siapa yang melihat dulu ia yang memberikan salam dahulu kepada orang akan di beri salam dan tidak memandang kepangkatannya dalam masyarakat. Salam Pramuka selain berarti sebagai penghormatan, juga berarti mengingatkan akan Tri Satya dan Pancasila kepada yang diberi salam, sehingga setiap anggota pramuka berkenan menyampaikan salam kepada semua Pembimbing dan Pembina serta kepada sesama Pramuka, juga kepada semua yang berhak menerimanya. Salam Pramuka juga merupakan Suara Perwujudan ikatan jiwa yang erat, maka didalam memberi atau menjawab Salam Pramuka harus dilaksanakan dengan tertib dan sempurna, sehingga tercermin semangat Pramuka yang Rajin, gembira dan penuh keikhlasan.',
   variant: [
     {
+			key: 'salam-biasa',
+			emoji: '👋',
       title: 'Salam Biasa',
-      meaning: 'Salam biasa di sampaikan kepada',
+      meaning: 'Salam biasa di sampaikan kepada:',
       usage: [
         'Semua Pramuka',
         'Orang Tua',
@@ -15,6 +17,8 @@ export default {
       ],
     },
     {
+      key: 'salam-penghormatan',
+			emoji: '👏',
       title: 'Salam Penghormatan',
       meaning:
         'Salam penghormatan merupakan suatu penhargaan yang mendalam yang disampaikan kepada:',
@@ -28,7 +32,9 @@ export default {
       ],
     },
     {
-      title: 'Salam Biasa',
+      key: 'salam-janji',
+			emoji: '🤞',
+      title: 'Salam Janji',
       meaning:
         'Salam Janji adalah tanda penghormatan yang dilakukan setiap anggota Pramuka sewaktu mendengar Tri Satya sedang dibacakan.',
       usage: [],

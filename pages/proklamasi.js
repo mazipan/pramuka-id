@@ -16,19 +16,35 @@ function ProklamasiPage() {
       <ChapterNavigation nextLink="/dwi-satya/" />
       <ChapterTitle subTitle="Proklamasi" title="Dasar Negara" />
 
-      <div className="text-left">
-        <div>
-          {ProklamasiData.map((section) => (
-            <div
-              key={section}
-              className="mt-4 flex items-center rounded overflow-hidden shadow-lg"
-            >
-              <div className="px-6 py-4">
-                <p>{section}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="flex flex-col items-center justify-center text-center">
+        <img
+          src="/assets/proklamasi/proklamasi-bung-karno.jpg"
+          className="w-auto"
+          alt="Pembacaan naskah proklamasi oleh Bung Karno"
+        />
+      </div>
+
+      <div className="mt-8 text-left">
+        {ProklamasiData.data.map((section) => (
+          <p
+            className="mt-4"
+            key={section}
+          >
+            {section}
+          </p>
+        ))}
+      </div>
+
+			<audio controls className="mt-8">
+				<source src={ProklamasiData.audio} type="audio/mpeg" />
+			</audio>
+
+      <div className="mt-8 flex flex-col items-center justify-center text-center">
+        <img
+          src="/assets/proklamasi/naskah-proklamasi.jpeg"
+          className="w-auto"
+          alt="Naskah proklamasi"
+        />
       </div>
 
       <ChapterNavigation nextLink="/dwi-satya/" />

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import IconPramuka from './IconPramuka';
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -8,10 +9,7 @@ function Header() {
     <header className="bg-indigo-500">
       <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:flex-no-wrap">
         <div className="flex items-center">
-          <img
-            src="/assets/icon.png"
-            className="h-10 mr-3 text-white"
-          />
+					<IconPramuka color="#fff" className="h-10 w-10 text-white"/>
 
           <Link href="/">
             <a className="text-xl font-bold text-white">
