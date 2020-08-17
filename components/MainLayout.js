@@ -35,11 +35,40 @@ function Layout(props) {
         <meta property="og:type" content="website" />
         <meta property="og:image" content={metaImg} />
 
-				<link rel="apple-touch-icon" sizes="180x180" href={`${url}/apple-touch-icon.png`} />
-				<link rel="icon" type="image/png" sizes="32x32" href={`${url}/favicon-32x32.png`} />
-				<link rel="icon" type="image/png" sizes="16x16" href={`${url}/favicon-16x16.png`} />
-				<link rel="manifest" href={`${url}/site.webmanifest`} />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href={`${url}/apple-touch-icon.png`}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href={`${url}/favicon-32x32.png`}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href={`${url}/favicon-16x16.png`}
+        />
+        <link rel="manifest" href={`${url}/site.webmanifest`} />
 
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-25065548-9"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+						gtag('config', 'UA-25065548-9');
+        `,
+          }}
+        />
       </Head>
       <div className="flex flex-col min-h-screen">
         <Header />
