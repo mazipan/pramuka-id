@@ -4,6 +4,16 @@ export default {
 		alt: 'Kode morse internasional',
 		src: '/assets/morse/morse-code.svg'
 	}],
+	sections: [{
+		title: 'Huruf',
+		key: 'alphabet'
+	}, {
+		title: 'Angka',
+		key: 'number'
+	}, {
+		title: 'Tanda Baca',
+		key: 'symbol'
+	}],
   alphabet: [
     {
       code: '• –',

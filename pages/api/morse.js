@@ -1,5 +1,5 @@
 import cors from '../../middleware/cors';
-import data from '../../data/lambang-pramuka';
+import data from '../../data/morse';
 
 export default async (req, res) => {
 	await cors(req, res)

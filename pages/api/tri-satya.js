@@ -1,7 +1,7 @@
 import cors from '../../middleware/cors';
 import data from '../../data/tri-satya';
 
-export default (req, res) => {
+export default async (req, res) => {
 	await cors(req, res)
 
 	res.setHeader('Cache-Control', 'max-age=86400');

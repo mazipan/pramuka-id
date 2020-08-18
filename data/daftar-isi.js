@@ -64,4 +64,14 @@ export default [
       },
     ],
   },
+	{
+    text: 'Materi Kecakapan Umum',
+    children: [
+      {
+        text: 'Sandi Morse',
+        href: '/morse/',
+        api: '/api/morse',
+      },
+    ],
+  },
 ];

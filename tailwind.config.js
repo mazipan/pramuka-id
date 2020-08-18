@@ -8,6 +8,7 @@ module.exports = {
 		},
 		minWidth: {
 			'80': '80px',
+			'150': '150px',
 			'250': '250px'
 		},
 		minHeight: {
