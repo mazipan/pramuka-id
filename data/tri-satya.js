@@ -2,7 +2,7 @@ export default {
   id: 'tri-satya',
   title: 'Tri Satya',
   preface:
-    'Pengertian dari Tri Satya adalah Tri: tiga, Satya: Kesetiaan. Artinya adalah tiga kesetiaan yang harus di penuhi oleh atau dipatuhi oleh setia para anggota Pramuka.',
+    'Pengertian dari Tri Satya adalah Tri: tiga, Satya: Kesetiaan. Artinya adalah tiga kesetiaan yang harus di penuhi oleh atau dipatuhi oleh setiap anggota Pramuka.',
   data: {
     origin: {
       preface: 'Demi kehormatanku aku berjanji akan bersungguh-sungguh :',

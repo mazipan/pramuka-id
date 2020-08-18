@@ -8,4 +8,11 @@ export default {
 		'Soekarno/Hatta.',
 	],
 	audio: '/audio/proklamasi.mp3',
+	images: [{
+		alt: 'Soekarno membaca teks proklamasi',
+		src: '/assets/proklamasi/proklamasi-bung-karno.jpg'
+	}, {
+		alt: 'Teks proklamasi',
+		src: '/assets/proklamasi/naskah-proklamasi.jpeg'
+	}],
 };

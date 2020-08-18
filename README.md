@@ -15,6 +15,7 @@ https://buku-saku-pramuka.vercel.app/
 - Image: Children Campfire by [Freepik](https://www.freepik.com/free-vector/children-campfire-mountain-forest_8609015.htm#page=1&query=scout&position=4)
 - Image: Scouts Camping by [Freepik](https://www.freepik.com/free-vector/scouts-camping-flat-vector-illustration_8610362.htm)
 - Image: Scouts group Playing Guitar by [Freepik](https://www.freepik.com/free-vector/scouts-group-leader-playing-guitar_9176792.htm#page=1&query=scout&position=17)
+- Data: [infojempol.com](https://www.infojempol.com/2012/02/buku-saku-pramuka-lengkap.html)
 
 ---
 

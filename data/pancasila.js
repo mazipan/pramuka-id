@@ -1,4 +1,6 @@
 export default {
+	imageGaruda: '/assets/pancasila/garuda.png',
+	imageItem: '/assets/pancasila/[index].png',
   data: [
     'KETUHANAN YANG MAHA ESA ',
     'KEMANUSIAAN YANG ADIL DAN BERADAB',

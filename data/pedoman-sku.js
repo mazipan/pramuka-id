@@ -15,7 +15,7 @@ export default [
       },
       {
         title:
-          'Dapat memberi salam pramuka, dan tahu maksud dan pengguna-annya.',
+          'Dapat memberi salam pramuka, dan tahu maksud dan penggunaannya.',
         meaning:
           'Seorang pramuka tahu macam-macam salam pramuka, cara, juga sikap pada waktu memberikan salam kepada siapa dan kapan/dimana salam itu diucapkan.',
       },
