@@ -14,7 +14,7 @@ function ProklamasiPage() {
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
       <ChapterNavigation nextLink="/dwi-satya/" />
-      <ChapterTitle subTitle="Proklamasi" title="Dasar Negara" />
+      <ChapterTitle subTitle="Proklamasi" title="Materi Kenegaraan" />
 
       <div className="flex flex-col items-center justify-center text-center">
         <img

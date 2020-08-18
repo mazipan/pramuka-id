@@ -14,7 +14,7 @@ function UUD45Page() {
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
       <ChapterNavigation nextLink="/proklamasi/" />
-      <ChapterTitle subTitle="UUD 1945" title="Dasar Negara" />
+      <ChapterTitle subTitle="UUD 1945" title="Materi Kenegaraan" />
 
       <div className="text-left">
         <div>
