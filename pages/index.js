@@ -5,13 +5,6 @@ import DataDaftarIsi from '../data/daftar-isi';
 function DaftarIsiPage() {
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center text-center">
-        <img
-          src="/assets/5930.jpg"
-          className="mt-8 w-full max-w-xl rounded"
-          alt="Para pramuka"
-        />
-      </div>
       <div className="text-center">
         <h1 className="mt-8 font-bold text-3xl md:text-4xl">Buku Saku Pramuka Digital</h1>
       </div>
