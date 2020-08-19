@@ -50,7 +50,7 @@ function SalamPramukaPage() {
                   onClick={() => {
                     handleCollapse(index);
                   }}
-                  className="bg-indigo-500 hover:bg-indigo-700 text-white py-2 px-4 rounded inline-flex items-center"
+                  className="bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded inline-flex items-center"
                 >
                   {collapsed === index ? 'Tutup detail' : 'Lihat detail'}
                   <svg

@@ -15,7 +15,7 @@ function Layout(props) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta name="theme-color" content="#667EEA" />
+        <meta name="theme-color" content="#7B341E" />
         <title key="title">{title}</title>
         <meta key="description" name="description" content={desc} />
 

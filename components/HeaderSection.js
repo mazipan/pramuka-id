@@ -6,7 +6,7 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-indigo-500">
+    <header className="bg-orange-900">
       <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:flex-no-wrap">
         <div className="flex items-center">
 					<IconPramuka color="#fff" className="h-10 w-10 text-white"/>

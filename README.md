@@ -4,6 +4,10 @@
 
 https://buku-saku-pramuka.vercel.app/
 
+## Public API
+
+https://buku-saku-pramuka.vercel.app/api/all
+
 ## Screenshots
 
 ![Halaman daftar isi](screenshot.png)
@@ -17,6 +21,11 @@ https://buku-saku-pramuka.vercel.app/
 - Image: Scouts group Playing Guitar by [Freepik](https://www.freepik.com/free-vector/scouts-group-leader-playing-guitar_9176792.htm#page=1&query=scout&position=17)
 - Data: [infojempol.com](https://www.infojempol.com/2012/02/buku-saku-pramuka-lengkap.html)
 
+## Support me
+
+- Via [trakteer](https://trakteer.id/mazipan)
+- Direct support, [send me an email](mailto:mazipanneh@gmail.com)
+
 ---
 
- By [Irfan Maulana](https://mazipan.space/)
+Copyright © 2020 by [Irfan Maulana](https://mazipan.space/)
