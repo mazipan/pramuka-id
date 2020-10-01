@@ -72,6 +72,10 @@ export default [
         href: '/morse/',
         api: '/api/morse',
       },
+      {
+        text: 'Sandi Radio',
+        href: '/radio/'
+      }
     ],
   },
 ];
