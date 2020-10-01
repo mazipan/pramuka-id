@@ -9,7 +9,7 @@ export default [
       },
       {
         text: 'Pembukaan UUD 1945',
-        href: '/uud1945/',
+        href: '/pembukaan-uud-1945/',
         api: '/api/uud1945',
       },
       {
