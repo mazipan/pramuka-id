@@ -13,7 +13,7 @@ function PancasilaPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/uud1945/" />
+      <ChapterNavigation nextLink="/pembukaan-uud-1945/" />
       <ChapterTitle subTitle="Pancasila" title="Materi Kenegaraan" />
 
       <div className="flex flex-col items-center justify-center text-center">
@@ -56,7 +56,7 @@ function PancasilaPage() {
         </div>
       </div>
 
-      <ChapterNavigation nextLink="/uud1945/" />
+      <ChapterNavigation nextLink="/pembukaan-uud-1945/" />
     </Layout>
   );
 }

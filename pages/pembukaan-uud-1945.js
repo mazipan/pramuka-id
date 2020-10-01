@@ -7,7 +7,7 @@ import { BASE_PATH } from '../constants';
 
 const title = 'UUD 1945 | Buku Saku Pramuka Digital';
 const desc = 'UUD 1945 di Buku Saku Pramuka Digital';
-const url = BASE_PATH + '/uud1945/';
+const url = BASE_PATH + '/pembukaan-uud-1945/';
 
 function UUD45Page() {
   return (
