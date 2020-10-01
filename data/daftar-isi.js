@@ -8,7 +8,7 @@ export default [
         api: '/api/pancasila',
       },
       {
-        text: 'UUD 1945',
+        text: 'Pembukaan UUD 1945',
         href: '/uud1945/',
         api: '/api/uud1945',
       },
