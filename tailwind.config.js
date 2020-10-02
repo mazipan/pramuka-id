@@ -9,10 +9,13 @@ module.exports = {
 		minWidth: {
 			'80': '80px',
 			'150': '150px',
-			'250': '250px'
+			'250': '250px',
+			full: '100%',
 		},
 		minHeight: {
-			'80': '80px'
+			'80': '80px',
+			full: '100%',
+      screen: '100vh',
 		},
 		listStyleType: {
 			'lower-alpha': 'lower-alpha',
