@@ -1,8 +1,10 @@
+import { useState, useEffect } from 'react'
 import Layout from '../components/MainLayout';
 import MetaHead from '../components/MetaHead';
 import ChapterNavigation from '../components/ChapterNavigation';
 import ChapterTitle from '../components/ChapterTitle';
 import RadioData from '../data/radio';
+import { FaVolumeUp } from 'react-icons/fa'
 import { BASE_PATH } from '../constants';
 
 const title = 'Kode Radio Lengkap | Buku Saku Pramuka Digital';
@@ -10,6 +12,26 @@ const desc = 'Daftar lengkap kode radio';
 const url = BASE_PATH + '/radio/';
 
 function LambangPramukaPage() {
+
+  const [canSpeak, setSpeak] = useState(false);
+
+  useEffect(() => {
+    // check if browser support Speech API
+    if('speechSynthesis' in window){
+      setSpeak(true) 
+    }
+  }, [])
+
+  const playAudio = (word) => {
+    try {
+      let utterance = new SpeechSynthesisUtterance(word);
+      utterance.lang = "en-US"
+      speechSynthesis.speak(utterance);
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
@@ -25,11 +47,13 @@ function LambangPramukaPage() {
                 {RadioData[section.key].map((item) => (
                   <div
                     key={item.text}
+                    onClick={() => canSpeak && playAudio(item.code.toLowerCase())}
                     className="w-1/2 md:w-1/5 flex items-center rounded overflow-hidden shadow-lg"
                   >
-                    <div className="px-2 py-2 flex items-center">
+                    <div className="px-2 py-2 flex items-center w-full">
                       <div className="w-10">{item.text}</div>{' '}
                       <div className="text-orange-500">{item.code}</div>
+                      {canSpeak && <div className="ml-auto text-gray-500"><FaVolumeUp/></div>}
                     </div>
                   </div>
                 ))}
