@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useSpeechAPI } from '../hooks/useSpeechAPI';
 import Layout from '../components/MainLayout';
 import MetaHead from '../components/MetaHead';
 import ChapterNavigation from '../components/ChapterNavigation';
@@ -13,14 +13,7 @@ const url = BASE_PATH + '/radio/';
 
 function LambangPramukaPage() {
 
-  const [canSpeak, setSpeak] = useState(false);
-
-  useEffect(() => {
-    // check if browser support Speech API
-    if('speechSynthesis' in window){
-      setSpeak(true) 
-    }
-  }, [])
+  const { canSpeak } = useSpeechAPI();
 
   const playAudio = (word) => {
     try {
