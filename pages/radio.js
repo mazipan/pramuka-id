@@ -53,7 +53,7 @@ function LambangPramukaPage() {
                     <div className="px-2 py-2 flex items-center w-full">
                       <div className="w-10">{item.text}</div>{' '}
                       <div className="text-orange-500">{item.code}</div>
-                      {canSpeak && <div className="ml-auto text-gray-500"><FaVolumeUp/></div>}
+                      {canSpeak && <div className="ml-auto text-gray-500 cursor-pointer"><FaVolumeUp/></div>}
                     </div>
                   </div>
                 ))}
