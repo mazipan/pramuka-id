@@ -13,7 +13,7 @@ function LambangPramukaPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/" />
+      <ChapterNavigation nextLink="/radio/" />
       <ChapterTitle subTitle="Kode Morse" title="Materi Pramuka" />
 
       <div className="text-center md:text-left">
@@ -39,7 +39,7 @@ function LambangPramukaPage() {
         </div>
       </div>
 
-      <ChapterNavigation nextLink="/" />
+      <ChapterNavigation nextLink="/radio/" />
     </Layout>
   );
 }
