@@ -26,8 +26,8 @@ function DaftarIsiPage() {
 
                     {babChild.children && babChild.children.length > 0 && (
                       <ol>
-                        {babChild.children.map((li) => (
-                          <li className="ml-4 text-orange-500">
+                        {babChild.children.map((li, index) => (
+                          <li key={index} className="ml-4 text-orange-500">
                             <Link href={li.href}>
                               <a title={li.text}>{li.text}</a>
                             </Link>

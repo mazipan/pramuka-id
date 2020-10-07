@@ -43,7 +43,7 @@ function PancasilaPage() {
         </div>
         <p>{PancasilaData.meaning.preface}</p>
         <div className="mt-4">
-          {PancasilaData.meaning.data.map((section, index) => (
+          {PancasilaData.meaning.data.map((section) => (
             <div
               key={section}
               className="mt-4 flex items-center rounded overflow-hidden shadow-lg"
