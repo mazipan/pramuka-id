@@ -27,7 +27,7 @@
   "homepage": "https://github.com/mazipan/buku-saku-pramuka#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "next": "9.5.2",
+    "next": "9.5.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-icons": "^3.11.0"
