@@ -1,3 +1,4 @@
+const {theme} = require('tailwindcss/defaultConfig')
 module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
   theme: {
@@ -18,6 +19,7 @@ module.exports = {
       screen: '100vh',
 		},
 		listStyleType: {
+			...theme.listStyleType,
 			'lower-alpha': 'lower-alpha',
 		}
   },

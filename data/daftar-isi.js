@@ -68,6 +68,11 @@ export default [
     text: 'Materi Kecakapan Umum',
     children: [
       {
+        text: 'Bendera semaphore',
+        href: '/bendera-semaphore/',
+        api: '/api/bendera-semaphore',
+      },
+      {
         text: 'Sandi Morse',
         href: '/morse/',
         api: '/api/morse',

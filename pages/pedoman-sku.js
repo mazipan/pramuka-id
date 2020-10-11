@@ -26,7 +26,7 @@ function PedomanSkuPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/morse/" />
+      <ChapterNavigation nextLink="/bendera-semaphore/" />
       <ChapterTitle subTitle="Pedoman SKU" title="Materi Pramuka" />
 
       <div className="text-left">
@@ -82,7 +82,7 @@ function PedomanSkuPage() {
         ))}
       </div>
 
-      <ChapterNavigation nextLink="/morse/" />
+      <ChapterNavigation nextLink="/bendera-semaphore/" />
     </Layout>
   );
 }
