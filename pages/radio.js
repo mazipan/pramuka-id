@@ -32,7 +32,7 @@ function LambangPramukaPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/" />
+      <ChapterNavigation nextLink="/hari-peringatan-nasional" />
       <ChapterTitle subTitle="Kode Radio" title="Materi Pramuka" />
 
       <div className="text-center md:text-left">
@@ -60,7 +60,7 @@ function LambangPramukaPage() {
         </div>
       </div>
 
-      <ChapterNavigation nextLink="/" />
+      <ChapterNavigation nextLink="/hari-peringatan-nasional" />
     </Layout>
   );
 }
