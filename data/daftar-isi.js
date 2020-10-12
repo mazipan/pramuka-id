@@ -80,6 +80,11 @@ export default [
       {
         text: 'Sandi Radio',
         href: '/radio/'
+      },
+      {
+        text: 'Hari Peringatan Nasional',
+        href: '/hari-peringatan-nasional/',
+        api: '/api/hari-peringatan-nasional',
       }
     ],
   },
