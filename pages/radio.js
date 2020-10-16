@@ -33,7 +33,7 @@ function LambangPramukaPage() {
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
       <ChapterNavigation nextLink="/hari-peringatan-nasional" />
-      <ChapterTitle subTitle="Kode Radio" title="Materi Pramuka" />
+      <ChapterTitle subTitle="Kode Radio" title="Materi Kecakapan Umum" />
 
       <div className="text-center md:text-left">
         <div>

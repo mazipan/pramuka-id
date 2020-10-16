@@ -14,7 +14,7 @@ function LambangPramukaPage() {
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
       <ChapterNavigation nextLink="/radio/" />
-      <ChapterTitle subTitle="Kode Morse" title="Materi Pramuka" />
+      <ChapterTitle subTitle="Kode Morse" title="Materi Kecakapan Umum" />
 
       <div className="text-center md:text-left">
         <div>
