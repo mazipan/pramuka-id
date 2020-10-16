@@ -66,7 +66,7 @@ function LaguLaguPramuka() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/" />
+      <ChapterNavigation nextLink="/tanda-kecakapan-khusus/" />
       <ChapterTitle subTitle={SongsData.subtitle} title={SongsData.title} />
 
       <div className="text-left">
@@ -114,7 +114,7 @@ function LaguLaguPramuka() {
         </div>
       </div>
 
-      <ChapterNavigation nextLink="/" />
+      <ChapterNavigation nextLink="/tanda-kecakapan-khusus/" />
     </Layout>
   );
 }
