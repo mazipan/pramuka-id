@@ -9,7 +9,7 @@ const title = `${TkkData.subtitle} | Buku Saku Pramuka Digital`;
 const desc = TkkData.description;
 const url = BASE_PATH + '/tanda-kecakapan-khusus/';
 
-function LaguLaguPramuka() {
+function TandaKecakapanKhusus() {
   const [collapsed, setCollapsed] = React.useState(-1)
 
   const handleCollapse = (index) => {
@@ -121,4 +121,4 @@ export function reportWebVitals({ id, name, label, value }) {
   });
 }
 
-export default LaguLaguPramuka;
+export default TandaKecakapanKhusus;
