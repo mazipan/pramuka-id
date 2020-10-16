@@ -2,7 +2,7 @@ export default {
   title: 'Materi Kecakapan Umum',
   subtitle: 'Tanda Kecakapan Khusus (TKK)',
   description: 'Penjelasan lengkap mengenai Tanda Kecakapan Khusus (TKK)',
-  source: 'https://www.pramukaindonesia.com/2015/07/download-kumpulan-lagu-lagu-pramuka.html',
+  source: 'https://www.pramukaindonesia.com/2015/02/tanda-kecakapan-khusus-tkk-pramuka.html',
   meaning: 'Tanda Kecakapan Khusus (TKK) Pramuka merupakan tanda yang diberikan kepada peserta didik sebagai bentuk apresiasi atas kemampuan seorang peserta didik dalam suatu bidang tertentu. TKK bersifat opsional bagi peserta didik, sehingga seorang peserta didik dapat memiliki TKK yang berbeda dari peserta didik lain.',
   sections: [
     {
