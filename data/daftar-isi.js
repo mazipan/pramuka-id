@@ -90,6 +90,11 @@ export default [
         text: 'Lagu-lagu Pramuka',
         href: '/lagu-lagu-pramuka/',
         api: '/api/lagu-lagu-pramuka',
+      },
+      {
+        text: 'Tanda Kecakapan Khusus (TKK)',
+        href: '/tanda-kecakapan-khusus/',
+        api: '/api/tanda-kecakapan-khusus',
       }
     ],
   },
