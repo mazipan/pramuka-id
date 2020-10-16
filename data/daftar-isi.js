@@ -85,6 +85,11 @@ export default [
         text: 'Hari Peringatan Nasional',
         href: '/hari-peringatan-nasional/',
         api: '/api/hari-peringatan-nasional',
+      },
+      {
+        text: 'Lagu-lagu Pramuka',
+        href: '/lagu-lagu-pramuka/',
+        api: '/api/lagu-lagu-pramuka',
       }
     ],
   },

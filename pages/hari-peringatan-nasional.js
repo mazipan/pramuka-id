@@ -35,7 +35,7 @@ function HariPeringatanNasionalPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/" />
+      <ChapterNavigation nextLink="/lagu-lagu-pramuka/" />
       <ChapterTitle subTitle="Hari Peringatan Nasional" title="Materi Kecakapan Umum" />
 
       <div className="text-left">
@@ -96,7 +96,7 @@ function HariPeringatanNasionalPage() {
         </div>
       </div>
 
-      <ChapterNavigation nextLink="/" />
+      <ChapterNavigation nextLink="/lagu-lagu-pramuka/" />
     </Layout>
   )
 }
