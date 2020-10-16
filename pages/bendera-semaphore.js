@@ -15,7 +15,7 @@ const BenderaSemaphore = () => {
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
       <ChapterNavigation nextLink={nextLink} />
-      <ChapterTitle subTitle="Bendera Semaphore" title="Materi Pramuka" />
+      <ChapterTitle subTitle="Bendera Semaphore" title="Materi Kecakapan Umum" />
       <div className="text-center md:text-left">
         <div className="mb-2">
           <img className='w-9/12 lg:w-6/12 m-auto' src={dataSemaphore.semaphoreImg} alt='bendera semaphore'/>
