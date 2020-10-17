@@ -1,4 +1,4 @@
-# 🌴 Buku Saku Pramuka
+# 🌴 Buku Saku Pramuka 🌴
 
 ## Live Web
 
@@ -30,3 +30,4 @@ https://buku-saku-pramuka.vercel.app/api/all
 ---
 
 Copyright © 2020 by [Irfan Maulana](https://mazipan.space/)
+🌴 Buku Saku Pramuka 🌴
