@@ -11,13 +11,16 @@ const url = BASE_PATH;
 const metaImg = BASE_PATH + '/assets/5930.jpg';
 
 function Layout(props) {
-  const [appTheme, setAppTheme] = React.useState('light')
+  const userTheme = window.localStorage.getItem('app-theme');
+  const [appTheme, setAppTheme] = React.useState(userTheme || 'light');
 
   const toggleTheme = () => {
     if (appTheme === 'light') {
       setAppTheme('dark')
+      window.localStorage.setItem('app-theme', 'dark')
     } else {
       setAppTheme('light')
+      window.localStorage.setItem('app-theme', 'light')
     }
   }
 
