@@ -14,8 +14,7 @@ function SandiAmbalanPage() {
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
       <ChapterNavigation nextLink="/bendera-semaphore/" />
-
-      <ChapterTitle subTitle={SandiAmbalanData.subtitle} title={SandiAmbalanData.title} />
+      <ChapterTitle subTitle="Sandi Ambalan" title={SandiAmbalanData.title} />
 
       <div className="text-left">
         <div className="mt-4" id={SandiAmbalanData.id}>

@@ -1,7 +1,6 @@
 export default {
   source: 'https://www.pramukaindonesia.com/2014/10/sandi-ambalan-bhinneka-tunggal-ika.html',
   title: 'Materi Pramuka',
-  subTitle: 'Sandi Ambalan',
   id: 'sandi-ambalan',
   data: [
     [
