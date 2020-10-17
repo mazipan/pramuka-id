@@ -48,6 +48,11 @@ export default [
         api: '/api/hymne-pramuka',
       },
       {
+        text: 'Kwartir',
+        href: '/kwartir/',
+        api: '/api/kwartir',
+      },
+      {
         text: 'Lambang Pramuka',
         href: '/lambang-pramuka/',
         api: '/api/lambang-pramuka',
