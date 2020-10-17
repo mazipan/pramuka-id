@@ -40,22 +40,17 @@ function SatuanKaryaPramukaPage() {
               <p className="font-bold w-full mb-1">{section.name}</p>
               <span>{section.description}</span>
 
-              {section.groupType === 'array' && (
-                <ul className="list-disc">
-                  {section.groups.map((list, index) => (
-                    <li key={index} className="ml-6">
-                      {list}
-                    </li>
-                  ))}
-                </ul>
-              )}
-
-              {section.groupType === 'object' && (
+              {section.groupType === 'group-object' && (
                 <div>
                   {section.groups.map((group, index) => (
                     <div key={sectionIndex + index} className="mt-4 rounded overflow-hidden shadow-lg">
                       <div className="w-full px-6 py-4 flex items-center justify-between flex-wrap">
-                        <div className="min-w-250 font-semibold">{group.text}</div>
+                        <div className="font-semibold flex items-center">
+                          {group.logo && (
+                            <img className="h-32 w-auto pr-5" src={`/assets/satuan-karya/${group.logo}`} />
+                          )}
+                          {group.text}
+                        </div>
 
                         <button
                           onClick={() => {
