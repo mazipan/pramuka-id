@@ -1,5 +1,5 @@
 export default [
-	{
+  {
     text: 'Materi Kenegaraan',
     children: [
       {
@@ -18,8 +18,8 @@ export default [
         api: '/api/proklamasi',
       },
     ],
-	},
-	{
+  },
+  {
     text: 'Materi Pramuka',
     children: [
       {
@@ -62,9 +62,14 @@ export default [
         href: '/pedoman-sku/',
         api: '/api/pedoman-sku',
       },
+      {
+        text: 'Sandi Ambalan',
+        href: '/sandi-ambalan/',
+        api: '/api/sandi-ambalan',
+      },
     ],
   },
-	{
+  {
     text: 'Materi Kecakapan Umum',
     children: [
       {
@@ -79,7 +84,7 @@ export default [
       },
       {
         text: 'Sandi Radio',
-        href: '/radio/'
+        href: '/radio/',
       },
       {
         text: 'Hari Peringatan Nasional',
@@ -95,7 +100,7 @@ export default [
         text: 'Tanda Kecakapan Khusus (TKK)',
         href: '/tanda-kecakapan-khusus/',
         api: '/api/tanda-kecakapan-khusus',
-      }
+      },
     ],
   },
-];
+]
