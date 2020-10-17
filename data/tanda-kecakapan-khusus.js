@@ -3,7 +3,8 @@ export default {
   subtitle: 'Tanda Kecakapan Khusus (TKK)',
   description: 'Penjelasan lengkap mengenai Tanda Kecakapan Khusus (TKK)',
   source: 'https://www.pramukaindonesia.com/2015/02/tanda-kecakapan-khusus-tkk-pramuka.html',
-  meaning: 'Tanda Kecakapan Khusus (TKK) Pramuka merupakan tanda yang diberikan kepada peserta didik sebagai bentuk apresiasi atas kemampuan seorang peserta didik dalam suatu bidang tertentu. TKK bersifat opsional bagi peserta didik, sehingga seorang peserta didik dapat memiliki TKK yang berbeda dari peserta didik lain.',
+  meaning:
+    'Tanda Kecakapan Khusus (TKK) Pramuka merupakan tanda yang diberikan kepada peserta didik sebagai bentuk apresiasi atas kemampuan seorang peserta didik dalam suatu bidang tertentu. TKK bersifat opsional bagi peserta didik, sehingga seorang peserta didik dapat memiliki TKK yang berbeda dari peserta didik lain.',
   sections: [
     {
       name: 'Warna Tanda Kecakapan Khusus Berdasarkan Jenis Bidang Keahlian',
@@ -23,8 +24,8 @@ export default {
             'TKK Pendayung',
             'TKK Ski Air',
             'TKK Pencak Silat',
-            'TKK Posyandu/TKK Keluarga Berencana'
-          ]
+            'TKK Posyandu/TKK Keluarga Berencana',
+          ],
         },
         {
           text: 'Warna Kuning',
@@ -46,8 +47,8 @@ export default {
             'TKK Wicaksana',
             'TKK Dana Punia',
             'TKK Bhakti',
-            'TKK Pendidikan KB'
-          ]
+            'TKK Pendidikan KB',
+          ],
         },
         {
           text: 'Warna Hijau',
@@ -112,12 +113,13 @@ export default {
             'TKK Peternak Lele',
             'TKK Statistika Keluarga Berencana',
             'TKK Pengatur Ruangan',
-            'TKK Pengatur Meja Makan'
-          ]
+            'TKK Pengatur Meja Makan',
+          ],
         },
         {
           text: 'Warna Biru',
-          description: 'Warna biru Untuk TKK Bidang Sosial, Perikemanusiaan, Gotong Royong, Ketertiban, Masyarakat, Perdamaian Dunia, dan Lingkungan Hidup',
+          description:
+            'Warna biru Untuk TKK Bidang Sosial, Perikemanusiaan, Gotong Royong, Ketertiban, Masyarakat, Perdamaian Dunia, dan Lingkungan Hidup',
           lists: [
             'TKK Pemadam Kebakaran',
             'TKK Pengatur Lalu Lintas',
@@ -137,8 +139,8 @@ export default {
             'TKK Juru Ukur',
             'TKK Kependudukan',
             'TKK Pendataan Keluarga Berencana',
-            'TKK Kesejahteraan Keluarga'
-          ]
+            'TKK Kesejahteraan Keluarga',
+          ],
         },
         {
           text: 'Warna Merah',
@@ -150,10 +152,10 @@ export default {
             'TKK Juru Gambar',
             'TKK Pengarang',
             'TKK Pembaca',
-            'TKK Pengatur Rumah'
-          ]
-        }
-      ]
+            'TKK Pengatur Rumah',
+          ],
+        },
+      ],
     },
     {
       name: 'TKK Berdasarkan Tingkatan',
@@ -163,8 +165,8 @@ export default {
         'TKK Purwa berbentuk Lingkaran',
         'TKK Madya berbentuk Persegi',
         'TKK Utama berbentuk Persegi 5',
-        'TKK Untuk siaga berbentuk Segitiga berwarna Hijau'
-      ]
+        'TKK Untuk siaga berbentuk Segitiga berwarna Hijau',
+      ],
     },
     {
       name: 'Tingkatan Berdasarkan Satuan Golongan Pramuka',
@@ -173,8 +175,8 @@ export default {
       groups: [
         'TKK siaga berwarna Hijau',
         'TKK penggalang Berbordir Warna Merah',
-        'TKK Penegak dan Pandega berbordir Warna Kuning'
-      ]
+        'TKK Penegak dan Pandega berbordir Warna Kuning',
+      ],
     },
     {
       name: 'Pemasangan TKK',
@@ -182,8 +184,8 @@ export default {
       groupType: 'array',
       groups: [
         'Melintang, dua jari di bawah lambang Kwartir Daerah/di atas jahitan bawah lengan, atau',
-        'Melingkari lambang Kwartir Daerah dengan komposisi dua buah di sebelah kanan lambang Kwartir Daerah, dua buah di sebelah kiri lambang Kwartir Daerah, dan satu buah di bawah lambang Kwartir Daerah.'
-      ]
-    }
-  ]
+        'Melingkari lambang Kwartir Daerah dengan komposisi dua buah di sebelah kanan lambang Kwartir Daerah, dua buah di sebelah kiri lambang Kwartir Daerah, dan satu buah di bawah lambang Kwartir Daerah.',
+      ],
+    },
+  ],
 }
