@@ -8,12 +8,13 @@ import { BASE_PATH } from '../constants'
 const title = 'Sandi Ambalan | Buku Saku Pramuka Digital'
 const desc = 'Sandi Ambalan di Buku Saku Pramuka Digital'
 const url = BASE_PATH + '/sandi-ambalan/'
+const nextLink = '/bendera-semaphore/'
 
 function SandiAmbalanPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/bendera-semaphore/" />
+      <ChapterNavigation nextLink={nextLink} />
       <ChapterTitle subTitle="Sandi Ambalan" title={SandiAmbalanData.title} />
 
       <div className="text-left">
@@ -30,7 +31,7 @@ function SandiAmbalanPage() {
         </div>
       </div>
 
-      <ChapterNavigation nextLink="/bendera-semaphore/" />
+      <ChapterNavigation nextLink={nextLink} />
     </Layout>
   )
 }

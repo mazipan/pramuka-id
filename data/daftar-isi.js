@@ -68,6 +68,11 @@ export default [
         api: '/api/seragam-pramuka',
       },
       {
+        text: 'Satuan Karya Pramuka',
+        href: '/satuan-karya-pramuka/',
+        api: '/api/satuan-karya-pramuka',
+      },
+      {
         text: 'Sandi Ambalan',
         href: '/sandi-ambalan/',
         api: '/api/sandi-ambalan',
