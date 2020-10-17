@@ -100,7 +100,12 @@ export default [
         text: 'Tanda Kecakapan Khusus (TKK)',
         href: '/tanda-kecakapan-khusus/',
         api: '/api/tanda-kecakapan-khusus',
-      }
+      },
+      {
+        text: 'Tepuk Pramuka',
+        href: '/tepuk-pramuka/',
+        api: '/api/tepuk-pramuka',
+      },
     ],
   },
 ];

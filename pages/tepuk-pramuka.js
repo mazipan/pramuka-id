@@ -2,14 +2,14 @@ import Layout from '../components/MainLayout';
 import MetaHead from '../components/MetaHead';
 import ChapterNavigation from '../components/ChapterNavigation';
 import ChapterTitle from '../components/ChapterTitle';
-import TkkData from '../data/tanda-kecakapan-khusus';
+import TepukData from '../data/tepuk-pramuka';
 import { BASE_PATH } from '../constants';
 
-const title = `${TkkData.subtitle} | Buku Saku Pramuka Digital`;
-const desc = TkkData.description;
-const url = BASE_PATH + '/tanda-kecakapan-khusus/';
+const title = `${TepukData.subtitle} | Buku Saku Pramuka Digital`;
+const desc = TepukData.description;
+const url = BASE_PATH + '/tepuk-pramuka/';
 
-function TandaKecakapanKhusus() {
+function TepukPramuka() {
   const [collapsed, setCollapsed] = React.useState(-1)
 
   const handleCollapse = (index) => {
@@ -29,13 +29,13 @@ function TandaKecakapanKhusus() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/tepuk-pramuka/" />
-      <ChapterTitle subTitle={TkkData.subtitle} title={TkkData.title} />
+      <ChapterNavigation nextLink="/" />
+      <ChapterTitle subTitle={TepukData.subtitle} title={TepukData.title} />
 
       <div className="text-left">
-        <p>{TkkData.meaning}</p>
+        <p>{TepukData.meaning}</p>
         <div className="mt-4">
-          {TkkData.sections.map((section, sectionIndex) => (
+          {TepukData.sections.map((section, sectionIndex) => (
             <div key={sectionIndex} className="mt-4">
                 <p className='font-bold w-full mb-1'>{section.name}</p>
                 <span>{section.description}</span>
@@ -83,13 +83,12 @@ function TandaKecakapanKhusus() {
 
                         <div className={`transition duration-150 ease-in-out ${collapsed === index ? 'block' : 'hidden'}`}>
                           <div className="w-full px-6 py-4">
-                            <p className='mb-2'>{group.description}</p>
 
-                            <ol className='list-decimal flex flex-col md:flex-row'>
+                            <ol className='list-decimal flex flex-col'>
                               {splitData(group.lists).map((split, splitIndex) => (
                                 <div key={splitIndex} className='w-full'>
                                   {split.map((list, listIndex) => (
-                                    <li key={listIndex} className='ml-6'>{list}</li>
+                                    <li key={listIndex} className='mb-1'>{list}</li>
                                   ))}
                                 </div>
                               ))}
@@ -121,4 +120,4 @@ export function reportWebVitals({ id, name, label, value }) {
   });
 }
 
-export default TandaKecakapanKhusus;
+export default TepukPramuka;
