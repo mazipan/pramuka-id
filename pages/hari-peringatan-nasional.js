@@ -25,7 +25,7 @@ function HariPeringatanNasionalPage() {
   const renderList = (data, key) => (
     <ol className="list-disc">
       {data.map((dt, index) => (
-        <li className="ml-4 text-gray-700 text-base" key={`${key}-${index}`}>
+        <li className="ml-4 text-secondary text-base" key={`${key}-${index}`}>
           {dt}
         </li>
       ))}
@@ -42,7 +42,7 @@ function HariPeringatanNasionalPage() {
         <p>{hariNasionalData.meaning}</p>
         <div className="mt-4">
           {hariNasionalData.types.map((type, index) => (
-            <div key={type.key} className="mt-4 rounded overflow-hidden shadow-lg">
+            <div key={type.key} className="mt-4 rounded overflow-hidden shadow-lg bg-card">
               <div className="w-full px-6 py-4 flex items-center justify-between flex-wrap">
                 <div className="font-bold text-xl min-w-250">{type.title}</div>
 
@@ -50,7 +50,7 @@ function HariPeringatanNasionalPage() {
                   onClick={() => {
                     handleCollapse(index)
                   }}
-                  className="bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded inline-flex items-center"
+                  className="bg-primary hover:bg-secondary text-button py-2 px-4 rounded inline-flex items-center"
                 >
                   {collapsed === index ? 'Tutup detail' : 'Lihat detail'}
                   <svg
@@ -75,13 +75,13 @@ function HariPeringatanNasionalPage() {
               <div className={`transition duration-150 ease-in-out ${collapsed === index ? 'block' : 'hidden'}`}>
                 <div className="w-full px-6 py-4">
                   {hariNasionalData[type.key]?.description && (
-                    <p className="mb-4 text-gray-700 text-base">{hariNasionalData[type.key].description}</p>
+                    <p className="mb-4 text-secondary text-base">{hariNasionalData[type.key].description}</p>
                   )}
 
                   {hariNasionalData[type.key]?.data
                     ? renderList(hariNasionalData[type.key].data, hariNasionalData[type.key])
                     : hariNasionalData[type.key].months.map((month) => (
-                        <div className="mt-4 text-gray-700" key={`${hariNasionalData[type.key]}-${month.key}`}>
+                        <div className="mt-4 text-secondary" key={`${hariNasionalData[type.key]}-${month.key}`}>
                           <p className="mb-4 font-bold">{month.title}</p>
                           {renderList(
                             hariNasionalData[type.key][month.key],

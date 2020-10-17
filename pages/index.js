@@ -18,7 +18,7 @@ function DaftarIsiPage() {
               <ul>
                 {bab.children.map((babChild) => (
                   <li className="mb-2" key={babChild.href}>
-                    <h3 className="mb-2 font-medium text-orange-600">
+                    <h3 className="mb-2 font-medium text-link">
                       <Link href={babChild.href}>
                         <a title={babChild.text}>{babChild.text}</a>
                       </Link>
@@ -27,7 +27,7 @@ function DaftarIsiPage() {
                     {babChild.children && babChild.children.length > 0 && (
                       <ol>
                         {babChild.children.map((li, index) => (
-                          <li key={index} className="ml-4 text-orange-500">
+                          <li key={index} className="ml-4 text-link">
                             <Link href={li.href}>
                               <a title={li.text}>{li.text}</a>
                             </Link>
@@ -49,7 +49,7 @@ function DaftarIsiPage() {
             href="https://github.com/mazipan/buku-saku-pramuka/issues/new"
             target="_blank"
             rel="noopenner noreferrer"
-            className="text-orange-500"
+            className="text-link-secondary"
           >
             Github issue
           </a>

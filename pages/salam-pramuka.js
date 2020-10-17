@@ -39,7 +39,7 @@ function SalamPramukaPage() {
           {SalamPramukaData.variant.map((section, index) => (
             <div
               key={section.key}
-              className="mt-4 rounded overflow-hidden shadow-lg"
+              className="mt-4 rounded overflow-hidden shadow-lg bg-card"
             >
               <div className="w-full px-6 py-4 flex items-center justify-between flex-wrap">
                 <div className="font-bold text-xl min-w-250">
@@ -50,7 +50,7 @@ function SalamPramukaPage() {
                   onClick={() => {
                     handleCollapse(index);
                   }}
-                  className="bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded inline-flex items-center"
+                  className="bg-primary hover:bg-secondary text-button py-2 px-4 rounded inline-flex items-center"
                 >
                   {collapsed === index ? 'Tutup detail' : 'Lihat detail'}
                   <svg
@@ -81,7 +81,7 @@ function SalamPramukaPage() {
                   <p
                     className={`${
                       section.usage.length > 0 ? 'mb-4' : ''
-                    } text-gray-700 text-base`}
+                    } text-secondary text-base`}
                   >
                     {section.meaning}
                   </p>
@@ -90,7 +90,7 @@ function SalamPramukaPage() {
                     <ol className="list-disc">
                       {section.usage.map((usage) => (
                         <li
-                          className="ml-4 text-gray-700 text-base"
+                          className="ml-4 text-secondary text-base"
                           key={`${section.key}${usage}`}
                         >
                           {usage}
@@ -99,19 +99,19 @@ function SalamPramukaPage() {
                     </ol>
                   )}
 
-                  <p className="mt-4 text-gray-700 text-base">
+                  <p className="mt-4 text-secondary text-base">
                     Cara Melakukan:
                   </p>
                   {getHowTo(section.key).steps.map((step, index) => (
                     <>
                       {!step.conditions && (
-                        <p className="mt-4 text-gray-700 text-base" key={`${section.key}${step.title}-nocond`}>
+                        <p className="mt-4 text-secondary text-base" key={`${section.key}${step.title}-nocond`}>
                           {step.title}
                         </p>
                       )}
 
                       {step.conditions && (
-                        <div className="mt-4 text-gray-700" key={`${section.key}${step.title}-w-cond`}>
+                        <div className="mt-4 text-secondary" key={`${section.key}${step.title}-w-cond`}>
                           <p className="mb-4 font-bold">{index + 1}. {step.title}</p>
                           <ol className="list-lower-alpha ml-6">
                             {step.conditions.map((cond) => (

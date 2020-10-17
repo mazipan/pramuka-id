@@ -31,7 +31,7 @@ function PedomanSkuPage() {
 
       <div className="text-left">
         {PedomanSkuData.map((section, index) => (
-          <div key={section.typeDetail} className="mt-4 rounded overflow-hidden shadow-lg">
+          <div key={section.typeDetail} className="mt-4 rounded overflow-hidden shadow-lg bg-card">
             <div className="w-full px-6 py-4 flex items-center justify-between flex-wrap">
               <div className="font-bold text-xl min-w-250">
                 {section.typeDetail}
@@ -41,7 +41,7 @@ function PedomanSkuPage() {
                 onClick={() => {
                   handleCollapse(index);
                 }}
-                className="bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded inline-flex items-center"
+                className="bg-primary hover:bg-hover text-button py-2 px-4 rounded inline-flex items-center"
               >
                 {collapsed === index ? 'Tutup detail' : 'Lihat detail'}
                 <svg
@@ -68,7 +68,7 @@ function PedomanSkuPage() {
               }`}
             >
               <div className="w-full px-6 py-4">
-                <ul className="text-gray-700">
+                <ul className="text-secondary">
                   {section.data.map((step, indexStep) => (
                     <li key={step.title}>
 											<p className="font-bold">{indexStep + 1}. {step.title}</p>

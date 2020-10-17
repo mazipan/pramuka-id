@@ -18,7 +18,7 @@ function HymnePramukaPage() {
 
       <div className="text-left">
         <div
-          className="mt-4 rounded overflow-hidden shadow-lg"
+          className="mt-4 rounded overflow-hidden shadow-lg bg-card"
           id={HymneData.id}
         >
           <div className="relative">

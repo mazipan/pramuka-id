@@ -19,7 +19,7 @@ function DwiSatyaPage() {
 
       <div className="text-left">
         <div
-          className="mt-4 rounded overflow-hidden shadow-lg"
+          className="mt-4 rounded overflow-hidden shadow-lg bg-card"
           id={DwiSatyaData.id}
         >
           <div className="relative">
