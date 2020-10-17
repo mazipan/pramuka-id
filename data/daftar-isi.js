@@ -67,6 +67,11 @@ export default [
         href: '/seragam-pramuka/',
         api: '/api/seragam-pramuka',
       },
+      {
+        text: 'Sandi Ambalan',
+        href: '/sandi-ambalan/',
+        api: '/api/sandi-ambalan',
+      },
     ],
   },
   {
