@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from './HeaderSection';
 import Footer from './FooterSection';
 import { BASE_PATH } from '../constants';
+import { useEffect } from 'react';
 
 const title = 'Buku Saku Pramuka Digital';
 const desc =
@@ -11,16 +12,23 @@ const url = BASE_PATH;
 const metaImg = BASE_PATH + '/assets/5930.jpg';
 
 function Layout(props) {
-  const userTheme = window.localStorage.getItem('app-theme');
-  const [appTheme, setAppTheme] = React.useState(userTheme || 'light');
+  const [appTheme, setAppTheme] = React.useState('light');
+
+  useEffect(() => {
+    const userTheme = window.localStorage.getItem('app-theme') || 'light';
+
+    if (userTheme !== appTheme) {
+      setAppTheme(userTheme);
+    }
+  });
 
   const toggleTheme = () => {
     if (appTheme === 'light') {
-      setAppTheme('dark')
-      window.localStorage.setItem('app-theme', 'dark')
+      setAppTheme('dark');
+      window.localStorage.setItem('app-theme', 'dark');
     } else {
-      setAppTheme('light')
-      window.localStorage.setItem('app-theme', 'light')
+      setAppTheme('light');
+      window.localStorage.setItem('app-theme', 'light');
     }
   }
 
