@@ -8,6 +8,7 @@ import { BASE_PATH } from '../constants'
 const title = `${TkkData.subtitle} | Buku Saku Pramuka Digital`
 const desc = TkkData.description
 const url = BASE_PATH + '/satuan-karya-pramuka/'
+const nextLink = '/sandi-ambalan/'
 
 function SatuanKaryaPramukaPage() {
   const [collapsed, setCollapsed] = React.useState(-1)
@@ -29,7 +30,7 @@ function SatuanKaryaPramukaPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/" />
+      <ChapterNavigation nextLink={nextLink} />
       <ChapterTitle subTitle={TkkData.subtitle} title={TkkData.title} />
 
       <div className="text-left">
@@ -109,7 +110,7 @@ function SatuanKaryaPramukaPage() {
         </div>
       </div>
 
-      <ChapterNavigation nextLink="/" />
+      <ChapterNavigation nextLink={nextLink} />
     </Layout>
   )
 }
