@@ -62,11 +62,6 @@ export default [
         href: '/pedoman-sku/',
         api: '/api/pedoman-sku',
       },
-      {
-        text: 'Sandi Ambalan',
-        href: '/sandi-ambalan/',
-        api: '/api/sandi-ambalan',
-      },
     ],
   },
   {
