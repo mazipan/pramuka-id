@@ -62,6 +62,11 @@ export default [
         href: '/pedoman-sku/',
         api: '/api/pedoman-sku',
       },
+      {
+        text: 'Seragam Pramuka',
+        href: '/seragam-pramuka/',
+        api: '/api/seragam-pramuka',
+      }
     ],
   },
 	{

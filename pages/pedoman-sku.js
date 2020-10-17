@@ -82,7 +82,7 @@ function PedomanSkuPage() {
         ))}
       </div>
 
-      <ChapterNavigation nextLink="/bendera-semaphore/" />
+      <ChapterNavigation nextLink="/seragam-pramuka/" />
     </Layout>
   );
 }

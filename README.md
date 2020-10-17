@@ -1,5 +1,7 @@
 # 🌴 Buku Saku Pramuka
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 ## Live Web
 
 https://buku-saku-pramuka.vercel.app/

@@ -4,6 +4,7 @@
   "description": "Buku saku pramuka digital",
   "main": "index.js",
   "scripts": {
+    "cz": "cz",
     "analyze:tailwind-css-class-order": "rustywind --dry-run .",
     "analyze": "yarn analyze:tailwind-css-class-order",
     "fix:tailwind-css-class-order": "rustywind --write .",
@@ -34,6 +35,8 @@
   },
   "devDependencies": {
     "autoprefixer": "9.8.6",
+    "commitizen": "^4.2.1",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.10.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-prettier": "^3.1.4",
@@ -49,7 +52,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
