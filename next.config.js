@@ -36,6 +36,10 @@ const configs = {
       });
     }
 
+    if (!dev && isServer) {
+      require('./scripts/generate-sitemap');
+    }
+
     return config;
   }
 }
