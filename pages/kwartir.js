@@ -16,7 +16,7 @@ const KwartirPage = () => {
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
       <ChapterNavigation nextLink={nextLink} />
-      <ChapterTitle subTitle={subtitle} title="Materi Kecakapan Umum" />
+      <ChapterTitle subTitle={subtitle} title="Materi Pramuka" />
       <div className="text-center md:text-left">
         <div className="mb-2">
           <p className="text-justify">{dataSemaphore.description}</p>
