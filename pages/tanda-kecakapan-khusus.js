@@ -105,7 +105,7 @@ function TandaKecakapanKhusus() {
         </div>
       </div>
 
-      <ChapterNavigation nextLink="/" />
+      <ChapterNavigation nextLink="/tepuk-pramuka/" />
     </Layout>
   );
 }

@@ -45,7 +45,7 @@ function TepukPramuka() {
                 {section.groupType === 'object' && (
                   <div>
                     {section.groups.map((group, index) => (
-                      <div key={index} className="mt-4 rounded overflow-hidden shadow-lg">
+                      <div key={index} className="mt-4 rounded overflow-hidden shadow-lg bg-card">
                         <div className="w-full px-6 py-4 flex items-center justify-between flex-wrap">
                           <div className="min-w-250 font-semibold">{group.text}</div>
 
@@ -53,7 +53,7 @@ function TepukPramuka() {
                             onClick={() => {
                               handleCollapse(index)
                             }}
-                            className="bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded inline-flex items-center"
+                            className="bg-primary hover:bg-secondary text-button py-2 px-4 rounded inline-flex items-center"
                           >
                             {collapsed === index ? 'Tutup detail' : 'Lihat detail'}
                             <svg
