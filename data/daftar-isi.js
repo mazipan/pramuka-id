@@ -83,7 +83,7 @@ export default [
     text: 'Materi Kecakapan Umum',
     children: [
       {
-        text: 'Bendera semaphore',
+        text: 'Bendera Semaphore',
         href: '/bendera-semaphore/',
         api: '/api/bendera-semaphore',
       },
@@ -102,7 +102,7 @@ export default [
         api: '/api/hari-peringatan-nasional',
       },
       {
-        text: 'Lagu-lagu Pramuka',
+        text: 'Lagu-Lagu Pramuka',
         href: '/lagu-lagu-pramuka/',
         api: '/api/lagu-lagu-pramuka',
       },
