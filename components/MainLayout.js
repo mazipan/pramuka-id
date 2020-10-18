@@ -15,8 +15,8 @@ function Layout(props) {
   return (
     <>
       <Head>
-        <meta charset="utf-8" />
-        <meta http-equiv="content-type" content="text/html" />
+        <meta charSet="utf-8" />
+        <meta httpEquiv="content-type" content="text/html" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta name="theme-color" content="#7B341E" />
         <title key="title">{title}</title>

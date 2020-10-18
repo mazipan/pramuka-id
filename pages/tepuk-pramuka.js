@@ -20,12 +20,6 @@ function TepukPramuka() {
     }
   }
 
-  const splitData = (data) => {
-    const halfwayThrough = Math.ceil(data.length / 2);
-
-    return [data.slice(0, halfwayThrough), data.slice(halfwayThrough, data.length)];
-  }
-
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
@@ -85,12 +79,8 @@ function TepukPramuka() {
                           <div className="w-full px-6 py-4">
 
                             <ol className='list-decimal flex flex-col'>
-                              {splitData(group.lists).map((split, splitIndex) => (
-                                <div key={splitIndex} className='w-full'>
-                                  {split.map((list, listIndex) => (
-                                    <li key={listIndex} className='mb-1'>{list}</li>
-                                  ))}
-                                </div>
+                              {group.lists.map((list, listIndex) => (
+                                <li key={listIndex} className='mb-1 ml-5'>{list}</li>
                               ))}
                             </ol>
                           </div>
