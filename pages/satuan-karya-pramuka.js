@@ -8,7 +8,7 @@ import { BASE_PATH } from '../constants'
 const title = `${TkkData.subtitle} | Buku Saku Pramuka Digital`
 const desc = TkkData.description
 const url = BASE_PATH + '/satuan-karya-pramuka/'
-const nextLink = '/sandi-ambalan/'
+const nextLink = '/bendera-semaphore/'
 
 function SatuanKaryaPramukaPage() {
   const [collapsed, setCollapsed] = React.useState(-1)

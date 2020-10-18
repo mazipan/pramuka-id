@@ -77,11 +77,6 @@ export default [
         href: '/satuan-karya-pramuka/',
         api: '/api/satuan-karya-pramuka',
       },
-      {
-        text: 'Sandi Ambalan',
-        href: '/sandi-ambalan/',
-        api: '/api/sandi-ambalan',
-      },
     ],
   },
   {
