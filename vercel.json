@@ -1,0 +1,13 @@
+{
+    "headers": [
+        {
+          "source": "/api/(.*)",
+          "headers" : [
+            {
+              "key" : "Cache-Control",
+              "value" : "public, max-age=0, max-age=86400"
+            }
+          ]
+        }
+    ]
+}
