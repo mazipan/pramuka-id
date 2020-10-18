@@ -10,6 +10,7 @@ const desc =
   'Buku saku pramuka digital dalam bentuk web, ✅ GRATIS, ✅ tanpa iklan, ❌ tidak perlu install Aplikasi lagi';
 const url = BASE_PATH;
 const metaImg = BASE_PATH + '/assets/5930.jpg';
+const authorName =  'Irfan Maulana';
 
 function Layout(props) {
   const [appTheme, setAppTheme] = React.useState('light');
@@ -35,13 +36,23 @@ function Layout(props) {
   return (
     <>
       <Head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="content-type" content="text/html" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta name="theme-color" content="#7B341E" />
         <title key="title">{title}</title>
+        
+        <meta name="author" content={authorName} />  
         <meta key="description" name="description" content={desc} />
+        <meta name="keywords" content="Pramuka, Buku Saku, Buku Saku Digital" />
+        <meta name="robots" content="index, follow" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="distribution" content="web" />
+
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={metaImg} />
+        <meta name="twitter:image:alt" content={title} />
         <meta name="twitter:site" content="@Maz_Ipan" />
         <meta key="twitter:title" name="twitter:title" content={title} />
         <meta
