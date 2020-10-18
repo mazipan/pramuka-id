@@ -1,5 +1,5 @@
 export default [
-	{
+  {
     text: 'Materi Kenegaraan',
     children: [
       {
@@ -18,8 +18,8 @@ export default [
         api: '/api/proklamasi',
       },
     ],
-	},
-	{
+  },
+  {
     text: 'Materi Pramuka',
     children: [
       {
@@ -48,6 +48,11 @@ export default [
         api: '/api/hymne-pramuka',
       },
       {
+        text: 'Kwartir',
+        href: '/kwartir/',
+        api: '/api/kwartir',
+      },
+      {
         text: 'Lambang Pramuka',
         href: '/lambang-pramuka/',
         api: '/api/lambang-pramuka',
@@ -66,10 +71,15 @@ export default [
         text: 'Seragam Pramuka',
         href: '/seragam-pramuka/',
         api: '/api/seragam-pramuka',
-      }
+      },
+      {
+        text: 'Satuan Karya Pramuka',
+        href: '/satuan-karya-pramuka/',
+        api: '/api/satuan-karya-pramuka',
+      },
     ],
   },
-	{
+  {
     text: 'Materi Kecakapan Umum',
     children: [
       {
@@ -84,7 +94,7 @@ export default [
       },
       {
         text: 'Sandi Radio',
-        href: '/radio/'
+        href: '/radio/',
       },
       {
         text: 'Hari Peringatan Nasional',
@@ -100,7 +110,12 @@ export default [
         text: 'Tanda Kecakapan Khusus (TKK)',
         href: '/tanda-kecakapan-khusus/',
         api: '/api/tanda-kecakapan-khusus',
-      }
+      },
+      {
+        text: 'Tepuk Pramuka',
+        href: '/tepuk-pramuka/',
+        api: '/api/tepuk-pramuka',
+      },
     ],
   },
-];
+]
