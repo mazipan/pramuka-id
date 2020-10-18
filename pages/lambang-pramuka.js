@@ -29,7 +29,7 @@ function LambangPramukaPage() {
           {LambangPramuka.meanings.map((section, index) => (
             <div
               key={section}
-              className="mt-4 flex items-center rounded overflow-hidden shadow-lg"
+              className="mt-4 flex items-center rounded overflow-hidden shadow-lg bg-card"
             >
               <div className="min-w-80 min-h-80 flex justify-center items-center text-center	 font-bold text-3xl md:text-4xl">
                 {index + 1}

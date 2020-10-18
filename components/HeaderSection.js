@@ -6,20 +6,20 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-orange-900">
+    <header className="bg-pramuka">
       <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:flex-no-wrap">
         <div className="flex items-center">
-					<IconPramuka color="#fff" className="h-10 w-10 text-white"/>
+					<IconPramuka color="#fff" className="h-10 w-10 text-nav"/>
 
           <Link href="/">
-            <a className="text-xl font-bold text-white">
+            <a className="text-xl font-bold text-nav">
               Buku Saku Pramuka
             </a>
           </Link>
         </div>
 
         <button
-          className="flex items-center block px-3 py-2 text-white border border-white rounded md:hidden"
+          className="flex items-center block px-3 py-2 text-nav border border-white rounded md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
@@ -43,7 +43,7 @@ function Header() {
           ].map(navigationItem => (
             <li className="mt-3 md:mt-0 md:ml-6" key={navigationItem.title}>
               <Link href={navigationItem.route}>
-                <a className="block text-white">{navigationItem.title}</a>
+                <a className="block text-nav">{navigationItem.title}</a>
               </Link>
             </li>
           ))}

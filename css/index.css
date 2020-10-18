@@ -1,3 +1,30 @@
+:root {
+  --color-background-pramuka: #7b341e; /*orange 900*/
+  --color-background-primary: #ed8936; /*orange 500*/
+  --color-background-hover: #c05621; /*orange 700*/
+  --color-background-card: #fff; /*white*/
+
+  --color-text-primary: #1a202c; /*gray 900*/
+  --color-text-secondary: #2d3748; /*gray 800*/
+  --color-text-nav: #fff; /*white*/
+  --color-text-button: #fff; /*white*/
+  --color-text-link: #dd6b20; /*orange 600*/
+  --color-text-link-secondary: #ed8936; /*orange 600*/
+}
+
+.theme-dark {
+  --color-background-pramuka: #101623;
+  --color-background-primary: #2d3748; /*gray 800*/
+  --color-background-hover: #2a4365; /*blue 900*/
+  --color-background-card: #222833;
+
+  --color-text-primary: #cbd5e0; /*gray 400*/
+  --color-text-secondary: #a0aec0; /*gray 500*/
+  --color-text-nav: #cbd5e0; /*gray 400*/
+  --color-text-button: #a0aec0; /*gray 500*/
+  background-color: #1a202c;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -27,7 +27,7 @@ const BenderaSemaphore = () => {
               <h3 className="font-bold text-xl">{section.title}</h3>
               <div className="mb-4 grid grid-cols-2 lg:grid-cols-5 gap-5">
                 {dataSemaphore[section.key].map((item) => (
-                  <div className="flex flex-col items-center rounded shadow-lg p-2" key={item.text}>
+                  <div className="flex flex-col items-center rounded shadow-lg p-2 bg-card" key={item.text}>
                     <img src={item.img} alt={'Semaphore ' + item.text} />
                     <div className="mt-2">{item.text}</div>{' '}
                   </div>

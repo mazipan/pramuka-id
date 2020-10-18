@@ -19,7 +19,7 @@ function DasaDharmaPage() {
 
       <div className="text-left">
         <div
-          className="mt-4 rounded overflow-hidden shadow-lg"
+          className="mt-4 rounded overflow-hidden shadow-lg bg-card"
           id={DasaDharmaData.id}
         >
           <div className="relative">
