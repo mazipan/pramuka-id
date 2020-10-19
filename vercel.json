@@ -5,8 +5,11 @@
           "headers" : [
             {
               "key" : "Cache-Control",
-              "value" : "public, max-age=86400",
-              "Access-Control-Allow-Origin" : "*"
+              "value" : "public, max-age=86400"
+            },
+            {
+               "key" : "Access-Control-Allow-Origin",
+               "value" : "*"
             }
           ]
         }
