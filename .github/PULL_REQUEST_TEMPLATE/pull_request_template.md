@@ -1,23 +1,23 @@
-👋 Thank you for the PR!
+## 👋 Thank you for the PR!
 
-## Description of PR:
+### Description of PR:
 
 Add short description
 
-## Issue Reference
+### Issue Reference
 
 Add issue reference
 
-## Screenshoot
+### Screenshoot
 
 Add screenshoot if you change the UI
 
-## Minimum Support
+### Minimum Support
 
 - [ ] Click 🌟 button
 - [ ] Follow the Author
 
-## Consider to Support
+### Consider to Support
 
 - 👉 🇮🇩 [Trakteer](https://trakteer.id/mazipan?utm_source=github)
 - 👉 🌍 [BuyMeACoffe](https://www.buymeacoffee.com/mazipan?utm_source=github)
