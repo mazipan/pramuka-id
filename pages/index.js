@@ -1,19 +1,33 @@
-import Link from 'next/link';
-import Layout from '../components/MainLayout';
-import DataDaftarIsi from '../data/daftar-isi';
+import Link from 'next/link'
+import Layout from '../components/MainLayout'
+import DataDaftarIsi from '../data/daftar-isi'
+import Head from 'next/head'
 
 function DaftarIsiPage() {
   return (
     <Layout>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'http://schema.org',
+              '@type': 'WebSite',
+              id: 'https://buku-saku-pramuka.vercel.app/#website',
+              name: 'Buku Saku Pramuka',
+              url: 'https://buku-saku-pramuka.vercel.app/',
+            }),
+          }}
+        />
+      </Head>
+
       <div className="text-center">
         <h1 className="mt-8 font-bold text-3xl md:text-4xl">Buku Saku Pramuka Digital</h1>
       </div>
       <div className="text-left">
         {DataDaftarIsi.map((bab) => (
           <div key={bab.text}>
-            <h2 className="mt-8 mb-4 font-medium text-xl md:text-2xl">
-              {bab.text}
-            </h2>
+            <h2 className="mt-8 mb-4 font-medium text-xl md:text-2xl">{bab.text}</h2>
             {bab.children && bab.children.length > 0 && (
               <ul>
                 {bab.children.map((babChild) => (
@@ -43,8 +57,7 @@ function DaftarIsiPage() {
         ))}
 
         <div className="mt-8">
-          Tidak menemukan yang kamu cari? Kamu bisa membuat permintaan
-          penambahan data baru melalui{` `}
+          Tidak menemukan yang kamu cari? Kamu bisa membuat permintaan penambahan data baru melalui{` `}
           <a
             href="https://github.com/mazipan/buku-saku-pramuka/issues/new"
             target="_blank"
@@ -56,13 +69,12 @@ function DaftarIsiPage() {
         </div>
       </div>
     </Layout>
-  );
+  )
 }
 
 export function reportWebVitals({ id, name, label, value }) {
   ga('send', 'event', {
-    eventCategory:
-      label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
+    eventCategory: label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
     eventAction: name,
     eventValue: Math.round(name === 'CLS' ? value * 1000 : value), // values must be integers
     eventLabel: id, // id unique to current page load
@@ -70,4 +82,4 @@ export function reportWebVitals({ id, name, label, value }) {
   })
 }
 
-export default DaftarIsiPage;
+export default DaftarIsiPage
