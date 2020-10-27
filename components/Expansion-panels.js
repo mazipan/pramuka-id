@@ -21,7 +21,7 @@ const Expansion = ({ title, i, value }) => {
             onClick={() => {
               handleCollapse(i);
             }}
-            className="bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded inline-flex items-center"
+            className="bg-secound-2 hover:bg-secound-1 text-light py-2 px-4 rounded inline-flex items-center"
           >
             {collapsed === i ? "Tutup detail" : "Lihat detail"}
             <svg

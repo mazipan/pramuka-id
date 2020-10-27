@@ -1,9 +1,9 @@
 function Footer() {
   return (
-    <footer className="bg-orange-900">
-      <ul className="flex items-center justify-between max-w-4xl p-4 mx-auto text-sm text-white md:p-8">
+    <footer className="bg-primary">
+      <ul className="flex items-center justify-between max-w-4xl p-4 mx-auto text-sm text-light md:p-8">
         <li>
-          Dibuat oleh{' '}
+          Dibuat oleh{" "}
           <a
             href="https://mazipan.space/"
             target="_blank"
