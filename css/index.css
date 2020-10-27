@@ -3,3 +3,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* button */
+.btn {
+    @apply mt-8 py-2 px-4 rounded inline-flex items-center;
+}
+.btn-route {
+    @apply bg-orange-500 text-white;
+}
+
+.btn-route:hover {
+    @apply bg-orange-700;
+}

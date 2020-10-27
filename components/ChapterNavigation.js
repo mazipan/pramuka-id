@@ -1,10 +1,10 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 function Navigation({ nextLink }) {
   return (
     <nav className="flex items-center justify-between">
       <Link href="/">
-        <button className="mt-8 bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded inline-flex items-center">
+        <button className="btn btn-route">
           <svg
             className="w-4 h-4 mr-2"
             xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ function Navigation({ nextLink }) {
         </button>
       </Link>
       <Link href={nextLink}>
-        <button className="mt-8 bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded inline-flex items-center">
+        <button className="btn btn-route">
           Selanjutnya
           <svg
             className="w-4 h-4 ml-2"
