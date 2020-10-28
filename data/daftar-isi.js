@@ -116,6 +116,11 @@ export default [
         href: '/tepuk-pramuka/',
         api: '/api/tepuk-pramuka',
       },
+      {
+        text: 'Kompas',
+        href: '/kompas/',
+        api: '/api/kompas',
+      },
     ],
   },
 ]
