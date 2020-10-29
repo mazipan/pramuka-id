@@ -6,22 +6,13 @@ import ChapterNavigation from '../components/ChapterNavigation'
 import ChapterTitle from '../components/ChapterTitle'
 import PedomanSkuData from '../data/pedoman-sku'
 import { BASE_PATH } from '../constants'
+import Expansion from '../components/Expansion'
 
 const title = 'Pedoman SKU | Buku Saku Pramuka Digital'
 const desc = 'Baca pedoman umum untuk menyelesaikan SKU di Buku Saku Pramuka Digital'
 const url = BASE_PATH + '/pedoman-sku/'
 
 function PedomanSkuPage() {
-  const [collapsed, setCollapsed] = React.useState(-1)
-
-  const handleCollapse = (index) => {
-    if (collapsed === index) {
-      setCollapsed(-1)
-    } else {
-      setCollapsed(index)
-    }
-  }
-
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
@@ -30,50 +21,19 @@ function PedomanSkuPage() {
 
       <div className="text-left">
         {PedomanSkuData.map((section, index) => (
-          <div key={section.typeDetail} className="mt-4 rounded overflow-hidden shadow-lg bg-card">
-            <div className="w-full px-6 py-4 flex items-center justify-between flex-wrap">
-              <div className="font-bold text-xl min-w-250">{section.typeDetail}</div>
-
-              <button
-                onClick={() => {
-                  handleCollapse(index)
-                }}
-                className="bg-primary hover:bg-hover text-button py-2 px-4 rounded inline-flex items-center"
-              >
-                {collapsed === index ? 'Tutup detail' : 'Lihat detail'}
-                <svg
-                  className={`w-4 h-4 ml-2 transition ease-in-out duration-500 transform ${
-                    collapsed === index ? '-rotate-180' : 'rotate-0'
-                  }`}
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </button>
-            </div>
-            <div className={`transition duration-150 ease-in-out ${collapsed === index ? 'block' : 'hidden'}`}>
-              <div className="w-full px-6 py-4">
-                <ul className="text-secondary">
-                  {section.data.map((step, indexStep) => (
-                    <li key={step.title}>
-                      <p className="font-bold">
-                        {indexStep + 1}. {step.title}
-                      </p>
-                      <p className="ml-4 mb-4 mt-2 text-base">Artinya: {step.meaning}</p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
+          <Expansion
+            key={index}
+            index={index}
+            title={section.typeDetail}
+            value={section.data.map((step, indexStep) => (
+              <li key={step.title}>
+                <p className="font-bold">
+                  {indexStep + 1}. {step.title}
+                </p>
+                <p className="ml-4 mb-4 mt-2 text-base">Artinya: {step.meaning}</p>
+              </li>
+            ))}
+          />
         ))}
       </div>
 

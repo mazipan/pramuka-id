@@ -6,22 +6,13 @@ import ChapterNavigation from '../components/ChapterNavigation'
 import ChapterTitle from '../components/ChapterTitle'
 import hariNasionalData from '../data/hari-peringatan-nasional'
 import { BASE_PATH } from '../constants'
+import Expansion from '../components/Expansion'
 
 const title = 'Hari Peringatan | Buku Saku Pramuka Digital'
 const desc = 'Hari peringatan nasional, baca selengkapnya di Buku Saku Pramuka Digital'
 const url = BASE_PATH + '/salam-pramuka/'
 
 function HariPeringatanNasionalPage() {
-  const [collapsed, setCollapsed] = React.useState(-1)
-
-  const handleCollapse = (index) => {
-    if (collapsed === index) {
-      setCollapsed(-1)
-    } else {
-      setCollapsed(index)
-    }
-  }
-
   const renderList = (data, key) => (
     <ol className="list-disc">
       {data.map((dt, index) => (
@@ -42,38 +33,12 @@ function HariPeringatanNasionalPage() {
         <p>{hariNasionalData.meaning}</p>
         <div className="mt-4">
           {hariNasionalData.types.map((type, index) => (
-            <div key={type.key} className="mt-4 rounded overflow-hidden shadow-lg bg-card">
-              <div className="w-full px-6 py-4 flex items-center justify-between flex-wrap">
-                <div className="font-bold text-xl min-w-250">{type.title}</div>
-
-                <button
-                  onClick={() => {
-                    handleCollapse(index)
-                  }}
-                  className="bg-primary hover:bg-secondary text-button py-2 px-4 rounded inline-flex items-center"
-                >
-                  {collapsed === index ? 'Tutup detail' : 'Lihat detail'}
-                  <svg
-                    className={`w-4 h-4 ml-2 transition ease-in-out duration-500 transform ${
-                      collapsed === index ? '-rotate-180' : 'rotate-0'
-                    }`}
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
-                </button>
-              </div>
-
-              <div className={`transition duration-150 ease-in-out ${collapsed === index ? 'block' : 'hidden'}`}>
-                <div className="w-full px-6 py-4">
+            <Expansion
+              key={index}
+              index={index}
+              title={type.title}
+              value={
+                <>
                   {hariNasionalData[type.key]?.description && (
                     <p className="mb-4 text-secondary text-base">{hariNasionalData[type.key].description}</p>
                   )}
@@ -89,9 +54,9 @@ function HariPeringatanNasionalPage() {
                           )}
                         </div>
                       ))}
-                </div>
-              </div>
-            </div>
+                </>
+              }
+            />
           ))}
         </div>
       </div>
