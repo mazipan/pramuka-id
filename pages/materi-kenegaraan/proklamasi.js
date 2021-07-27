@@ -1,9 +1,9 @@
-import Layout from '../components/MainLayout';
-import MetaHead from '../components/MetaHead';
+import Layout from '../../components/MainLayout';
+import MetaHead from '../../components/MetaHead';
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3';
-import ChapterTitle from '../components/ChapterTitle';
-import ProklamasiData from '../data/proklamasi';
-import { BASE_PATH } from '../constants';
+import ChapterTitle from '../../components/ChapterTitle';
+import ProklamasiData from '../../data/proklamasi';
+import { BASE_PATH } from '../../constants';
 
 const title = 'Proklamasi | Buku Saku Pramuka Digital';
 const desc = 'Teks proklamasi di Buku Saku Pramuka Digital';
