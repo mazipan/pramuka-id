@@ -1,16 +1,16 @@
-import { useSpeechAPI } from '../hooks/useSpeechAPI';
-import Layout from '../components/MainLayout';
-import MetaHead from '../components/MetaHead';
-import ChapterNavigation from '../components/ChapterNavigation';
-import ChapterTitle from '../components/ChapterTitle';
-import RadioData from '../data/radio';
+import { useSpeechAPI } from '../../hooks/useSpeechAPI';
+import Layout from '../../components/MainLayout';
+import MetaHead from '../../components/MetaHead';
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3';
+import ChapterTitle from '../../components/ChapterTitle';
+import RadioData from '../../data/radio';
 import { FaVolumeUp } from 'react-icons/fa'
-import { BASE_PATH } from '../constants';
+import { BASE_PATH } from '../../constants';
 import { useState } from 'react';
 
 const title = 'Kode Radio Lengkap | Buku Saku Pramuka Digital';
 const desc = 'Daftar lengkap kode radio';
-const url = BASE_PATH + '/radio/';
+const url = BASE_PATH + '/materi-kecakapan-umum/radio/';
 
 function LambangPramukaPage() {
 
@@ -33,7 +33,7 @@ function LambangPramukaPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/hari-peringatan-nasional" />
+      <BreadcrumbLevel3 text="Kode Radio" href={url} />
       <ChapterTitle subTitle="Kode Radio" title="Materi Kecakapan Umum" />
 
       <div className="text-center md:text-left">
@@ -60,8 +60,6 @@ function LambangPramukaPage() {
           ))}
         </div>
       </div>
-
-      <ChapterNavigation nextLink="/hari-peringatan-nasional" />
     </Layout>
   );
 }

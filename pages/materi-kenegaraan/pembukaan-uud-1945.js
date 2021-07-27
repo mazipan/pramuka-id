@@ -1,19 +1,19 @@
 import Layout from '../components/MainLayout';
 import MetaHead from '../components/MetaHead';
-import ChapterNavigation from '../components/ChapterNavigation';
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3';
 import ChapterTitle from '../components/ChapterTitle';
 import Uud45Data from '../data/uud45';
 import { BASE_PATH } from '../constants';
 
 const title = 'UUD 1945 | Buku Saku Pramuka Digital';
 const desc = 'UUD 1945 di Buku Saku Pramuka Digital';
-const url = BASE_PATH + '/pembukaan-uud-1945/';
+const url = BASE_PATH + '/materi-kenegaraan/pembukaan-uud-1945/';
 
 function UUD45Page() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/proklamasi/" />
+      <BreadcrumbLevel3 text="UUD 1945" href={url} />
       <ChapterTitle subTitle="UUD 1945" title="Materi Kenegaraan" />
 
       <div className="text-left">
@@ -30,8 +30,6 @@ function UUD45Page() {
           ))}
         </div>
       </div>
-
-      <ChapterNavigation nextLink="/proklamasi/" />
     </Layout>
   );
 }

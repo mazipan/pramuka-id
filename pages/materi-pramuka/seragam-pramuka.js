@@ -1,18 +1,17 @@
 import { Fragment } from 'react'
 
-import Layout from '../components/MainLayout'
-import MetaHead from '../components/MetaHead'
-import ChapterNavigation from '../components/ChapterNavigation'
-import ChapterTitle from '../components/ChapterTitle'
-import SeragamPramukaData from '../data/seragam-pramuka'
-import { BASE_PATH } from '../constants'
-import Text from '../components/Text'
-import Expansion from '../components/Expansion'
+import Layout from '../../components/MainLayout'
+import MetaHead from '../../components/MetaHead'
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
+import ChapterTitle from '../../components/ChapterTitle'
+import SeragamPramukaData from '../../data/seragam-pramuka'
+import { BASE_PATH } from '../../constants'
+import Text from '../../components/Text'
+import Expansion from '../../components/Expansion'
 
 const { title, subtitle, desc, data } = SeragamPramukaData
 const title_ = `${subtitle} | Buku Saku Pramuka Digital`
-const url = BASE_PATH + '/seragam-pramuka/'
-const nextLink = '/satuan-karya-pramuka/'
+const url = BASE_PATH + '/materi-pramuka/seragam-pramuka/'
 
 function SeragamPramukaPage() {
   const renderSection = (section) => {
@@ -45,7 +44,7 @@ function SeragamPramukaPage() {
   return (
     <Layout>
       <MetaHead title={title_} desc={desc} url={url} />
-      <ChapterNavigation nextLink={nextLink} />
+      <BreadcrumbLevel3 text={subtitle} href={url} />
       <ChapterTitle subTitle={subtitle} title={title} />
 
       <div className="text-left">
@@ -53,8 +52,6 @@ function SeragamPramukaPage() {
           <Expansion key={index} index={index} title={item.title} value={renderSection(item.section)} />
         ))}
       </div>
-
-      <ChapterNavigation nextLink={nextLink} />
     </Layout>
   )
 }

@@ -1,19 +1,19 @@
-import Layout from '../components/MainLayout';
-import MetaHead from '../components/MetaHead';
-import ChapterNavigation from '../components/ChapterNavigation';
-import ChapterTitle from '../components/ChapterTitle';
-import PancasilaData from '../data/pancasila';
-import { BASE_PATH } from '../constants';
+import Layout from '../../components/MainLayout';
+import MetaHead from '../../components/MetaHead';
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3';
+import ChapterTitle from '../../components/ChapterTitle';
+import PancasilaData from '../../data/pancasila';
+import { BASE_PATH } from '../../constants';
 
 const title = 'Pancasila | Buku Saku Pramuka Digital';
 const desc = 'Isi dan Arti dari Pancasila di Buku Saku Pramuka Digital';
-const url = BASE_PATH + '/pancasila/';
+const url = BASE_PATH + '/materi-kenegaraan/pancasila/';
 
 function PancasilaPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/pembukaan-uud-1945/" />
+      <BreadcrumbLevel3 text="Pancasila" href={url} />
       <ChapterTitle subTitle="Pancasila" title="Materi Kenegaraan" />
 
       <div className="flex flex-col items-center justify-center text-center">
@@ -55,8 +55,6 @@ function PancasilaPage() {
           ))}
         </div>
       </div>
-
-      <ChapterNavigation nextLink="/pembukaan-uud-1945/" />
     </Layout>
   );
 }

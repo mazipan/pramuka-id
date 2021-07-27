@@ -1,20 +1,19 @@
-import Layout from '../components/MainLayout'
-import MetaHead from '../components/MetaHead'
-import ChapterNavigation from '../components/ChapterNavigation'
-import ChapterTitle from '../components/ChapterTitle'
-import SandiAmbalanData from '../data/sandi-ambalan'
-import { BASE_PATH } from '../constants'
+import Layout from '../../components/MainLayout'
+import MetaHead from '../../components/MetaHead'
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
+import ChapterTitle from '../../components/ChapterTitle'
+import SandiAmbalanData from '../../data/sandi-ambalan'
+import { BASE_PATH } from '../../constants'
 
 const title = 'Sandi Ambalan | Buku Saku Pramuka Digital'
 const desc = 'Sandi Ambalan di Buku Saku Pramuka Digital'
-const url = BASE_PATH + '/sandi-ambalan/'
-const nextLink = '/bendera-semaphore/'
+const url = BASE_PATH + '/materi-pramuka/sandi-ambalan/'
 
 function SandiAmbalanPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink={nextLink} />
+      <BreadcrumbLevel3 text="Sandi Ambalan" href={url} />
       <ChapterTitle subTitle="Sandi Ambalan" title={SandiAmbalanData.title} />
 
       <div className="text-left">
@@ -31,7 +30,7 @@ function SandiAmbalanPage() {
         </div>
       </div>
 
-      <ChapterNavigation nextLink={nextLink} />
+      <BreadcrumbLevel3 text="Dasa Dharma" href="/materi-pramuka/dasa-dharma/" />
     </Layout>
   )
 }

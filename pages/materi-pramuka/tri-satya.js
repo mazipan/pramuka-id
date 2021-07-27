@@ -1,20 +1,20 @@
-import Layout from '../components/MainLayout';
-import MetaHead from '../components/MetaHead';
-import ChapterNavigation from '../components/ChapterNavigation';
-import ChapterTitle from '../components/ChapterTitle';
-import TriSatyaData from '../data/tri-satya';
-import { BASE_PATH } from '../constants';
+import Layout from '../../components/MainLayout';
+import MetaHead from '../../components/MetaHead';
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3';
+import ChapterTitle from '../../components/ChapterTitle';
+import TriSatyaData from '../../data/tri-satya';
+import { BASE_PATH } from '../../constants';
 
 const title = 'Tri Satya Pramuka | Buku Saku Pramuka Digital';
 const desc =
   'Penjelasan lengkap mengenai Tri Satya Pramuka di Buku Saku Pramuka Digital';
-const url = BASE_PATH + '/tri-satya/';
+const url = BASE_PATH + '/materi-pramuka/tri-satya/';
 
 function TriSatyaPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/dasa-dharma/" />
+      <BreadcrumbLevel3 text="Tri Satya" href="/materi-pramuka/tri-satya/" />
       <ChapterTitle subTitle="Tri Satya" title="Materi Pramuka" />
 
       <div className="text-left">
@@ -53,8 +53,6 @@ function TriSatyaPage() {
           </div>
         </div>
       </div>
-
-      <ChapterNavigation nextLink="/dasa-dharma/" />
     </Layout>
   );
 }

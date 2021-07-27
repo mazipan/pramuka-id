@@ -1,16 +1,16 @@
 import React from 'react'
 
-import Layout from '../components/MainLayout'
-import MetaHead from '../components/MetaHead'
-import ChapterNavigation from '../components/ChapterNavigation'
-import ChapterTitle from '../components/ChapterTitle'
-import hariNasionalData from '../data/hari-peringatan-nasional'
-import { BASE_PATH } from '../constants'
-import Expansion from '../components/Expansion'
+import Layout from '../../components/MainLayout'
+import MetaHead from '../../components/MetaHead'
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
+import ChapterTitle from '../../components/ChapterTitle'
+import hariNasionalData from '../../data/hari-peringatan-nasional'
+import { BASE_PATH } from '../../constants'
+import Expansion from '../../components/Expansion'
 
 const title = 'Hari Peringatan | Buku Saku Pramuka Digital'
 const desc = 'Hari peringatan nasional, baca selengkapnya di Buku Saku Pramuka Digital'
-const url = BASE_PATH + '/salam-pramuka/'
+const url = BASE_PATH + '/materi-kecakapan-umum/salam-pramuka/'
 
 function HariPeringatanNasionalPage() {
   const renderList = (data, key) => (
@@ -26,7 +26,7 @@ function HariPeringatanNasionalPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/lagu-lagu-pramuka/" />
+      <BreadcrumbLevel3 text="Hari Peringatan Nasional" href={url} />
       <ChapterTitle subTitle="Hari Peringatan Nasional" title="Materi Kecakapan Umum" />
 
       <div className="text-left">
@@ -60,8 +60,6 @@ function HariPeringatanNasionalPage() {
           ))}
         </div>
       </div>
-
-      <ChapterNavigation nextLink="/lagu-lagu-pramuka/" />
     </Layout>
   )
 }

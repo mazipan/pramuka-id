@@ -13,6 +13,7 @@ module.exports = {
       },
       backgroundColor: {
         pramuka: 'var(--color-background-pramuka)',
+        'pramuka-700': 'var(--color-background-pramuka-700)',
         primary: 'var(--color-background-primary)',
         hover: 'var(--color-background-hover)',
         card: 'var(--color-background-card)'

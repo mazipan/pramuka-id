@@ -1,20 +1,20 @@
-import Layout from '../components/MainLayout';
-import MetaHead from '../components/MetaHead';
-import ChapterNavigation from '../components/ChapterNavigation';
-import ChapterTitle from '../components/ChapterTitle';
-import DwiSatyaData from '../data/dwi-satya';
-import { BASE_PATH } from '../constants';
+import Layout from '../../components/MainLayout';
+import MetaHead from '../../components/MetaHead';
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3';
+import ChapterTitle from '../../components/ChapterTitle';
+import DwiSatyaData from '../../data/dwi-satya';
+import { BASE_PATH } from '../../constants';
 
 const title = 'Dwi Satya Pramuka | Buku Saku Pramuka Digital';
 const desc =
   'Penjelasan lengkap mengenai Dwi Satya Pramuka di Buku Saku Pramuka Digital';
-const url = BASE_PATH + '/dwi-satya/';
+const url = BASE_PATH + '/materi-pramuka/dwi-satya/';
 
 function DwiSatyaPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/dwi-dharma/" />
+      <BreadcrumbLevel3 text="Dwi Satya" href="/materi-pramuka/dwi-satya/" />
       <ChapterTitle subTitle="Dwi Satya" title="Materi Pramuka" />
 
       <div className="text-left">
@@ -45,8 +45,6 @@ function DwiSatyaPage() {
           </div>
         </div>
       </div>
-
-      <ChapterNavigation nextLink="/dwi-dharma/" />
     </Layout>
   );
 }
