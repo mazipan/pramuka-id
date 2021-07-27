@@ -30,7 +30,7 @@
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "cors": "^2.8.5",
     "globby": "^11.0.1",
-    "next": "9.5.3",
+    "next": "9.5.4",
     "preact": "^10.5.4",
     "preact-render-to-string": "^5.1.10",
     "react": "npm:@preact/compat@^0.0.3",
