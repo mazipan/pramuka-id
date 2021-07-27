@@ -1,12 +1,12 @@
 export default {
-	imageGaruda: '/assets/pancasila/garuda.png',
-	imageItem: '/assets/pancasila/[index].png',
+  imageGaruda: '/assets/pancasila/garuda.png',
+  imageItem: '/assets/pancasila/[index].png',
   data: [
     'KETUHANAN YANG MAHA ESA ',
     'KEMANUSIAAN YANG ADIL DAN BERADAB',
     'PERSATUAN INDONESIA',
     'KERAKYATAN YANG DIPIMPIN OLEH HIKMAT KEBIJAKSANAAN DALAM PERMUSYAWARATAN PERWAKILAN',
-    'KEADILAN BAGI SELURUH RAKYAT INDONESIA',
+    'KEADILAN SOSIAL BAGI SELURUH RAKYAT INDONESIA',
   ],
   meaning: {
     preface:
