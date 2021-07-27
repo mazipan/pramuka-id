@@ -109,8 +109,6 @@ function SatuanKaryaPramukaPage() {
           ))}
         </div>
       </div>
-
-      <BreadcrumbLevel3 text="Dasa Dharma" href="/materi-pramuka/dasa-dharma/" />
     </Layout>
   )
 }
