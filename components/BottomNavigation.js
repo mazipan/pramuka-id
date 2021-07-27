@@ -21,7 +21,7 @@ const items = [{
   icons: HandIcon,
   href: "/materi-kecakapan-umum"
 },{
-  text: "Download",
+  text: "Unduh",
   icons: DownloadIcon,
   href: "/download"
 }]
