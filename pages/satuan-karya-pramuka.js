@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Layout from '../components/MainLayout'
 import MetaHead from '../components/MetaHead'
 import ChapterNavigation from '../components/ChapterNavigation'
@@ -11,7 +12,7 @@ const url = BASE_PATH + '/satuan-karya-pramuka/'
 const nextLink = '/bendera-semaphore/'
 
 function SatuanKaryaPramukaPage() {
-  const [collapsed, setCollapsed] = React.useState(-1)
+  const [collapsed, setCollapsed] = useState(-1)
 
   const handleCollapse = (index) => {
     if (collapsed === index) {
@@ -116,7 +117,8 @@ function SatuanKaryaPramukaPage() {
 }
 
 export function reportWebVitals({ id, name, label, value }) {
-  ga('send', 'event', {
+  // eslint-disable-next-line no-undef
+  window.ga('send', 'event', {
     eventCategory: label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
     eventAction: name,
     eventValue: Math.round(name === 'CLS' ? value * 1000 : value), // values must be integers

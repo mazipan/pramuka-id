@@ -54,7 +54,8 @@ function DwiDharmaPage() {
 }
 
 export function reportWebVitals({ id, name, label, value }) {
-  ga('send', 'event', {
+  // eslint-disable-next-line no-undef
+  window.ga('send', 'event', {
     eventCategory:
       label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
     eventAction: name,

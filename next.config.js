@@ -8,21 +8,23 @@ const configs = {
     if (splitChunks) {
       const cacheGroups = splitChunks.cacheGroups;
       const preactModules = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider)[\\/]/;
-      if (cacheGroups.framework) {
-        cacheGroups.preact = Object.assign({}, cacheGroups.framework, {
-          test: preactModules
-        });
-        cacheGroups.commons.name = 'framework';
-      }
-      else {
-        cacheGroups.preact = {
-          name: 'commons',
-          chunks: 'all',
-          test: preactModules
-        };
+
+      if (cacheGroups) {
+        if (cacheGroups.framework) {
+          cacheGroups.preact = Object.assign({}, cacheGroups.framework, {
+            test: preactModules
+          });
+          cacheGroups.commons.name = 'framework';
+        } else {
+          cacheGroups.preact = {
+            name: 'commons',
+            chunks: 'all',
+            test: preactModules
+          };
+        }
       }
     }
-    
+
     // Install webpack aliases:
     const aliases = config.resolve.alias || (config.resolve.alias = {});
     aliases.react = aliases['react-dom'] = 'preact/compat';

@@ -1,4 +1,4 @@
-import React from 'react'
+import { Fragment } from 'react'
 
 import Layout from '../components/MainLayout'
 import MetaHead from '../components/MetaHead'
@@ -23,10 +23,10 @@ function SeragamPramukaPage() {
             return (
               <ul className="list-disc ml-8 pb-4" key={idx}>
                 {content.map(({ name, lists }, j) => (
-                  <React.Fragment key={j}>
+                  <Fragment key={j}>
                     <li className="py-2">{name}</li>
                     <ol className="list-disc ml-8">{lists && lists.map((list, k) => <li key={k}>{list}</li>)}</ol>
-                  </React.Fragment>
+                  </Fragment>
                 ))}
               </ul>
             )

@@ -16,7 +16,7 @@ const metaImg = BASE_PATH + '/assets/5930.jpg'
 const authorName = 'Irfan Maulana'
 
 function Layout(props) {
-  const [appTheme, setAppTheme] = React.useState('light')
+  const [appTheme, setAppTheme] = useState('light')
   const [upStyle, setUpStyle] = useState({
     transition: 'all 200ms ease-in',
     opacity: 0,

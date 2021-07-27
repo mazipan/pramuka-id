@@ -1,4 +1,4 @@
-Math.easeInOutQuad = (t, b, c, d) => {
+const easeInOutQuad = (t, b, c, d) => {
   let time = t
   time /= d / 2
   if (time < 1) {
@@ -17,7 +17,7 @@ export const scrollTo = (element, duration = 1000) => {
 
   const animateScroll = () => {
     currentTime += increment
-    const val = Math.easeInOutQuad(currentTime, start, change, duration)
+    const val = easeInOutQuad(currentTime, start, change, duration)
     window.scrollTo(0, val)
     if (currentTime < duration) {
       setTimeout(animateScroll, increment)
@@ -25,4 +25,16 @@ export const scrollTo = (element, duration = 1000) => {
   }
 
   animateScroll()
+}
+
+export function reportCoreWebVitals({ id, name, label, value }) {
+  // eslint-disable-next-line no-undef
+  window.ga('send', 'event', {
+    eventCategory:
+      label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
+    eventAction: name,
+    eventValue: Math.round(name === 'CLS' ? value * 1000 : value), // values must be integers
+    eventLabel: id, // id unique to current page load
+    nonInteraction: true, // avoids affecting bounce rate.
+  })
 }
