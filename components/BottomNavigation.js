@@ -31,7 +31,7 @@ function BottomNavigation() {
   const path = router.asPath;
 
   const isActive = (p) => {
-    return (p === path)
+    return p === '/' ? (p === path) : (path.indexOf(p) >= 0) 
   }
 
   return (
