@@ -8,7 +8,7 @@ function NotFoundPage() {
        <div className="px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
           <div className="py-16 sm:py-24 max-w-max mx-auto">
             <div className="sm:flex">
-              <p className="text-4xl font-extrabold text-blue-600 sm:text-5xl">
+              <p className="text-4xl font-extrabold text-primary sm:text-5xl">
                 404
               </p>
               <div className="sm:ml-6">
@@ -22,7 +22,7 @@ function NotFoundPage() {
                 </div>
                 <div className="mt-6 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
                   <Link href="/">
-                    <a className="text-base font-medium text-blue-600">
+                    <a className="text-base font-medium text-primary">
                       <span aria-hidden="true"> &larr;</span> Kembali ke Beranda
                     </a>
                   </Link>
