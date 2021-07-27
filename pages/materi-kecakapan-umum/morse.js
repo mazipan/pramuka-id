@@ -1,19 +1,19 @@
-import Layout from '../components/MainLayout';
-import MetaHead from '../components/MetaHead';
-import ChapterNavigation from '../components/ChapterNavigation';
-import ChapterTitle from '../components/ChapterTitle';
-import MorseData from '../data/morse';
-import { BASE_PATH } from '../constants';
+import Layout from '../../components/MainLayout';
+import MetaHead from '../../components/MetaHead';
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3';
+import ChapterTitle from '../../components/ChapterTitle';
+import MorseData from '../../data/morse';
+import { BASE_PATH } from '../../constants';
 
 const title = 'Kode Morse Lengkap | Buku Saku Pramuka Digital';
 const desc = 'Daftar lengkap kode morse beserta cara menghafalnya';
-const url = BASE_PATH + '/morse/';
+const url = BASE_PATH + '/materi-kecakapan-umum/morse/';
 
 function LambangPramukaPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/radio/" />
+      <BreadcrumbLevel3 text="Kode Morse" href={url} />
       <ChapterTitle subTitle="Kode Morse" title="Materi Kecakapan Umum" />
 
       <div className="text-center md:text-left">
@@ -38,8 +38,6 @@ function LambangPramukaPage() {
           ))}
         </div>
       </div>
-
-      <ChapterNavigation nextLink="/radio/" />
     </Layout>
   );
 }

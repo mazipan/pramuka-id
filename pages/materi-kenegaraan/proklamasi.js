@@ -1,19 +1,19 @@
-import Layout from '../components/MainLayout';
-import MetaHead from '../components/MetaHead';
-import ChapterNavigation from '../components/ChapterNavigation';
-import ChapterTitle from '../components/ChapterTitle';
-import ProklamasiData from '../data/proklamasi';
-import { BASE_PATH } from '../constants';
+import Layout from '../../components/MainLayout';
+import MetaHead from '../../components/MetaHead';
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3';
+import ChapterTitle from '../../components/ChapterTitle';
+import ProklamasiData from '../../data/proklamasi';
+import { BASE_PATH } from '../../constants';
 
 const title = 'Proklamasi | Buku Saku Pramuka Digital';
 const desc = 'Teks proklamasi di Buku Saku Pramuka Digital';
-const url = BASE_PATH + '/proklamasi/';
+const url = BASE_PATH + '/materi-kenegaraan/proklamasi/';
 
 function ProklamasiPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/dwi-satya/" />
+      <BreadcrumbLevel3 text="Proklamasi" href={url} />
       <ChapterTitle subTitle="Proklamasi" title="Materi Kenegaraan" />
 
       <div className="flex flex-col items-center justify-center text-center">
@@ -46,8 +46,6 @@ function ProklamasiPage() {
           alt="Naskah proklamasi"
         />
       </div>
-
-      <ChapterNavigation nextLink="/dwi-satya/" />
     </Layout>
   );
 }

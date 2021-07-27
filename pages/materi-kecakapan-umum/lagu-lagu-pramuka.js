@@ -1,14 +1,14 @@
-import Layout from '../components/MainLayout'
-import MetaHead from '../components/MetaHead'
-import ChapterNavigation from '../components/ChapterNavigation'
-import ChapterTitle from '../components/ChapterTitle'
-import SongsData from '../data/lagu-lagu-pramuka'
-import { BASE_PATH } from '../constants'
-import Expansion from '../components/Expansion'
+import Layout from '../../components/MainLayout'
+import MetaHead from '../../components/MetaHead'
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
+import ChapterTitle from '../../components/ChapterTitle'
+import SongsData from '../../data/lagu-lagu-pramuka'
+import { BASE_PATH } from '../../constants'
+import Expansion from '../../components/Expansion'
 
 const title = `${SongsData.subtitle} | Buku Saku Pramuka Digital`
 const desc = SongsData.description
-const url = BASE_PATH + '/lagu-lagu-pramuka/'
+const url = BASE_PATH + '/materi-kecakapan-umum/lagu-lagu-pramuka/'
 
 function LaguLaguPramuka() {
   const renderAudio = (song) => {
@@ -68,7 +68,7 @@ function LaguLaguPramuka() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/tanda-kecakapan-khusus/" />
+      <BreadcrumbLevel3 text={SongsData.subtitle} href={url} />
       <ChapterTitle subTitle={SongsData.subtitle} title={SongsData.title} />
 
       <div className="text-left">
@@ -89,8 +89,6 @@ function LaguLaguPramuka() {
           ))}
         </div>
       </div>
-
-      <ChapterNavigation nextLink="/tanda-kecakapan-khusus/" />
     </Layout>
   )
 }

@@ -1,16 +1,16 @@
 import React from 'react'
 
-import Layout from '../components/MainLayout'
-import MetaHead from '../components/MetaHead'
-import ChapterNavigation from '../components/ChapterNavigation'
-import ChapterTitle from '../components/ChapterTitle'
-import SalamPramukaData from '../data/salam-pramuka'
-import { BASE_PATH } from '../constants'
-import Expansion from '../components/Expansion'
+import Layout from '../../components/MainLayout'
+import MetaHead from '../../components/MetaHead'
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
+import ChapterTitle from '../../components/ChapterTitle'
+import SalamPramukaData from '../../data/salam-pramuka'
+import { BASE_PATH } from '../../constants'
+import Expansion from '../../components/Expansion'
 
 const title = 'Salam Pramuka | Buku Saku Pramuka Digital'
 const desc = 'Arti dan jenis salam pramuka, baca selengkapnya di Buku Saku Pramuka Digital'
-const url = BASE_PATH + '/salam-pramuka/'
+const url = BASE_PATH + '/materi-pramuka/salam-pramuka/'
 
 function SalamPramukaPage() {
   const getHowTo = (key) => {
@@ -20,7 +20,7 @@ function SalamPramukaPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/pedoman-sku/" />
+      <BreadcrumbLevel3 text="Salam Pramuka" href={url} />
       <ChapterTitle subTitle="Salam Pramuka" title="Materi Pramuka" />
 
       <div className="text-left">
@@ -85,8 +85,6 @@ function SalamPramukaPage() {
           ))}
         </div>
       </div>
-
-      <ChapterNavigation nextLink="/pedoman-sku/" />
     </Layout>
   )
 }

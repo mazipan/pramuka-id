@@ -1,15 +1,14 @@
 import { useState } from 'react'
-import Layout from '../components/MainLayout'
-import MetaHead from '../components/MetaHead'
-import ChapterNavigation from '../components/ChapterNavigation'
-import ChapterTitle from '../components/ChapterTitle'
-import TkkData from '../data/satuan-karya-pramuka'
-import { BASE_PATH } from '../constants'
+import Layout from '../../components/MainLayout'
+import MetaHead from '../../components/MetaHead'
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
+import ChapterTitle from '../../components/ChapterTitle'
+import TkkData from '../../data/satuan-karya-pramuka'
+import { BASE_PATH } from '../../constants'
 
 const title = `${TkkData.subtitle} | Buku Saku Pramuka Digital`
 const desc = TkkData.description
-const url = BASE_PATH + '/satuan-karya-pramuka/'
-const nextLink = '/bendera-semaphore/'
+const url = BASE_PATH + '/materi-pramuka/satuan-karya-pramuka/'
 
 function SatuanKaryaPramukaPage() {
   const [collapsed, setCollapsed] = useState(-1)
@@ -31,7 +30,7 @@ function SatuanKaryaPramukaPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink={nextLink} />
+      <BreadcrumbLevel3 text={TkkData.subtitle} href={url} />
       <ChapterTitle subTitle={TkkData.subtitle} title={TkkData.title} />
 
       <div className="text-left">
@@ -111,7 +110,7 @@ function SatuanKaryaPramukaPage() {
         </div>
       </div>
 
-      <ChapterNavigation nextLink={nextLink} />
+      <BreadcrumbLevel3 text="Dasa Dharma" href="/materi-pramuka/dasa-dharma/" />
     </Layout>
   )
 }

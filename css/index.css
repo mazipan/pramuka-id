@@ -1,5 +1,6 @@
 :root {
   --color-background-pramuka: #7b341e; /*orange 900*/
+  --color-background-pramuka-700: #c05621; /*orange 700*/
   --color-background-primary: #ed8936; /*orange 500*/
   --color-background-hover: #c05621; /*orange 700*/
   --color-background-card: #fff; /*white*/
@@ -12,8 +13,9 @@
   --color-text-link-secondary: #ed8936; /*orange 600*/
 }
 
-.theme-dark {
+.dark {
   --color-background-pramuka: #101623;
+  --color-background-pramuka-700: #2a4365; /*orange 700*/
   --color-background-primary: #2d3748; /*gray 800*/
   --color-background-hover: #2a4365; /*blue 900*/
   --color-background-card: #222833;

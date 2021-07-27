@@ -1,22 +1,22 @@
 import React from 'react'
 
-import Layout from '../components/MainLayout'
-import MetaHead from '../components/MetaHead'
-import ChapterNavigation from '../components/ChapterNavigation'
-import ChapterTitle from '../components/ChapterTitle'
-import PedomanSkuData from '../data/pedoman-sku'
-import { BASE_PATH } from '../constants'
-import Expansion from '../components/Expansion'
+import Layout from '../../components/MainLayout'
+import MetaHead from '../../components/MetaHead'
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
+import ChapterTitle from '../../components/ChapterTitle'
+import PedomanSkuData from '../../data/pedoman-sku'
+import { BASE_PATH } from '../../constants'
+import Expansion from '../../components/Expansion'
 
 const title = 'Pedoman SKU | Buku Saku Pramuka Digital'
 const desc = 'Baca pedoman umum untuk menyelesaikan SKU di Buku Saku Pramuka Digital'
-const url = BASE_PATH + '/pedoman-sku/'
+const url = BASE_PATH + '/materi-pramuka/pedoman-sku/'
 
 function PedomanSkuPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/seragam-pramuka/" />
+      <BreadcrumbLevel3 text="Pedoman SKU" href="/materi-pramuka/pedoman-sku/" />
       <ChapterTitle subTitle="Pedoman SKU" title="Materi Pramuka" />
 
       <div className="text-left">
@@ -36,8 +36,6 @@ function PedomanSkuPage() {
           />
         ))}
       </div>
-
-      <ChapterNavigation nextLink="/seragam-pramuka/" />
     </Layout>
   )
 }

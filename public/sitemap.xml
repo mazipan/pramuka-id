@@ -8,183 +8,204 @@
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
 >
   <url>
-    <loc>https://buku-saku-pramuka.vercel.app/bendera-semaphore</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/dasa-dharma</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://buku-saku-pramuka.vercel.app/download</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/dwi-dharma</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/dwi-satya</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/hari-peringatan-nasional</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/hymne-pramuka</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://buku-saku-pramuka.vercel.app</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/kompas</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/kwartir</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/lagu-lagu-pramuka</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/lambang-pramuka</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/morse</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/pancasila</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/pedoman-sku</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/pembukaan-uud-1945</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/proklamasi</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/radio</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/salam-pramuka</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/sandi-ambalan</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/satuan-karya-pramuka</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/seragam-pramuka</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://buku-saku-pramuka.vercel.app/tanda-kecakapan-khusus</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://buku-saku-pramuka.vercel.app/tentang</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://buku-saku-pramuka.vercel.app/tepuk-pramuka</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-kecakapan-umum/bendera-semaphore</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://buku-saku-pramuka.vercel.app/tri-satya</loc>
-    <lastmod>2021-07-27T10:22:15.252Z</lastmod>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-kecakapan-umum/hari-peringatan-nasional</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-kecakapan-umum/index</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-kecakapan-umum/kompas</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-kecakapan-umum/lagu-lagu-pramuka</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-kecakapan-umum/morse</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-kecakapan-umum/radio</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-kecakapan-umum/tanda-kecakapan-khusus</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-kecakapan-umum/tepuk-pramuka</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-kenegaraan/index</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-kenegaraan/pancasila</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-kenegaraan/pembukaan-uud-1945</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-kenegaraan/proklamasi</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-pramuka/dasa-dharma</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-pramuka/dwi-dharma</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-pramuka/dwi-satya</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-pramuka/hymne-pramuka</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-pramuka/index</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-pramuka/kwartir</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-pramuka/lambang-pramuka</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-pramuka/pedoman-sku</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-pramuka/salam-pramuka</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-pramuka/sandi-ambalan</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-pramuka/satuan-karya-pramuka</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-pramuka/seragam-pramuka</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://buku-saku-pramuka.vercel.app/materi-pramuka/tri-satya</loc>
+    <lastmod>2021-07-27T16:38:09.833Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>

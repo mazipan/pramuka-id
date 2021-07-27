@@ -1,14 +1,14 @@
-import Layout from '../components/MainLayout'
-import MetaHead from '../components/MetaHead'
-import ChapterNavigation from '../components/ChapterNavigation'
-import ChapterTitle from '../components/ChapterTitle'
-import TkkData from '../data/tanda-kecakapan-khusus'
-import { BASE_PATH } from '../constants'
-import Expansion from '../components/Expansion'
+import Layout from '../../components/MainLayout'
+import MetaHead from '../../components/MetaHead'
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
+import ChapterTitle from '../../components/ChapterTitle'
+import TkkData from '../../data/tanda-kecakapan-khusus'
+import { BASE_PATH } from '../../constants'
+import Expansion from '../../components/Expansion'
 
 const title = `${TkkData.subtitle} | Buku Saku Pramuka Digital`
 const desc = TkkData.description
-const url = BASE_PATH + '/tanda-kecakapan-khusus/'
+const url = BASE_PATH + '/materi-kecakapan-umum/tanda-kecakapan-khusus/'
 
 function TandaKecakapanKhusus() {
   const splitData = (data) => {
@@ -20,7 +20,7 @@ function TandaKecakapanKhusus() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink="/tepuk-pramuka/" />
+      <BreadcrumbLevel3 text={TkkData.subtitle} href={url} />
       <ChapterTitle subTitle={TkkData.subtitle} title={TkkData.title} />
 
       <div className="text-left">
@@ -73,8 +73,6 @@ function TandaKecakapanKhusus() {
           ))}
         </div>
       </div>
-
-      <ChapterNavigation nextLink="/tepuk-pramuka/" />
     </Layout>
   )
 }

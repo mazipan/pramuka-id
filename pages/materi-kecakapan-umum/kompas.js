@@ -1,15 +1,14 @@
 import { useState } from "react"
-import Layout from '../components/MainLayout'
-import MetaHead from '../components/MetaHead'
-import ChapterNavigation from '../components/ChapterNavigation'
-import ChapterTitle from '../components/ChapterTitle'
-import KompasData from '../data/kompas'
-import { BASE_PATH } from '../constants'
+import Layout from '../../components/MainLayout'
+import MetaHead from '../../components/MetaHead'
+import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
+import ChapterTitle from '../../components/ChapterTitle'
+import KompasData from '../../data/kompas'
+import { BASE_PATH } from '../../constants'
 
 const title = 'Mengenal Kompas | Buku Saku Pramuka Digital'
 const desc = 'Kompas di Buku Saku Pramuka Digital'
-const url = BASE_PATH + '/kompas/'
-const nextLink = '/bendera-semaphore/'
+const url = BASE_PATH + '/materi-kecakapan-umum/kompas/'
 
 function KompasPage() {
   const [collapsed, setCollapsed] = useState(-1)
@@ -25,7 +24,7 @@ function KompasPage() {
   return (
     <Layout>
       <MetaHead title={title} desc={desc} url={url} />
-      <ChapterNavigation nextLink={nextLink} />
+      <BreadcrumbLevel3 text="Mengenal Kompas" href={url} />
       <ChapterTitle subTitle="Mengenal Kompas" title={KompasData.title} />
       <div className="text-left">
         <div className="mt-4 sectionIntro" id={KompasData.id}>
