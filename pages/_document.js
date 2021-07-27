@@ -15,7 +15,7 @@ class MyDocument extends Document {
         <meta httpEquiv="content-type" content="text/html" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <meta name="revisit-after" content="7 days" />
+        <meta name="revisit-after" content="1 days" />
         <meta name="distribution" content="web" />
 
         <meta content="u8olGi9rN_mzUhMWIqakLvCi-pQMluERfdUK_6bC4x4" name="google-site-verification" />
@@ -28,7 +28,7 @@ class MyDocument extends Document {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-						gtag('config', 'UA-25065548-9');
+	    gtag('config', 'UA-25065548-9');
         `,
           }}
         />
