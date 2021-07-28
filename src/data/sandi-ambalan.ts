@@ -1,4 +1,11 @@
-export default {
+export interface SandiAmbalan {
+  source: string
+  title: string
+  id: string
+  data: string[][]
+}
+
+const data: SandiAmbalan = {
   source: 'https://www.pramukaindonesia.com/2014/10/sandi-ambalan-bhinneka-tunggal-ika.html',
   title: 'Materi Pramuka',
   id: 'sandi-ambalan',
@@ -39,3 +46,5 @@ export default {
     ['Itulah kehendak ambalan kita', 'Bhinneka tunggal ika']
   ]
 }
+
+export default data

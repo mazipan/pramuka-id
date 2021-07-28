@@ -1,4 +1,13 @@
-export default {
+export interface HymnePramuka {
+  id: string
+  title: string
+  data: {
+    lyrics: string[]
+    audio: string
+  }
+}
+
+const data: HymnePramuka = {
   id: 'hymne-pramuka',
   title: 'Hymne Pramuka',
   data: {
@@ -14,3 +23,5 @@ export default {
     audio: '/audio/hymne-pramuka.mp3'
   }
 }
+
+export default data

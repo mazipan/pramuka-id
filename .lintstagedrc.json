@@ -1,7 +1,7 @@
 {
   "*.{css,scss,json,md,html}": ["prettier --ignore-path .gitignore --write"],
   "*.{js,jsx,ts,tsx}": [
-    "rustywind --ignore-path .gitignore --write ",
+    "rustywind --write .",
     "prettier --ignore-path .gitignore --write",
     "eslint --ignore-path .gitignore --quiet --fix"
   ]

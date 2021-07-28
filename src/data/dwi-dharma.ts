@@ -1,4 +1,16 @@
-export default {
+export interface DwiDharma {
+  id: string
+  title: string
+  preface: string
+  data: {
+    origin: {
+      preface: string
+      data: string[]
+    }
+  }
+}
+
+const data: DwiDharma = {
   id: 'dwi-dharma',
   title: 'Dwi Dharma',
   preface:
@@ -10,3 +22,5 @@ export default {
     }
   }
 }
+
+export default data

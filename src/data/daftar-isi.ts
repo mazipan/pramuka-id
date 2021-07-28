@@ -1,4 +1,15 @@
-export default [
+export interface ContentChildItem {
+  text: string
+  href: string
+  api: string
+}
+export interface ContentItem {
+  text: string
+  href: string
+  children: ContentChildItem[]
+}
+
+const data: ContentItem[] = [
   {
     text: 'Materi Kenegaraan',
     href: '/materi-kenegaraan/',
@@ -97,7 +108,8 @@ export default [
       },
       {
         text: 'Sandi Radio',
-        href: '/materi-kecakapan-umum/radio/'
+        href: '/materi-kecakapan-umum/radio/',
+        api: '/api/radio'
       },
       {
         text: 'Hari Peringatan Nasional',
@@ -127,3 +139,5 @@ export default [
     ]
   }
 ]
+
+export default data

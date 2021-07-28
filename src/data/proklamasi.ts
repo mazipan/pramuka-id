@@ -1,4 +1,13 @@
-export default {
+export interface Proklamasi {
+  data: string[]
+  audio: string
+  images: {
+    alt: string
+    src: string
+  }[]
+}
+
+const data: Proklamasi = {
   data: [
     'PROKLAMASI',
     'Kami bangsa Indonesia, dengan ini menjatakan Kemerdekaan Indonesia.',
@@ -19,3 +28,5 @@ export default {
     }
   ]
 }
+
+export default data

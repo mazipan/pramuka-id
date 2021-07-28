@@ -1,4 +1,24 @@
-export default {
+export interface DownloadSKU {
+  data: {
+    title: string
+    key: string
+  }[]
+  types: string[]
+  sku: {
+    siaga: string
+    penggalang: string
+    penegak: string
+    pandega: string
+  }
+  panduan: {
+    siaga: string
+    penggalang: string
+    penegak: string
+    pandega: string
+  }
+}
+
+const data: DownloadSKU = {
   data: [
     {
       title: 'Buku SKU',
@@ -23,3 +43,5 @@ export default {
     pandega: 'https://drive.google.com/file/d/0Bw9eKTeTmqjgUnozZ2NWRUEzaXM/view'
   }
 }
+
+export default data

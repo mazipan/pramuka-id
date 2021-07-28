@@ -1,4 +1,23 @@
-export default {
+export interface TriSatya {
+  id: string
+  title: string
+  preface: string
+  data: {
+    origin: {
+      preface: string
+      data: string[]
+    }
+    meanings: {
+      refer: boolean
+      preface: string
+      data: {
+        short: string
+      }[]
+    }
+  }
+}
+
+const data: TriSatya = {
   id: 'tri-satya',
   title: 'Tri Satya',
   preface:
@@ -38,3 +57,5 @@ export default {
     }
   }
 }
+
+export default data

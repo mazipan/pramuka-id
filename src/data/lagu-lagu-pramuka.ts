@@ -1,4 +1,24 @@
-export default {
+export interface LaguPramuka {
+  title: string
+  subtitle: string
+  description: string
+  source: string
+  songs: {
+    title: string
+    key: string
+    lyric: string
+    audio: string
+    youtube: string
+  }[]
+  lyrics: {
+    hymne_pramuka: string[][]
+    alam_bebas: string[][]
+    di_sini_kita_bertemu: string[][]
+    pisah_hanya_dilahirnya: string[][]
+  }
+}
+
+const data: LaguPramuka = {
   title: 'Materi Kecakapan Umum',
   subtitle: 'Lagu-lagu Pramuka',
   description: 'Kumpulan lagu-lagu dalam kegiatan kepramukaan',
@@ -80,3 +100,5 @@ export default {
     ]
   }
 }
+
+export default data

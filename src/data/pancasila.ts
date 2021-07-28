@@ -1,4 +1,14 @@
-export default {
+export interface Pancasila {
+  imageGaruda: string
+  imageItem: string
+  data: string[]
+  meaning: {
+    preface: string
+    data: string[]
+  }
+}
+
+const data: Pancasila = {
   imageGaruda: '/assets/pancasila/garuda.png',
   imageItem: '/assets/pancasila/[index].png',
   data: [
@@ -19,3 +29,5 @@ export default {
     ]
   }
 }
+
+export default data

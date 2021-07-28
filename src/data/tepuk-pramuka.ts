@@ -1,4 +1,21 @@
-export default {
+export interface TepukPramuka {
+  title: string
+  subtitle: string
+  description: string
+  source: string
+  meaning: string
+  sections: {
+    name: string
+    description: string
+    groupType: string
+    groups: {
+      text: string
+      lists: string[]
+    }[]
+  }[]
+}
+
+const data: TepukPramuka = {
   title: 'Materi Kecakapan Umum',
   subtitle: 'Tepuk Pramuka',
   description: 'Macam-macam tepuk pramuka dan cara melakukannya',
@@ -366,3 +383,5 @@ export default {
     }
   ]
 }
+
+export default data

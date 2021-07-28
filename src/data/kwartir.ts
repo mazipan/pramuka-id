@@ -1,9 +1,47 @@
-export default {
+export interface Kwartir {
+  source: string
+  description: string
+  semaphoreImg: string
+  sections: {
+    title: string
+    key: string
+  }[]
+  sumatera: {
+    img: string
+    text: string
+  }[]
+  jawa: {
+    img: string
+    text: string
+  }[]
+  kalimantan: {
+    img: string
+    text: string
+  }[]
+  bali_nusa: {
+    img: string
+    text: string
+  }[]
+  sulawesi: {
+    img: string
+    text: string
+  }[]
+  maluku_papua: {
+    img: string
+    text: string
+  }[]
+  reference: {
+    text: string
+    url: string
+  }[]
+}
+
+const data: Kwartir = {
   source: 'https://id.m.wikipedia.org/wiki/Gerakan_Pramuka_Indonesia',
 
   description: `Kwartir adalah suatu badan pengelola Gerakan Pramuka yang mempunyai tugas pokok pembinaan kepada Kwartir, Satuan, dan Gugu depan dalam
-    pengembangan Gerakan Pramuka untuk mencapai tujuannya. Kwartir dalam istilah kepramukaan merujuk pada satuan organisasi yang mengelola Gerak Pramuka yang 
-    dipimpin secara kolektif oleh para andalan (istilah untuk pengurus kwartir). Kwartir memiliki tingkatan yang disesuaikan dengan tingkat/ wilayah pemerintahan 
+    pengembangan Gerakan Pramuka untuk mencapai tujuannya. Kwartir dalam istilah kepramukaan merujuk pada satuan organisasi yang mengelola Gerak Pramuka yang
+    dipimpin secara kolektif oleh para andalan (istilah untuk pengurus kwartir). Kwartir memiliki tingkatan yang disesuaikan dengan tingkat/ wilayah pemerintahan
     dari pusat sampai daerah.
   `,
   semaphoreImg: '/assets/bendera-semaphore/ukuran.png',
@@ -188,3 +226,5 @@ export default {
     }
   ]
 }
+
+export default data

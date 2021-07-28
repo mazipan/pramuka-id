@@ -1,4 +1,23 @@
-export default {
+export interface DasaDharma {
+  id: string
+  title: string
+  preface: string
+  data: {
+    origin: {
+      preface: string
+      data: string[]
+    }
+    meanings: {
+      refer: boolean
+      preface: string
+      data: {
+        details: string[]
+      }[]
+    }
+  }
+}
+
+const data: DasaDharma = {
   id: 'dasa-dharma',
   title: 'Dasa Dharma',
   preface:
@@ -101,3 +120,5 @@ export default {
     }
   }
 }
+
+export default data

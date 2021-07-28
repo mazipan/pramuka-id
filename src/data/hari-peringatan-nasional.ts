@@ -1,4 +1,35 @@
-export default {
+export interface PeringatanNasional {
+  source: string
+  meaning: string
+  types: {
+    title: string
+    key: string
+  }[]
+  'hari-libur-nasional': {
+    description: string
+    data: string[]
+  }
+  'hari-penting-lainnya': {
+    months: {
+      title: string
+      key: string
+    }[]
+    januari: string[]
+    februari: string[]
+    maret: string[]
+    april: string[]
+    mei: string[]
+    juni: string[]
+    juli: string[]
+    agustus: string[]
+    september: string[]
+    oktober: string[]
+    november: string[]
+    desember: string[]
+  }
+}
+
+const data: PeringatanNasional = {
   source: 'https://id.wikipedia.org/wiki/Daftar_hari_penting_di_Indonesia',
   meaning:
     'Hari Peringatan Nasional merupakan hari penting nasional di Indonesia yang selalu diperingati setiap tahunnya.',
@@ -253,3 +284,5 @@ export default {
     ]
   }
 }
+
+export default data

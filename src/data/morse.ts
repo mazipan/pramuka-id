@@ -1,4 +1,65 @@
-export default {
+export interface Morse {
+  source: string
+  images: {
+    alt: string
+    src: string
+  }[]
+  sections: {
+    title: string
+    key: string
+  }[]
+  alphabet: {
+    code: string
+    text: string
+  }[]
+  number: {
+    code: string
+    text: number
+  }[]
+  symbol: {
+    code: string
+    text: string
+  }[]
+  memorization: (
+    | {
+        name: string
+        desc: string
+        details?: undefined
+      }
+    | {
+        name: string
+        desc: string
+        details: {
+          code: string
+          text: string
+          substitute: string
+        }[]
+      }
+    | {
+        name: string
+        desc: string
+        details: (
+          | {
+              title: string
+              children: {
+                origin: string
+                target: string
+              }[]
+              tile?: undefined
+            }
+          | {
+              tile: string
+              children: {
+                origin: string
+              }[]
+              title?: undefined
+            }
+        )[]
+      }
+  )[]
+}
+
+const data: Morse = {
   source: 'https://id.wikipedia.org/wiki/Kode_Morse',
   images: [
     {
@@ -425,3 +486,5 @@ export default {
     }
   ]
 }
+
+export default data

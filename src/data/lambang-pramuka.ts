@@ -1,4 +1,13 @@
-export default {
+export interface LambangPramuka {
+  preface: string
+  prefix: string
+  meanings: string[]
+  postfix: string
+  overall_meaning: string
+  usage: string
+}
+
+const data: LambangPramuka = {
   preface:
     'Lambang gerakan pramuka adalah tanda pengenal tetap yang mengkiaskan sifat, keadaan, nilai dan norma yang dimiliki setiap anggota Pramuka yang dicita-citakan oleh gerakan pramuka. Lambang Gerakan Pramuka diciptakan oleh Soenardjo Atmodipuro, seorang pembina pramuka yang aktif bekerja sebagai pegawai tinggi Departemen Pertanian. Lambang gerakan pramuka digunakan sejak tanggal 14 Agustus 1961 pada Panji Gerakan Pendidikan Panduan Nasional Indonesia yang dianugerahkan kepada gerakan pramuka.',
   prefix:
@@ -18,3 +27,5 @@ export default {
   usage:
     'Lambang Gerakan Pramuka dapat di gunakan pada Panji, Bendera, papan nama satuan dan Kwartir, tanda Pengenal, dan alat administrasi Gerakan Pramuka. Penggunaan tersebut dimaksudkan sebagai alat pendidikan untuk mengingatkan dan menanamkan pada setiap anggota Pramuka agar memiliki sifat dan keadaan seperti arti kiasan lambang tunas kelapa tersebut.'
 }
+
+export default data

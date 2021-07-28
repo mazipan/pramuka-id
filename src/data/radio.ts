@@ -1,4 +1,20 @@
-export default {
+export interface Radio {
+  source: string
+  sections: {
+    title: string
+    key: string
+  }[]
+  alphabet: {
+    code: string
+    text: string
+  }[]
+  number: {
+    code: string
+    text: number
+  }[]
+}
+
+const data: Radio = {
   source: 'https://id.m.wikipedia.org/wiki/Alfabet_fonetik_NATO',
   sections: [
     {
@@ -159,3 +175,5 @@ export default {
     }
   ]
 }
+
+export default data

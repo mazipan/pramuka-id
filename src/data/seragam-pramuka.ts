@@ -1,4 +1,44 @@
-export default {
+export interface SeragamPramuka {
+  title: string
+  subtitle: string
+  description: string
+  source: string
+  data: (
+    | {
+        title: string
+        section: (
+          | {
+              type: string
+              content: string
+            }
+          | {
+              type: string
+              content: {
+                name: string
+              }[]
+            }
+        )[]
+      }
+    | {
+        title: string
+        section: (
+          | {
+              type: string
+              content: string
+            }
+          | {
+              type: string
+              content: {
+                name: string
+                lists: string[]
+              }[]
+            }
+        )[]
+      }
+  )[]
+}
+
+const data: SeragamPramuka = {
   title: 'Materi Pramuka',
   subtitle: 'Seragam Pramuka',
   description: 'Pakaian Seragam Pramuka',
@@ -228,3 +268,5 @@ export default {
     }
   ]
 }
+
+export default data

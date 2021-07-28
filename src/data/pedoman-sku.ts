@@ -1,4 +1,13 @@
-export default [
+export interface PedomanSKU {
+  type: string
+  typeDetail: string
+  data: {
+    title: string
+    meaning: string
+  }[]
+}
+
+const data: PedomanSKU[] = [
   {
     type: 'PRAMUKA PENGGALANG',
     typeDetail: 'PENGGALANG RAMU',
@@ -385,3 +394,5 @@ export default [
     ]
   }
 ]
+
+export default data

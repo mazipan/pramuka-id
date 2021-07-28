@@ -1,4 +1,30 @@
-export default {
+export interface TandaKecakapanUmum {
+  title: string
+  subtitle: string
+  description: string
+  source: string
+  meaning: string
+  sections: (
+    | {
+        name: string
+        description: string
+        groupType: string
+        groups: {
+          text: string
+          description: string
+          lists: string[]
+        }[]
+      }
+    | {
+        name: string
+        description: string
+        groupType: string
+        groups: string[]
+      }
+  )[]
+}
+
+const data: TandaKecakapanUmum = {
   title: 'Materi Kecakapan Umum',
   subtitle: 'Tanda Kecakapan Khusus (TKK)',
   description: 'Penjelasan lengkap mengenai Tanda Kecakapan Khusus (TKK)',
@@ -192,3 +218,5 @@ export default {
     }
   ]
 }
+
+export default data

@@ -1,4 +1,46 @@
-export default {
+export interface Kompas {
+  source: string[]
+  title: string
+  id: string
+  dataIntro: {
+    heading: string
+    paragraph: string[]
+  }[]
+  dataFungsi: {
+    heading: string
+    paragraph: string
+    list: string[]
+  }
+  dataCarKer: {
+    heading: string
+    image: string
+    paragraph: string[]
+    table: {
+      th: string[]
+      td: string[][]
+    }
+  }
+  dataBagian: {
+    heading: string
+    image: string
+    list: string[]
+  }
+  dataCara: {
+    heading: string
+    paragraph: string[]
+    list: string[]
+  }
+  dataJenis: {
+    heading: string
+    list: {
+      title: string
+      image: string
+      desc: string
+    }[]
+  }
+}
+
+const data: Kompas = {
   source: ['https://id.wikipedia.org/wiki/Kompas', 'https://rimbakita.com/kompas/'],
   title: 'Materi Kecakapan Umum',
   id: 'kompas',
@@ -156,3 +198,5 @@ export default {
     ]
   }
 }
+
+export default data

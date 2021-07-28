@@ -1,4 +1,16 @@
-export default {
+export interface DwiSatya {
+  id: string
+  title: string
+  preface: string
+  data: {
+    origin: {
+      preface: string
+      data: string[]
+    }
+  }
+}
+
+const data: DwiSatya = {
   id: 'dwi-satya',
   title: 'Dwi Satya',
   preface:
@@ -13,3 +25,5 @@ export default {
     }
   }
 }
+
+export default data

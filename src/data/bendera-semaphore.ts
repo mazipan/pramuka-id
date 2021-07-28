@@ -1,4 +1,30 @@
-export default {
+export interface Semaphore {
+  source: string
+  description: string
+  semaphoreImg: string
+  sections: {
+    title: string
+    key: string
+  }[]
+  alphabet: {
+    img: string
+    text: string
+  }[]
+  number: {
+    img: string
+    text: string
+  }[]
+  other: {
+    img: string
+    text: string
+  }[]
+  reference: {
+    text: string
+    url: string
+  }[]
+}
+
+const data: Semaphore = {
   source: 'https://en.wikipedia.org/wiki/Flag_semaphore',
   description: `Semaphore adalah cara mengirimkan berita dengan mempergunakan sepasang bendera. Bendera yang digunakan ukuran 45 x 45 cm dua buah, Warna (kanan dan kiri) merah-kuning (bersilang). Bendera diikatkan pada tongkat yang panjangnya 50-55 cm.`,
   semaphoreImg: '/assets/bendera-semaphore/ukuran.png',
@@ -185,3 +211,5 @@ export default {
     }
   ]
 }
+
+export default data
