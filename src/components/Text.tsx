@@ -1,19 +1,19 @@
-import React, { Component } from 'react'
+import { createElement } from 'react'
+interface TextProps {
+  tag: string
+  text: string
+  className: string
+}
 
-class Text extends Component {
-  render() {
-    // @ts-ignore
-    const { tag, style, text, className, children, ...other } = this.props
-    return React.createElement(
-      `${tag}`,
-      {
-        className: `${className || ''}`,
-        style,
-        ...other
-      },
-      text || children
-    )
-  }
+function Text({ tag, text, className, ...other }: TextProps) {
+  return createElement(
+    `${tag}`,
+    {
+      className: `${className || ''}`,
+      ...other
+    },
+    text
+  )
 }
 
 export default Text

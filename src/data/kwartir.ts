@@ -1,39 +1,28 @@
+export interface KwartirItem {
+  img: string
+  text: string
+}
+
+export interface KwartirSection {
+  title: string
+  key: string
+}
+export interface KwartirReference {
+  text: string
+  url: string
+}
 export interface Kwartir {
   source: string
   description: string
   semaphoreImg: string
-  sections: {
-    title: string
-    key: string
-  }[]
-  sumatera: {
-    img: string
-    text: string
-  }[]
-  jawa: {
-    img: string
-    text: string
-  }[]
-  kalimantan: {
-    img: string
-    text: string
-  }[]
-  bali_nusa: {
-    img: string
-    text: string
-  }[]
-  sulawesi: {
-    img: string
-    text: string
-  }[]
-  maluku_papua: {
-    img: string
-    text: string
-  }[]
-  reference: {
-    text: string
-    url: string
-  }[]
+  sections: KwartirSection[]
+  sumatera: KwartirItem[]
+  jawa: KwartirItem[]
+  kalimantan: KwartirItem[]
+  bali_nusa: KwartirItem[]
+  sulawesi: KwartirItem[]
+  maluku_papua: KwartirItem[]
+  reference: KwartirReference[]
 }
 
 const data: Kwartir = {

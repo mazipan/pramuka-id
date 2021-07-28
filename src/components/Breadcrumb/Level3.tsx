@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 
-import { HomeIcon, ChevronRightIcon } from '@heroicons/react/solid'
+import { ChevronRightIcon, HomeIcon } from '@heroicons/react/solid'
 
 import { BASE_PATH } from '../../constants'
 

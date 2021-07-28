@@ -4,27 +4,35 @@ import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
-import SeragamPramukaData from '../../data/seragam-pramuka'
+import SeragamPramukaDataJson from '../../data/seragam-pramuka'
 import { BASE_PATH } from '../../constants'
 import Text from '../../components/Text'
 import Expansion from '../../components/Expansion'
+import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
-const { title, subtitle, desc, data } = SeragamPramukaData
+const { title, subtitle, description, data } = SeragamPramukaDataJson
 const title_ = `${subtitle}`
 const url = BASE_PATH + '/materi-pramuka/seragam-pramuka/'
 
 function SeragamPramukaPage() {
+  // @ts-ignore
   const renderSection = (section) => {
     return (
       <>
+        {/*
+      // @ts-ignore */}
         {section.map(({ type, content }, idx) => {
           if (type === 'list') {
             return (
               <ul className="pb-4 ml-8 list-disc" key={idx}>
+                {/*
+              // @ts-ignore */}
                 {content.map(({ name, lists }, j) => (
                   <Fragment key={j}>
                     <li className="py-2">{name}</li>
                     <ol className="ml-8 list-disc">
+                      {/*
+              // @ts-ignore */}
                       {lists && lists.map((list, k) => <li key={k}>{list}</li>)}
                     </ol>
                   </Fragment>
@@ -52,22 +60,28 @@ function SeragamPramukaPage() {
 
   return (
     <Layout>
-      <MetaHead title={title_} desc={desc} url={url} />
-      <BreadcrumbLevel3 text={subtitle} href={url} />
-      <ChapterTitle subTitle={subtitle} title={title} />
+      <>
+        <MetaHead title={title_} desc={description} url={url} />
+        <BreadcrumbLevel3 text={subtitle} href={url} />
+        <ChapterTitle subTitle={subtitle} title={title} />
 
-      <div className="text-left">
-        {data.map((item, index) => (
-          <Expansion
-            key={index}
-            index={index}
-            title={item.title}
-            value={renderSection(item.section)}
-          />
-        ))}
-      </div>
+        <div className="text-left">
+          {data.map((item, index) => (
+            <Expansion
+              key={index}
+              index={index}
+              title={item.title}
+              value={renderSection(item.section)}
+            />
+          ))}
+        </div>
+      </>
     </Layout>
   )
+}
+
+export function reportWebVitals(param: ReportCoreWebVitalsParams) {
+  reportCoreWebVitals(param)
 }
 
 export default SeragamPramukaPage

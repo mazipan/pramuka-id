@@ -1,13 +1,15 @@
-export interface PedomanSKU {
-  type: string
-  typeDetail: string
-  data: {
-    title: string
-    meaning: string
-  }[]
+export interface PedomanSkuData {
+  title: string
+  meaning: string
 }
 
-const data: PedomanSKU[] = [
+export interface PedomanSku {
+  type: string
+  typeDetail: string
+  data: PedomanSkuData[]
+}
+
+const data: PedomanSku[] = [
   {
     type: 'PRAMUKA PENGGALANG',
     typeDetail: 'PENGGALANG RAMU',

@@ -1,24 +1,21 @@
-export interface DownloadSKU {
-  data: {
-    title: string
-    key: string
-  }[]
+export interface DownloadSkuLevels {
+  siaga: string
+  penggalang: string
+  penegak: string
+  pandega: string
+}
+export interface DownloadSkuData {
+  title: string
+  key: string
+}
+export interface DownloadSku {
+  data: DownloadSkuData[]
   types: string[]
-  sku: {
-    siaga: string
-    penggalang: string
-    penegak: string
-    pandega: string
-  }
-  panduan: {
-    siaga: string
-    penggalang: string
-    penegak: string
-    pandega: string
-  }
+  sku: DownloadSkuLevels
+  panduan: DownloadSkuLevels
 }
 
-const data: DownloadSKU = {
+const data: DownloadSku = {
   data: [
     {
       title: 'Buku SKU',

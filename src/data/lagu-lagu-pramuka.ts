@@ -1,21 +1,25 @@
+export interface Song {
+  title: string
+  key: string
+  lyric: string
+  audio: string
+  youtube: string
+}
+
+export interface Lyrics {
+  hymne_pramuka: string[][]
+  alam_bebas: string[][]
+  di_sini_kita_bertemu: string[][]
+  pisah_hanya_dilahirnya: string[][]
+}
+
 export interface LaguPramuka {
   title: string
   subtitle: string
   description: string
   source: string
-  songs: {
-    title: string
-    key: string
-    lyric: string
-    audio: string
-    youtube: string
-  }[]
-  lyrics: {
-    hymne_pramuka: string[][]
-    alam_bebas: string[][]
-    di_sini_kita_bertemu: string[][]
-    pisah_hanya_dilahirnya: string[][]
-  }
+  songs: Song[]
+  lyrics: Lyrics
 }
 
 const data: LaguPramuka = {

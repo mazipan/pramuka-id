@@ -1,19 +1,23 @@
+export interface DasaDharmaOrigin {
+  preface: string
+  data: string[]
+}
+export interface DasaDharmaMeaningData {
+  details: string[]
+}
+
+export interface DasaDharmaMeaning {
+  refer: boolean
+  preface: string
+  data: DasaDharmaMeaningData[]
+}
 export interface DasaDharma {
   id: string
   title: string
   preface: string
   data: {
-    origin: {
-      preface: string
-      data: string[]
-    }
-    meanings: {
-      refer: boolean
-      preface: string
-      data: {
-        details: string[]
-      }[]
-    }
+    origin: DasaDharmaOrigin
+    meanings: DasaDharmaMeaning
   }
 }
 

@@ -1,43 +1,51 @@
+export interface MonthItem {
+  title: string
+  key: string
+}
+export interface HariPentingLain {
+  months: MonthItem[]
+  januari: string[]
+  februari: string[]
+  maret: string[]
+  april: string[]
+  mei: string[]
+  juni: string[]
+  juli: string[]
+  agustus: string[]
+  september: string[]
+  oktober: string[]
+  november: string[]
+  desember: string[]
+}
+
+export interface LiburNasional {
+  description: string
+  data: string[]
+}
+export interface TypesItem {
+  title: string
+  key: 'hari-libur-nasional' | 'hari-penting-lainnya'
+}
 export interface PeringatanNasional {
   source: string
   meaning: string
-  types: {
-    title: string
-    key: string
-  }[]
-  'hari-libur-nasional': {
-    description: string
-    data: string[]
-  }
-  'hari-penting-lainnya': {
-    months: {
-      title: string
-      key: string
-    }[]
-    januari: string[]
-    februari: string[]
-    maret: string[]
-    april: string[]
-    mei: string[]
-    juni: string[]
-    juli: string[]
-    agustus: string[]
-    september: string[]
-    oktober: string[]
-    november: string[]
-    desember: string[]
-  }
+  types: TypesItem[]
+  'hari-libur-nasional': LiburNasional
+  'hari-penting-lainnya': HariPentingLain
 }
+
+export const HARI_LIBUR_NASIONAL = 'hari-libur-nasional'
+export const HARI_PENTING_LAINNYA = 'hari-penting-lainnya'
 
 const data: PeringatanNasional = {
   source: 'https://id.wikipedia.org/wiki/Daftar_hari_penting_di_Indonesia',
   meaning:
     'Hari Peringatan Nasional merupakan hari penting nasional di Indonesia yang selalu diperingati setiap tahunnya.',
   types: [
-    { title: 'Hari libur nasional', key: 'hari-libur-nasional' },
-    { title: 'Hari penting lainnya', key: 'hari-penting-lainnya' }
+    { title: 'Hari libur nasional', key: HARI_LIBUR_NASIONAL },
+    { title: 'Hari penting lainnya', key: HARI_PENTING_LAINNYA }
   ],
-  'hari-libur-nasional': {
+  [HARI_LIBUR_NASIONAL]: {
     description:
       'Berikut hari libur nasional di Indonesia. Diurutkan berdasarkan tanggal libur. Disertakan tanggal libur menurut kalendernya, Untuk hari libur yang tidak menyertakan tanggalnya berarti tanggal peringatannya berubah-ubah setiap tahunnya.',
     data: [
@@ -57,7 +65,7 @@ const data: PeringatanNasional = {
       '25 Desember: Hari Natal'
     ]
   },
-  'hari-penting-lainnya': {
+  [HARI_PENTING_LAINNYA]: {
     months: [
       { title: 'Januari', key: 'januari' },
       { title: 'Februari', key: 'februari' },

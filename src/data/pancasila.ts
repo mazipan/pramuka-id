@@ -1,11 +1,12 @@
+export interface PancasilaMeaning {
+  preface: string
+  data: string[]
+}
 export interface Pancasila {
   imageGaruda: string
   imageItem: string
   data: string[]
-  meaning: {
-    preface: string
-    data: string[]
-  }
+  meaning: PancasilaMeaning
 }
 
 const data: Pancasila = {

@@ -1,17 +1,20 @@
+export interface RadioSection {
+  title: string
+  key: string
+}
+export interface RadioAlphabet {
+  code: string
+  text: string
+}
+export interface RadioNumeric {
+  code: string
+  text: number
+}
 export interface Radio {
   source: string
-  sections: {
-    title: string
-    key: string
-  }[]
-  alphabet: {
-    code: string
-    text: string
-  }[]
-  number: {
-    code: string
-    text: number
-  }[]
+  sections: RadioSection[]
+  alphabet: RadioAlphabet[]
+  number: RadioNumeric[]
 }
 
 const data: Radio = {

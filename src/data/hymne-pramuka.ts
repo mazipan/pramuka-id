@@ -1,10 +1,11 @@
+export interface HymnePramukaData {
+  lyrics: string[]
+  audio: string
+}
 export interface HymnePramuka {
   id: string
   title: string
-  data: {
-    lyrics: string[]
-    audio: string
-  }
+  data: HymnePramukaData
 }
 
 const data: HymnePramuka = {

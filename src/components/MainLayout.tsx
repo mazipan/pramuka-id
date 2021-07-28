@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { useState, ReactChild } from 'react'
+import { ReactChild, useState } from 'react'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 
 import { ChevronUpIcon } from '@heroicons/react/solid'

@@ -1,13 +1,15 @@
+export interface DwiDharmaOrigin {
+  preface: string
+  data: string[]
+}
+export interface DwiDharmaData {
+  origin: DwiDharmaOrigin
+}
 export interface DwiDharma {
   id: string
   title: string
   preface: string
-  data: {
-    origin: {
-      preface: string
-      data: string[]
-    }
-  }
+  data: DwiDharmaData
 }
 
 const data: DwiDharma = {

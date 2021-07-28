@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 
 interface ExpansionProps {
-  index: number;
-  title: string;
-  value: string;
+  index: number
+  title: string
+  value: string | ReactNode
 }
 
 const Expansion = ({ index, title, value }: ExpansionProps) => {

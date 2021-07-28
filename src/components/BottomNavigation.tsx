@@ -3,11 +3,11 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import {
-  HomeIcon,
   BriefcaseIcon,
+  DownloadIcon,
   GlobeAltIcon,
   HandIcon,
-  DownloadIcon
+  HomeIcon
 } from '@heroicons/react/solid'
 
 const items = [

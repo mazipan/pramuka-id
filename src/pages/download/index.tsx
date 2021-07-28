@@ -3,7 +3,7 @@ import MetaHead from '../../components/MetaHead'
 import ChapterTitle from '../../components/ChapterTitle'
 import { BASE_PATH } from '../../constants'
 
-import { reportCoreWebVitals, ReportCoreWebVitalsParams } from '../../utils/index'
+import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 import DataDownload from '../../data/download-sku'
 

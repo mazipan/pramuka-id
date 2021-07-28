@@ -1,27 +1,21 @@
+export interface TandaKecakapanUmumGroup {
+  text: string
+  description: string
+  lists: string[]
+}
+export interface TandaKecakapanUmumSection {
+  name: string
+  description: string
+  groupType: string
+  groups: string[] | TandaKecakapanUmumGroup[]
+}
 export interface TandaKecakapanUmum {
   title: string
   subtitle: string
   description: string
   source: string
   meaning: string
-  sections: (
-    | {
-        name: string
-        description: string
-        groupType: string
-        groups: {
-          text: string
-          description: string
-          lists: string[]
-        }[]
-      }
-    | {
-        name: string
-        description: string
-        groupType: string
-        groups: string[]
-      }
-  )[]
+  sections: TandaKecakapanUmumSection[]
 }
 
 const data: TandaKecakapanUmum = {

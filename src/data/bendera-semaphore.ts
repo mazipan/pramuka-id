@@ -1,27 +1,26 @@
+export interface SemaphoreSection {
+  title: string
+  key: string
+}
+export interface SemaphoreImgSection {
+  img: string
+  text: string
+}
+
+export interface SemaphoreUrlSection {
+  url: string
+  text: string
+}
+
 export interface Semaphore {
   source: string
   description: string
   semaphoreImg: string
-  sections: {
-    title: string
-    key: string
-  }[]
-  alphabet: {
-    img: string
-    text: string
-  }[]
-  number: {
-    img: string
-    text: string
-  }[]
-  other: {
-    img: string
-    text: string
-  }[]
-  reference: {
-    text: string
-    url: string
-  }[]
+  sections: SemaphoreSection[]
+  alphabet: SemaphoreImgSection[]
+  number: SemaphoreImgSection[]
+  other: SemaphoreImgSection[]
+  reference: SemaphoreUrlSection[]
 }
 
 const data: Semaphore = {

@@ -1,43 +1,48 @@
+export interface KompasData {
+  heading: string
+  paragraph: string[]
+}
+export interface KompasDataList extends KompasData {
+  list: string[]
+}
+
+export interface KompasTable {
+  th: string[]
+  td: string[][]
+}
+
+export interface KompasCaraKerja {
+  heading: string
+  image: string
+  paragraph: string[]
+  table: KompasTable
+}
+
+export interface KompasBagian {
+  heading: string
+  image: string
+  list: string[]
+}
+
+export interface KompasJenisList {
+  title: string
+  image: string
+  desc: string
+}
+export interface KompasJenis {
+  heading: string
+  list: KompasJenisList[]
+}
 export interface Kompas {
   source: string[]
   title: string
   id: string
-  dataIntro: {
-    heading: string
-    paragraph: string[]
-  }[]
-  dataFungsi: {
-    heading: string
-    paragraph: string
-    list: string[]
-  }
-  dataCarKer: {
-    heading: string
-    image: string
-    paragraph: string[]
-    table: {
-      th: string[]
-      td: string[][]
-    }
-  }
-  dataBagian: {
-    heading: string
-    image: string
-    list: string[]
-  }
-  dataCara: {
-    heading: string
-    paragraph: string[]
-    list: string[]
-  }
-  dataJenis: {
-    heading: string
-    list: {
-      title: string
-      image: string
-      desc: string
-    }[]
-  }
+  dataIntro: KompasData[]
+  dataFungsi: KompasDataList
+  dataCarKer: KompasCaraKerja
+  dataBagian: KompasBagian
+  dataCara: KompasDataList
+  dataJenis: KompasJenis
 }
 
 const data: Kompas = {
@@ -63,8 +68,9 @@ const data: Kompas = {
   ],
   dataFungsi: {
     heading: 'Fungsi dan Manfaat',
-    paragraph:
-      'Fungsi dan manfaat utama dari kompas adalah untuk menentukan arah mata angin, terutama arah utara dan selatan yang menjadi tempat medan magnetis bumi. Selain itu, kompas juga berguna untuk:',
+    paragraph: [
+      'Fungsi dan manfaat utama dari kompas adalah untuk menentukan arah mata angin, terutama arah utara dan selatan yang menjadi tempat medan magnetis bumi. Selain itu, kompas juga berguna untuk:'
+    ],
     list: [
       'Mengukur besar sudut kompas',
       'Mengukur besar sudut peta',

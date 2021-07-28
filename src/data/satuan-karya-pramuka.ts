@@ -1,36 +1,25 @@
+export interface SatuanKaryaPramukaGroup {
+  text: string
+  logo: string
+  description: string
+}
+export interface SatuanKaryaPramukaList {
+  text: string
+  lists: string[]
+}
+export interface SatuanKaryaPramukaSection {
+  name: string
+  description: string
+  groupType: string
+  groups: SatuanKaryaPramukaList[] | SatuanKaryaPramukaGroup[]
+}
 export interface SatuanKaryaPramuka {
   title: string
   subtitle: string
   description: string
   source: string
   meaning: string
-  sections: (
-    | {
-        name: string
-        description: string
-        groupType?: undefined
-        groups?: undefined
-      }
-    | {
-        name: string
-        description: string
-        groupType: string
-        groups: {
-          text: string
-          lists: string[]
-        }[]
-      }
-    | {
-        name: string
-        description: string
-        groupType: string
-        groups: {
-          text: string
-          logo: string
-          description: string
-        }[]
-      }
-  )[]
+  sections: SatuanKaryaPramukaSection[]
 }
 
 const data: SatuanKaryaPramuka = {
@@ -46,6 +35,8 @@ const data: SatuanKaryaPramuka = {
   sections: [
     {
       name: 'Organisasi',
+      groupType: '',
+      groups: [],
       description: `
         Saka dapat dibentuk di "Kwartir Ranting" atas kehendak dan minat yang sama dari Pramuka Penegak dan
         Pramuka Pandega, disesuaikan dengan situasu dan kondisi wilayahnya. Wewenang pengelolaan, pengendalian, dan

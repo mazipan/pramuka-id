@@ -1,18 +1,22 @@
+export interface TepukPramukaGroup {
+  text: string
+  lists: string[]
+}
+
+export interface TepukPramukaSection {
+  name: string
+  description: string
+  groupType: string
+  groups: TepukPramukaGroup[]
+}
+
 export interface TepukPramuka {
   title: string
   subtitle: string
   description: string
   source: string
   meaning: string
-  sections: {
-    name: string
-    description: string
-    groupType: string
-    groups: {
-      text: string
-      lists: string[]
-    }[]
-  }[]
+  sections: TepukPramukaSection[]
 }
 
 const data: TepukPramuka = {

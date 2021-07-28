@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { reportCoreWebVitals, ReportCoreWebVitalsParams } from '../utils/index'
+import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../utils/index'
 import Layout from '../components/MainLayout'
 
 function NotFoundPage() {

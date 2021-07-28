@@ -1,20 +1,25 @@
+export interface TriSatyaOrigin {
+  preface: string
+  data: string[]
+}
+export interface TriSatyaMeaningShort {
+  short: string
+}
+export interface TriSatyaMeaning {
+  refer: boolean
+  preface: string
+  data: TriSatyaMeaningShort[]
+}
+export interface TriSatyaData {
+  origin: TriSatyaOrigin
+  meanings: TriSatyaMeaning
+}
+
 export interface TriSatya {
   id: string
   title: string
   preface: string
-  data: {
-    origin: {
-      preface: string
-      data: string[]
-    }
-    meanings: {
-      refer: boolean
-      preface: string
-      data: {
-        short: string
-      }[]
-    }
-  }
+  data: TriSatyaData
 }
 
 const data: TriSatya = {

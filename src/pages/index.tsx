@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Layout from '../components/MainLayout'
 import DataDaftarIsi from '../data/daftar-isi'
-import { reportCoreWebVitals, ReportCoreWebVitalsParams } from '../utils/index'
+import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../utils/index'
 
 import { BASE_PATH, BRAND_TITLE } from '../constants'
 

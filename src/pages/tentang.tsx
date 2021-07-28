@@ -2,7 +2,7 @@ import Layout from '../components/MainLayout'
 import MetaHead from '../components/MetaHead'
 
 import Head from 'next/head'
-import { reportCoreWebVitals, ReportCoreWebVitalsParams } from '../utils/index'
+import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../utils/index'
 
 import { BASE_PATH, BRAND_TITLE } from '../constants'
 

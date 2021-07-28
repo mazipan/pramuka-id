@@ -1,10 +1,11 @@
+export interface ProklamasiImage {
+  alt: string
+  src: string
+}
 export interface Proklamasi {
   data: string[]
   audio: string
-  images: {
-    alt: string
-    src: string
-  }[]
+  images: ProklamasiImage[]
 }
 
 const data: Proklamasi = {

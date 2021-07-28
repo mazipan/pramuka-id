@@ -12,6 +12,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:import/recommended',
     'plugin:import/typescript',
     'standard',
     'prettier'
@@ -36,6 +37,11 @@ module.exports = {
     'react/prop-types': 'off',
     'react/no-children-prop': 'off',
     'react/no-unescaped-entities': 'warn',
-    'react/react-in-jsx-scope': 'off'
+    'react/react-in-jsx-scope': 'off',
+    'import/no-unresolved': [2, { commonjs: true, amd: true }],
+    'import/named': 2,
+    'import/namespace': 2,
+    'import/default': 2,
+    'import/export': 2
   }
 }

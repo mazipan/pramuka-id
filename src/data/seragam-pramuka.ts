@@ -1,41 +1,27 @@
+export interface SeragamPramukaContentName {
+  name: string
+}
+
+export interface SeragamPramukaContentList {
+  name: string
+  lists: string[]
+}
+
+export interface SeragamPramukaSection {
+  type: string
+  content: string | SeragamPramukaContentName[] | SeragamPramukaContentList[]
+}
+
+export interface SeragamPramukaData {
+  title: string
+  section: SeragamPramukaSection[]
+}
 export interface SeragamPramuka {
   title: string
   subtitle: string
   description: string
   source: string
-  data: (
-    | {
-        title: string
-        section: (
-          | {
-              type: string
-              content: string
-            }
-          | {
-              type: string
-              content: {
-                name: string
-              }[]
-            }
-        )[]
-      }
-    | {
-        title: string
-        section: (
-          | {
-              type: string
-              content: string
-            }
-          | {
-              type: string
-              content: {
-                name: string
-                lists: string[]
-              }[]
-            }
-        )[]
-      }
-  )[]
+  data: SeragamPramukaData[]
 }
 
 const data: SeragamPramuka = {

@@ -1,30 +1,26 @@
+export interface SalamPramukaVariant {
+  key: string
+  emoji: string
+  title: string
+  meaning: string
+  usage: string[]
+}
+export interface SalamPramukaCondition {
+  title: string
+  details: string[]
+}
+export interface SalamPramukaSteps {
+  title: string
+  conditions: SalamPramukaCondition[]
+}
+export interface SalamPramukaHow {
+  key: string
+  steps: SalamPramukaSteps[]
+}
 export interface SalamPramuka {
   meaning: string
-  variant: {
-    key: string
-    emoji: string
-    title: string
-    meaning: string
-    usage: string[]
-  }[]
-  howto: (
-    | {
-        key: string
-        steps: {
-          title: string
-          conditions: {
-            title: string
-            details: string[]
-          }[]
-        }[]
-      }
-    | {
-        key: string
-        steps: {
-          title: string
-        }[]
-      }
-  )[]
+  variant: SalamPramukaVariant[]
+  howto: SalamPramukaHow[]
 }
 
 const data: SalamPramuka = {
@@ -140,6 +136,7 @@ const data: SalamPramuka = {
       key: 'salam-penghormatan',
       steps: [
         {
+          conditions: [],
           title:
             'Cara melakukan Salam Penghormatan sama dengan keadaan berhenti lebih dahulu + 6 (enam) langkah menghadap penuh kepada yang diberi salam Penghormatan, da n selesai apabila yang di beri hormat telah membalas dan atau telah melewatinya. Apabila dalam keadan membawa tongkat, tongkat dipindahkan ke tangan kiri dan pangkal tongkat tetap ditanah di tempat semula, kemudian melakukan salam dengan tangan kanan seperti salam tanpa tongkat.'
         }
@@ -149,6 +146,7 @@ const data: SalamPramuka = {
       key: 'salam-janji',
       steps: [
         {
+          conditions: [],
           title:
             'Salam janji ini biasanya dilakukan ketika seorang anggota Pramuka dilantik dan mengucapkan Tri Satya sebagai Sumpah atau janji. Apabila seorang Pramuka dilantik Kenaikan Tingkat dalam Pramuka, sebelum Sumpah atau janji itu diucapkan ia memegang ujung Bendera Merah Putih dengan tangan kiri dan menempelkan Bendera pada dada, kemudian tangan kanan memberi Salam dan memulai mengucapkan Tri Satya.'
         }
