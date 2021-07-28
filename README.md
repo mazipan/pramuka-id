@@ -12,7 +12,9 @@ https://buku-saku-pramuka.vercel.app/api
 
 ## Screenshots
 
-![Halaman daftar isi](screenshots/homepage.png)
+|               Home                |                Pancasila                |
+| :-------------------------------: | :-------------------------------------: |
+| ![Home](screenshots/homepage.png) | ![Pancasila](screenshots/pancasila.png) |
 
 ## Credits
 
