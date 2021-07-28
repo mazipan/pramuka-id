@@ -4,12 +4,18 @@ import SubmitGhIssue from '../components/SubmitGhIssue'
 import DataDaftarIsi from '../data/daftar-isi'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../utils/index'
 
-import { BRAND_TITLE } from '../constants'
+import MetaHead from '../components/MetaHead'
+import { BASE_PATH, BRAND_TITLE, BRAND_LONG_DESC } from '../constants'
+
+const title = `Beranda`
+const desc = BRAND_LONG_DESC
+const url = `${BASE_PATH}`
 
 function DaftarIsiPage() {
   return (
     <Layout>
       <>
+        <MetaHead title={title} desc={desc} url={url} />
         <div className="text-center">
           <h1 className="mt-8 text-3xl font-bold md:text-4xl">{BRAND_TITLE}</h1>
         </div>

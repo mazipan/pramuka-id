@@ -4,10 +4,10 @@ import MetaHead from '../components/MetaHead'
 import Head from 'next/head'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../utils/index'
 
-import { BASE_PATH, BRAND_TITLE } from '../constants'
+import { BASE_PATH, BRAND_TITLE, BRAND_LONG_DESC } from '../constants'
 
 const title = `Tentang`
-const desc = `Tentang ${BRAND_TITLE}: Kumpulan informasi digital mengenai berbagai materi pramuka, materi kenegaraan dan materi kecakapan umum`
+const desc = `Tentang ${BRAND_TITLE}: ${BRAND_LONG_DESC}`
 const url = BASE_PATH + '/tentang'
 
 function AboutPage() {

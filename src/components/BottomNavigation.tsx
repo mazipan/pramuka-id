@@ -48,7 +48,7 @@ function BottomNavigation() {
 
   return (
     <nav className="fixed bottom-0 z-10 p-1 w-full bg-white border-t border-gray-30 dark:bg-pramuka">
-      <div className="flex flex-wrap justify-between items-center mx-auto max-w-4xl md:flex-no-wrap">
+      <div className="flex flex-wrap justify-between items-center mx-auto sm:max-w-xl md:flex-no-wrap">
         <ul className="flex justify-evenly items-center w-full">
           {items.map((item) => (
             <li className="relative" key={item.href}>

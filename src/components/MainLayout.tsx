@@ -5,6 +5,7 @@ import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import { ChevronUpIcon } from '@heroicons/react/solid'
 
 import Header from './HeaderSection'
+import FooterSection from './FooterSection'
 import BottomNavigation from './BottomNavigation'
 import { BASE_PATH, BRAND_TITLE } from '../constants'
 import { scrollTo } from '../utils'
@@ -72,7 +73,12 @@ function Layout({ children }: LayoutProps) {
       <div className={`flex flex-col min-h-screen text-primary`}>
         <Header />
 
-        <main className="flex-1 p-4 mx-auto mt-14 mb-16 w-full max-w-4xl">{children}</main>
+        <main className="flex-1 p-4 mx-auto mt-14 mb-16 w-full sm:max-w-xl">
+          <>
+            {children}
+            <FooterSection />
+          </>
+        </main>
 
         <BottomNavigation />
 
