@@ -3,6 +3,8 @@ import Layout from '../../components/MainLayout'
 import DataDaftarIsi from '../../data/daftar-isi'
 import Head from 'next/head'
 
+import { BASE_PATH } from '../constants'
+
 function MateriKecakapanUmumPage() {
   const FilteredData = DataDaftarIsi.find((bab) => bab.href === '/materi-kecakapan-umum/')
 
@@ -15,9 +17,9 @@ function MateriKecakapanUmumPage() {
             __html: JSON.stringify({
               '@context': 'http://schema.org',
               '@type': 'WebSite',
-              id: 'https://buku-saku-pramuka.vercel.app/#website',
+              id: BASE_PATH,
               name: 'Buku Saku Pramuka',
-              url: 'https://buku-saku-pramuka.vercel.app/'
+              url: BASE_PATH
             })
           }}
         />

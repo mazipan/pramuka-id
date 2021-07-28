@@ -2,6 +2,9 @@ import Link from 'next/link'
 import Layout from '../components/MainLayout'
 import DataDaftarIsi from '../data/daftar-isi'
 import { reportCoreWebVitals, ReportCoreWebVitalsParams } from '../utils/index'
+
+import { BASE_PATH } from '../constants'
+
 import Head from 'next/head'
 
 function DaftarIsiPage() {
@@ -15,9 +18,9 @@ function DaftarIsiPage() {
               __html: JSON.stringify({
                 '@context': 'http://schema.org',
                 '@type': 'WebSite',
-                id: 'https://buku-saku-pramuka.vercel.app/#website',
+                id: BASE_PATH,
                 name: 'Buku Saku Pramuka',
-                url: 'https://buku-saku-pramuka.vercel.app/'
+                url: BASE_PATH
               })
             }}
           />
@@ -44,7 +47,7 @@ function DaftarIsiPage() {
                       // @ts-ignore */}
                       {babChild.children && babChild.children.length > 0 && (
                         <ol>
-                        {/*
+                          {/*
                         // @ts-ignore */}
                           {babChild.children.map((li, index) => (
                             <li key={index} className="ml-4 text-link">
@@ -63,7 +66,8 @@ function DaftarIsiPage() {
           ))}
 
           <div className="mt-8">
-            Tidak menemukan yang kamu cari? Kamu bisa membuat permintaan penambahan data baru melalui
+            Tidak menemukan yang kamu cari? Kamu bisa membuat permintaan penambahan data baru
+            melalui
             {` `}
             <a
               href="https://github.com/mazipan/buku-saku-pramuka/issues/new"

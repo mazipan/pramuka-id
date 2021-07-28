@@ -2,6 +2,8 @@ import Layout from '../components/MainLayout'
 import Head from 'next/head'
 import { reportCoreWebVitals, ReportCoreWebVitalsParams } from '../utils/index'
 
+import { BASE_PATH } from '../constants'
+
 function AboutPage() {
   return (
     <Layout>
@@ -20,13 +22,13 @@ function AboutPage() {
                         '@type': 'ListItem',
                         position: 1,
                         name: 'Buku Saku Pramuka',
-                        item: 'https://buku-saku-pramuka.vercel.app'
+                        item: BASE_PATH
                       },
                       {
                         '@type': 'ListItem',
                         position: 2,
                         name: 'Tentang',
-                        item: 'https://buku-saku-pramuka.vercel.app/tentang'
+                        item: `${BASE_PATH}/tentang`
                       }
                     ]
                   },
@@ -34,11 +36,11 @@ function AboutPage() {
                     '@type': 'AboutPage',
                     name: 'Tentang Buku Saku Pramuka',
                     headline: 'Tentang Buku Saku Pramuka Digital',
-                    url: 'https://buku-saku-pramuka.vercel.app/tentang',
-                    mainEntityOfPage: 'https://buku-saku-pramuka.vercel.app/tentang',
+                    url: `${BASE_PATH}/tentang`,
+                    mainEntityOfPage: `${BASE_PATH}/tentang`,
                     image: {
                       '@type': 'ImageObject',
-                      url: 'https://buku-saku-pramuka.vercel.app/assets/5930.jpg'
+                      url: `${BASE_PATH}/assets/5930.jpg`
                     }
                   }
                 ]

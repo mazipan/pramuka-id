@@ -1,9 +1,11 @@
 import Head from 'next/head'
 
+import { BASE_PATH } from '../constants'
+
 interface MetaHeadProps {
-  url: string;
-  title: string;
-  desc: string;
+  url: string
+  title: string
+  desc: string
 }
 
 function MetaHead({ title, desc, url }: MetaHeadProps) {
@@ -31,7 +33,7 @@ function MetaHead({ title, desc, url }: MetaHeadProps) {
                     '@type': 'ListItem',
                     position: 1,
                     name: 'Buku Saku Pramuka',
-                    item: 'https://buku-saku-pramuka.vercel.app'
+                    item: BASE_PATH
                   },
                   {
                     '@type': 'ListItem',
