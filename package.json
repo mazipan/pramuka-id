@@ -14,10 +14,8 @@
   "author": "Irfan Maulana <https://mazipan.space/>",
   "main": "index.js",
   "scripts": {
-    "analyze:tailwind-css-class-order": "rustywind --dry-run .",
-    "analyze": "yarn analyze:tailwind-css-class-order",
-    "fix:tailwind-css-class-order": "rustywind --write .",
-    "fix:css": "yarn fix:tailwind-css-class-order",
+    "analyze:css": "rustywind --dry-run .",
+    "fix:css": "rustywind --write .",
     "dev": "next",
     "build": "next build",
     "postbuild": "next-sitemap",
