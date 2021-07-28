@@ -12,9 +12,9 @@ https://buku-saku-pramuka.vercel.app/api
 
 ## Screenshots
 
-|               Home                |                Pancasila                |
-| :-------------------------------: | :-------------------------------------: |
-| ![Home](screenshots/homepage.png) | ![Pancasila](screenshots/pancasila.png) |
+|               Home                |                Pancasila                |           Sandi Morse           |
+| :-------------------------------: | :-------------------------------------: | :-----------------------------: |
+| ![Home](screenshots/homepage.png) | ![Pancasila](screenshots/pancasila.png) | ![Morse](screenshots/morse.png) |
 
 ## Credits
 
