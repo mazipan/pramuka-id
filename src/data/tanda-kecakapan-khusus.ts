@@ -20,7 +20,7 @@ export interface TandaKecakapanUmum {
 
 const data: TandaKecakapanUmum = {
   title: 'Materi Kecakapan Umum',
-  subtitle: 'Tanda Kecakapan Khusus (TKK)',
+  subtitle: 'Tanda Kecakapan Khusus',
   description: 'Penjelasan lengkap mengenai Tanda Kecakapan Khusus (TKK)',
   source: 'https://www.pramukaindonesia.com/2015/02/tanda-kecakapan-khusus-tkk-pramuka.html',
   meaning:

@@ -1,31 +1,15 @@
 import Link from 'next/link'
 import Layout from '../components/MainLayout'
+import SubmitGhIssue from '../components/SubmitGhIssue'
 import DataDaftarIsi from '../data/daftar-isi'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../utils/index'
 
-import { BASE_PATH, BRAND_TITLE } from '../constants'
-
-import Head from 'next/head'
+import { BRAND_TITLE } from '../constants'
 
 function DaftarIsiPage() {
   return (
     <Layout>
       <>
-        <Head>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                '@context': 'http://schema.org',
-                '@type': 'WebSite',
-                id: BASE_PATH,
-                name: BRAND_TITLE,
-                url: BASE_PATH
-              })
-            }}
-          />
-        </Head>
-
         <div className="text-center">
           <h1 className="mt-8 text-3xl font-bold md:text-4xl">{BRAND_TITLE}</h1>
         </div>
@@ -42,22 +26,6 @@ function DaftarIsiPage() {
                           <a title={babChild.text}>{babChild.text}</a>
                         </Link>
                       </h3>
-
-                      {/*
-                      // @ts-ignore */}
-                      {babChild.children && babChild.children.length > 0 && (
-                        <ol>
-                          {/*
-                        // @ts-ignore */}
-                          {babChild.children.map((li, index) => (
-                            <li key={index} className="ml-4 text-link">
-                              <Link href={li.href}>
-                                <a title={li.text}>{li.text}</a>
-                              </Link>
-                            </li>
-                          ))}
-                        </ol>
-                      )}
                     </li>
                   ))}
                 </ul>
@@ -65,19 +33,7 @@ function DaftarIsiPage() {
             </div>
           ))}
 
-          <div className="mt-8">
-            Tidak menemukan yang kamu cari? Kamu bisa membuat permintaan penambahan data baru
-            melalui
-            {` `}
-            <a
-              href="https://github.com/mazipan/buku-saku-pramuka/issues/new"
-              target="_blank"
-              rel="noopenner noreferrer"
-              className="text-link-secondary"
-            >
-              Github issue
-            </a>
-          </div>
+          <SubmitGhIssue />
         </div>
       </>
     </Layout>

@@ -8,7 +8,7 @@ import {
   GlobeAltIcon,
   HandIcon,
   HomeIcon
-} from '@heroicons/react/solid'
+} from '@heroicons/react/outline'
 
 const items = [
   {
@@ -47,7 +47,7 @@ function BottomNavigation() {
   }
 
   return (
-    <nav className="fixed bottom-0 z-10 p-1 w-full bg-pramuka">
+    <nav className="fixed bottom-0 z-10 p-1 w-full bg-white border-t border-gray-30 dark:bg-pramuka">
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-4xl md:flex-no-wrap">
         <ul className="flex justify-evenly items-center w-full">
           {items.map((item) => (
@@ -56,8 +56,8 @@ function BottomNavigation() {
                 <a
                   title={item.text}
                   className={`inline-flex flex-col items-center justify-center text-center h-12 rounded-md ${
-                    isActive(item.href) ? 'text-gray-100' : 'text-gray-400'
-                  } font-semibold hover:text-gray-100`}
+                    isActive(item.href) ? 'text-yellow-700' : 'text-gray-400'
+                  } font-semibold`}
                 >
                   {createElement(item.icons, {
                     className: 'w-6 h-6',

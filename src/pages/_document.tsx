@@ -1,5 +1,7 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
+import { BASE_PATH } from '../constants'
+
 class MyDocument extends Document {
   render() {
     return (
@@ -21,12 +23,25 @@ class MyDocument extends Document {
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25065548-9" />
 
         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'http://schema.org',
+              '@type': 'WebSite',
+              id: BASE_PATH,
+              name: 'Buku Saku Pramuka',
+              url: BASE_PATH
+            })
+          }}
+        />
+
+        <script
           dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-	    gtag('config', 'UA-25065548-9');
+	          gtag('config', 'UA-25065548-9');
         `
           }}
         />

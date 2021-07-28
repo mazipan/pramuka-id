@@ -1,6 +1,7 @@
 import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
 import ChapterTitle from '../../components/ChapterTitle'
+import CardList from '../../components/Card/List'
 import { BASE_PATH } from '../../constants'
 
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
@@ -25,25 +26,14 @@ function DwiDharmaPage() {
                 <div key={section.key} className="mb-8">
                   <p className="font-bold">{section.title}</p>
                   {DataDownload.types.map((type) => (
-                    <div
-                      className="flex overflow-hidden items-center mt-4 rounded shadow-lg"
+                    <CardList
                       key={`${section.key}${type}`}
-                    >
-                      <div className="py-4 px-6">
-                        <p>
-                          <a
-                            className="text-orange-500 capitalize"
-                            title={type}
-                            // @ts-ignore
-                            href={DataDownload[section.key][type]}
-                            target="_blank"
-                            rel="noopenner noreferrer"
-                          >
-                            👉&nbsp; {type}
-                          </a>
-                        </p>
-                      </div>
-                    </div>
+                      title={type}
+                      subtitle={`${section.title} untuk ${type}`}
+                      // @ts-ignore
+                      href={DataDownload[section.key][type]}
+                      external
+                    />
                   ))}
                 </div>
               ))}

@@ -45,7 +45,6 @@ function Layout({ children }: LayoutProps) {
   return (
     <>
       <Head>
-        <meta name="theme-color" content={'#7B341E'} />
         <title key="title">{title}</title>
 
         <meta name="author" content={authorName} />
