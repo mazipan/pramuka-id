@@ -104,6 +104,7 @@ function SatuanKaryaPramukaPage() {
                               {/*
               // @ts-ignore */}
                               {group.lists &&
+                                // @ts-ignore
                                 splitData(group.lists).map((split, splitIndex) => (
                                   <div key={splitIndex} className="w-full">
                                     {/*
