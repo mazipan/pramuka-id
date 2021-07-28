@@ -86,19 +86,19 @@ function BreadcrumbLevel3({ text, href }: BreadcrumbLevel3Props) {
           </a>
         </Link>
 
-        <ChevronRightIcon className="w-8 h-8" />
+        <ChevronRightIcon className="w-6 h-6" />
 
         <Link href={parent.href}>
           <a title={parent.text}>
-            <span className="">{parent.text}</span>
+            <span className="text-sm">{parent.text}</span>
           </a>
         </Link>
 
-        <ChevronRightIcon className="w-8 h-8" />
+        <ChevronRightIcon className="w-6 h-6" />
 
         <Link href={href}>
           <a title={text}>
-            <span className="">{text}</span>
+            <span className="text-sm">{text}</span>
           </a>
         </Link>
       </nav>
