@@ -2,30 +2,35 @@
   "name": "buku-saku-pramuka",
   "version": "1.1.0",
   "description": "Buku saku pramuka digital",
+  "homepage": "https://github.com/mazipan/buku-saku-pramuka#readme",
+  "bugs": {
+    "url": "https://github.com/mazipan/buku-saku-pramuka/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mazipan/buku-saku-pramuka.git"
+  },
+  "license": "MIT",
+  "author": "Irfan Maulana <https://mazipan.space/>",
   "main": "index.js",
   "scripts": {
-    "cz": "cz",
     "analyze:tailwind-css-class-order": "rustywind --dry-run .",
     "analyze": "yarn analyze:tailwind-css-class-order",
     "fix:tailwind-css-class-order": "rustywind --write .",
     "fix": "yarn fix:tailwind-css-class-order",
     "dev": "next",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "export": "yarn build && next export",
     "start": "next start",
-    "lint": "eslint . --fix",
+    "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\" --quiet --fix",
+    "format": "prettier --ignore-path .gitignore \"**/*.+(js|ts|tsx|css|scss|json|md|html)\" --write",
+    "prepare": "husky install",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mazipan/buku-saku-pramuka.git"
-  },
-  "author": "Irfan Maulana <https://mazipan.space/>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mazipan/buku-saku-pramuka/issues"
-  },
-  "homepage": "https://github.com/mazipan/buku-saku-pramuka#readme",
   "dependencies": {
     "@heroicons/react": "^1.0.3",
     "@n8tb1t/use-scroll-position": "^2.0.3",
@@ -39,34 +44,36 @@
     "react-ssr-prepass": "npm:preact-ssr-prepass@1.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@prefresh/next": "^1.4.6",
+    "@types/cors": "^2.8.12",
+    "@types/node": "^16.4.4",
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
     "autoprefixer": "10.3.1",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "^7.31.0",
+    "eslint": "7.31.0",
     "eslint-config-next": "^11.0.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.24.0",
-    "globby": "^11.0.4",
-    "husky": "^4.3.8",
-    "lint-staged": "^10.5.4",
+    "eslint-plugin-promise": "5.1.0",
+    "eslint-plugin-react": "7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-standard": "5.0.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.1",
+    "next-sitemap": "^1.6.140",
+    "pinst": "^2.1.6",
     "prettier": "^2.3.2",
     "rustywind": "0.12.2",
-    "tailwindcss": "2.2.7"
-  },
-  "lint-staged": {
-    "*.{js,ts,vue}": "yarn lint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "tailwindcss": "2.2.7",
+    "typescript": "^4.3.5"
   }
 }

@@ -1,34 +1,41 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        node: true,
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        'prettier'
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module",
-        "parser": '@typescript-eslint/parser'
-    },
-    "plugins": [
-        "react"
-    ],
-    rules: {
-        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        "react/react-in-jsx-scope": "off",
-        "react/prop-types": "off",
-    },
-    settings: {
-        react: {
-            version: 'detect'
-        }
+  settings: {
+    react: {
+      version: 'detect'
     }
-};
+  },
+  env: {
+    browser: true,
+    es2021: true
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:import/typescript',
+    'standard',
+    'prettier'
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 12,
+    sourceType: 'module'
+  },
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
+  rules: {
+    camelcase: 'off',
+    'import/extensions': 'off',
+    'no-alert': 'warn',
+    'no-console': 'warn',
+    'no-nested-ternary': 'off',
+    'no-unused-vars': 'error',
+    'multiline-ternary': 'off',
+    'react/prop-types': 'off',
+    'react/no-children-prop': 'off',
+    'react/no-unescaped-entities': 'warn',
+    'react/react-in-jsx-scope': 'off'
+  }
+}
