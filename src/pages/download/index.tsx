@@ -19,17 +19,17 @@ function DwiDharmaPage() {
         <ChapterTitle subTitle="Unduh Buku SKU dan Panduan" title="Unduh Materi" />
 
         <div className="text-left">
-          <div className="text-left mt-8">
+          <div className="mt-8 text-left">
             <div className="mb-8">
               {DataDownload.data.map((section) => (
                 <div key={section.key} className="mb-8">
                   <p className="font-bold">{section.title}</p>
                   {DataDownload.types.map((type) => (
                     <div
-                      className="mt-4 flex items-center rounded overflow-hidden shadow-lg"
+                      className="flex overflow-hidden items-center mt-4 rounded shadow-lg"
                       key={`${section.key}${type}`}
                     >
-                      <div className="px-6 py-4">
+                      <div className="py-4 px-6">
                         <p>
                           <a
                             className="text-orange-500 capitalize"

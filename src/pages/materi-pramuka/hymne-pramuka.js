@@ -17,11 +17,11 @@ function HymnePramukaPage() {
       <ChapterTitle subTitle="Hymne Pramuka" title="Materi Pramuka" />
 
       <div className="text-left">
-        <div className="mt-4 rounded overflow-hidden shadow-lg bg-card" id={HymneData.id}>
+        <div className="overflow-hidden mt-4 rounded shadow-lg bg-card" id={HymneData.id}>
           <div className="relative">
             <img className="w-full" src="/assets/6649.jpg" alt="Anak-anak bernyanyi" />
           </div>
-          <div className="px-6 py-4">
+          <div className="py-4 px-6">
             <ol>
               {HymneData.data.lyrics.map((li) => (
                 <li className="mb-2" key={li}>

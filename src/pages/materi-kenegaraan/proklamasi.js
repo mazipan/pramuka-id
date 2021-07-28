@@ -16,7 +16,7 @@ function ProklamasiPage() {
       <BreadcrumbLevel3 text="Proklamasi" href={url} />
       <ChapterTitle subTitle="Proklamasi" title="Materi Kenegaraan" />
 
-      <div className="flex flex-col items-center justify-center text-center">
+      <div className="flex flex-col justify-center items-center text-center">
         <img
           src="/assets/proklamasi/proklamasi-bung-karno.jpg"
           className="w-auto"
@@ -36,7 +36,7 @@ function ProklamasiPage() {
         <source src={ProklamasiData.audio} type="audio/mpeg" />
       </audio>
 
-      <div className="mt-8 flex flex-col items-center justify-center text-center">
+      <div className="flex flex-col justify-center items-center mt-8 text-center">
         <img
           src="/assets/proklamasi/naskah-proklamasi.jpeg"
           className="w-auto"

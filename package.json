@@ -17,7 +17,7 @@
     "analyze:tailwind-css-class-order": "rustywind --dry-run .",
     "analyze": "yarn analyze:tailwind-css-class-order",
     "fix:tailwind-css-class-order": "rustywind --write .",
-    "fix": "yarn fix:tailwind-css-class-order",
+    "fix:css": "yarn fix:tailwind-css-class-order",
     "dev": "next",
     "build": "next build",
     "postbuild": "next-sitemap",
@@ -36,12 +36,14 @@
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "cors": "^2.8.5",
     "next": "11.0.1",
+    "nprogress": "^0.2.0",
     "preact": "^10.5.14",
     "preact-render-to-string": "^5.1.19",
     "react": "npm:@preact/compat@0.0.4",
     "react-dom": "npm:@preact/compat@0.0.4",
     "react-icons": "^4.2.0",
-    "react-ssr-prepass": "npm:preact-ssr-prepass@1.2.0"
+    "react-ssr-prepass": "npm:preact-ssr-prepass@1.2.0",
+    "typeface-inter": "^3.18.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
@@ -49,6 +51,7 @@
     "@prefresh/next": "^1.4.6",
     "@types/cors": "^2.8.12",
     "@types/node": "^16.4.4",
+    "@types/nprogress": "^0.2.0",
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^4.28.5",

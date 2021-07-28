@@ -21,9 +21,9 @@ function UUD45Page() {
           {Uud45Data.map((section) => (
             <div
               key={section}
-              className="mt-4 flex items-center rounded overflow-hidden shadow-lg bg-card"
+              className="flex overflow-hidden items-center mt-4 rounded shadow-lg bg-card"
             >
-              <div className="px-6 py-4">
+              <div className="py-4 px-6">
                 <p>{section}</p>
               </div>
             </div>

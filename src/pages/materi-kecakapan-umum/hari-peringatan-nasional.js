@@ -14,7 +14,7 @@ function HariPeringatanNasionalPage() {
   const renderList = (data, key) => (
     <ol className="list-disc">
       {data.map((dt, index) => (
-        <li className="ml-4 text-secondary text-base" key={`${key}-${index}`}>
+        <li className="ml-4 text-base text-secondary" key={`${key}-${index}`}>
           {dt}
         </li>
       ))}
@@ -38,7 +38,7 @@ function HariPeringatanNasionalPage() {
               value={
                 <>
                   {hariNasionalData[type.key]?.description && (
-                    <p className="mb-4 text-secondary text-base">
+                    <p className="mb-4 text-base text-secondary">
                       {hariNasionalData[type.key].description}
                     </p>
                   )}

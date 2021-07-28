@@ -17,11 +17,11 @@ function DwiSatyaPage() {
       <ChapterTitle subTitle="Dwi Satya" title="Materi Pramuka" />
 
       <div className="text-left">
-        <div className="mt-4 rounded overflow-hidden shadow-lg bg-card" id={DwiSatyaData.id}>
+        <div className="overflow-hidden mt-4 rounded shadow-lg bg-card" id={DwiSatyaData.id}>
           <div className="relative">
             <img className="w-full" src="/assets/5766.jpg" alt="Anak-anak berkemah" />
           </div>
-          <div className="px-6 py-4">
+          <div className="py-4 px-6">
             <p>{DwiSatyaData.preface}</p>
             <div className="mt-4">
               <p>Isi {DwiSatyaData.title} adalah sebagai berikut :</p>

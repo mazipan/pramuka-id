@@ -17,7 +17,7 @@ function LambangPramukaPage() {
       <BreadcrumbLevel3 text="Lambang Pramuka" href="/materi-pramuka/lambang-pramuka/" />
       <ChapterTitle subTitle="Lambang Pramuka" title="Materi Pramuka" />
 
-      <div className="flex flex-col items-center justify-center text-center">
+      <div className="flex flex-col justify-center items-center text-center">
         <IconPramuka color="#000" />
       </div>
 
@@ -28,12 +28,12 @@ function LambangPramukaPage() {
           {LambangPramuka.meanings.map((section, index) => (
             <div
               key={section}
-              className="mt-4 flex items-center rounded overflow-hidden shadow-lg bg-card"
+              className="flex overflow-hidden items-center mt-4 rounded shadow-lg bg-card"
             >
-              <div className="min-w-80 min-h-80 flex justify-center items-center text-center	 font-bold text-3xl md:text-4xl">
+              <div className="flex justify-center items-center text-3xl font-bold text-center md:text-4xl min-w-80 min-h-80">
                 {index + 1}
               </div>
-              <div className="px-6 py-4">
+              <div className="py-4 px-6">
                 <p>{section}</p>
               </div>
             </div>

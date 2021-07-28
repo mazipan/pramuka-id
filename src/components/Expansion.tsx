@@ -18,15 +18,15 @@ const Expansion = ({ index, title, value }: ExpansionProps) => {
   }
 
   return (
-    <div className="mt-4 rounded overflow-hidden shadow-lg bg-card">
-      <div className="w-full px-6 py-4 flex items-center justify-between flex-wrap">
-        <div className="font-bold text-xl min-w-250">{title}</div>
+    <div className="overflow-hidden mt-4 rounded shadow-lg bg-card">
+      <div className="flex flex-wrap justify-between items-center py-4 px-6 w-full">
+        <div className="text-xl font-bold min-w-250">{title}</div>
 
         <button
           onClick={() => {
             handleCollapse(index)
           }}
-          className="bg-primary hover:bg-hover text-button py-2 px-4 rounded inline-flex items-center"
+          className="inline-flex items-center py-2 px-4 rounded bg-primary text-button hover:bg-hover"
         >
           {collapsed === index ? 'Tutup detail' : 'Lihat detail'}
           <svg
@@ -52,7 +52,7 @@ const Expansion = ({ index, title, value }: ExpansionProps) => {
           collapsed === index ? 'block' : 'hidden'
         }`}
       >
-        <div className="w-full px-6 py-4">
+        <div className="py-4 px-6 w-full">
           <ul className="text-secondary">{value}</ul>
         </div>
       </div>

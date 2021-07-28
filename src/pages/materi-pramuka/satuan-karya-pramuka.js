@@ -38,7 +38,7 @@ function SatuanKaryaPramukaPage() {
         <div className="mt-4">
           {TkkData.sections.map((section, sectionIndex) => (
             <div key={sectionIndex} className="mt-4">
-              <p className="font-bold w-full mb-1">{section.name}</p>
+              <p className="mb-1 w-full font-bold">{section.name}</p>
               <span>{section.description}</span>
 
               {section.groupType === 'group-object' && (
@@ -46,13 +46,13 @@ function SatuanKaryaPramukaPage() {
                   {section.groups.map((group, index) => (
                     <div
                       key={sectionIndex + index}
-                      className="mt-4 rounded overflow-hidden shadow-lg bg-card"
+                      className="overflow-hidden mt-4 rounded shadow-lg bg-card"
                     >
-                      <div className="w-full px-6 py-4 flex items-center justify-between flex-wrap">
-                        <div className="font-semibold flex items-center">
+                      <div className="flex flex-wrap justify-between items-center py-4 px-6 w-full">
+                        <div className="flex items-center font-semibold">
                           {group.logo && (
                             <img
-                              className="h-32 w-auto pr-5"
+                              className="pr-5 w-auto h-32"
                               src={`/assets/satuan-karya/${group.logo}`}
                             />
                           )}
@@ -63,7 +63,7 @@ function SatuanKaryaPramukaPage() {
                           onClick={() => {
                             handleCollapse(sectionIndex + index)
                           }}
-                          className="bg-primary hover:bg-secondary text-button py-2 px-4 rounded inline-flex items-center"
+                          className="inline-flex items-center py-2 px-4 rounded bg-primary text-button hover:bg-secondary"
                         >
                           {collapsed === sectionIndex + index ? 'Tutup detail' : 'Lihat detail'}
                           <svg
@@ -90,10 +90,10 @@ function SatuanKaryaPramukaPage() {
                           collapsed === sectionIndex + index ? 'block' : 'hidden'
                         }`}
                       >
-                        <div className="w-full px-6 py-4">
+                        <div className="py-4 px-6 w-full">
                           {group.description && <p className="mb-2">{group.description}</p>}
 
-                          <ol className="list-decimal flex flex-col">
+                          <ol className="flex flex-col list-decimal">
                             {group.lists &&
                               splitData(group.lists).map((split, splitIndex) => (
                                 <div key={splitIndex} className="w-full">

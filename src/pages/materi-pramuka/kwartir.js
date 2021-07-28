@@ -23,11 +23,11 @@ const KwartirPage = () => {
         <div>
           {dataSemaphore.sections.map((section) => (
             <div key={section.key} className="mb-4">
-              <h3 className="font-bold text-xl">{section.title}</h3>
-              <div className="mb-4 grid grid-cols-2 lg:grid-cols-5 gap-5">
+              <h3 className="text-xl font-bold">{section.title}</h3>
+              <div className="grid grid-cols-2 gap-5 mb-4 lg:grid-cols-5">
                 {dataSemaphore[section.key].map((item) => (
-                  <div className="flex flex-col items-center rounded shadow-lg p-2" key={item.text}>
-                    <img className="h-40 w-auto" src={item.img} alt={item.text} />
+                  <div className="flex flex-col items-center p-2 rounded shadow-lg" key={item.text}>
+                    <img className="w-auto h-40" src={item.img} alt={item.text} />
                     <div className="mt-2">{item.text}</div>{' '}
                   </div>
                 ))}
@@ -35,8 +35,8 @@ const KwartirPage = () => {
             </div>
           ))}
           <div className="mt-4">
-            <h3 className="font-bold text-xl">Referensi tambahan</h3>
-            <ul className="list-disc text-left pl-6">
+            <h3 className="text-xl font-bold">Referensi tambahan</h3>
+            <ul className="pl-6 list-disc text-left">
               {dataSemaphore.reference.map((data, key) => (
                 <li key={key}>
                   <a

@@ -31,7 +31,7 @@ function KompasPage() {
           <div className="mt-6">
             {KompasData.dataIntro.map((data, index) => (
               <div key={'sectionIntro-' + index}>
-                <p className="mt-2 mb-2 font-bold text-xl md:text-2xl">{data.heading}</p>
+                <p className="mt-2 mb-2 text-xl font-bold md:text-2xl">{data.heading}</p>
                 {data.paragraph.map((paragraph, index) => (
                   <p key={'paragraph-' + index}>{paragraph}</p>
                 ))}
@@ -40,7 +40,7 @@ function KompasPage() {
           </div>
         </div>
         <div className="sectionFungsi">
-          <p className="mt-2 mb-2 font-bold text-xl md:text-2xl">{KompasData.dataFungsi.heading}</p>
+          <p className="mt-2 mb-2 text-xl font-bold md:text-2xl">{KompasData.dataFungsi.heading}</p>
           <p>{KompasData.dataFungsi.paragraph}</p>
           {KompasData.dataFungsi.list.map((list, index) => (
             <ol className="fungsi-kompas-list" key={index}>
@@ -49,19 +49,19 @@ function KompasPage() {
           ))}
         </div>
         <div className="sectionCarKer">
-          <p className="mt-2 mb-4 font-bold text-xl md:text-2xl">{KompasData.dataCarKer.heading}</p>
+          <p className="mt-2 mb-4 text-xl font-bold md:text-2xl">{KompasData.dataCarKer.heading}</p>
           <center>
             <img src={KompasData.dataCarKer.image} alt="cara-kerja" />
           </center>
           <p className="mt-2">{KompasData.dataCarKer.paragraph}</p>
-          <div className="mt-4 rounded overflow-hidden shadow-lg bg-card">
-            <div className="w-full px-6 py-4 flex items-center justify-between flex-wrap">
-              <div className="min-w-250 font-semibold">Tabel Arah Mata Angin</div>
+          <div className="overflow-hidden mt-4 rounded shadow-lg bg-card">
+            <div className="flex flex-wrap justify-between items-center py-4 px-6 w-full">
+              <div className="font-semibold min-w-250">Tabel Arah Mata Angin</div>
               <button
                 onClick={() => {
                   setTable(!tableOpen)
                 }}
-                className="bg-primary hover:bg-secondary text-button py-2 px-4 rounded inline-flex items-center"
+                className="inline-flex items-center py-2 px-4 rounded bg-primary text-button hover:bg-secondary"
               >
                 {tableOpen ? 'Tutup tabel' : 'Lihat tabel'}
                 <svg
@@ -85,12 +85,12 @@ function KompasPage() {
             <div
               className={`transition duration-150 ease-in-out ${tableOpen ? 'block' : 'hidden'}`}
             >
-              <div className="w-full px-6 py-4">
+              <div className="py-4 px-6 w-full">
                 <table className="table-auto">
                   <thead>
                     <tr>
                       {KompasData.dataCarKer.table.th.map((heading, index) => (
-                        <th key={index} className="border px-4 py-2">
+                        <th key={index} className="py-2 px-4 border">
                           {heading}
                         </th>
                       ))}
@@ -100,7 +100,7 @@ function KompasPage() {
                     {KompasData.dataCarKer.table.td.map((td, index) => (
                       <tr key={index}>
                         {td.map((data, index) => (
-                          <td className="border px-4 py-2" key={index}>
+                          <td className="py-2 px-4 border" key={index}>
                             {data}
                           </td>
                         ))}
@@ -112,12 +112,12 @@ function KompasPage() {
             </div>
           </div>
         </div>
-        <div className="sectionBagian mt-4">
-          <p className="mt-2 mb-4 font-bold text-xl md:text-2xl">{KompasData.dataBagian.heading}</p>
+        <div className="mt-4 sectionBagian">
+          <p className="mt-2 mb-4 text-xl font-bold md:text-2xl">{KompasData.dataBagian.heading}</p>
           <center>
             <img src={KompasData.dataBagian.image} alt="cara-kerja" />
           </center>
-          <div className="list-bagian mt-2">
+          <div className="mt-2 list-bagian">
             <ol>
               {KompasData.dataBagian.list.map((list, index) => (
                 <li key={index}>{`${index + 1}. ${list}`}</li>
@@ -125,10 +125,10 @@ function KompasPage() {
             </ol>
           </div>
         </div>
-        <div className="sectionCara mt-4">
-          <p className="mt-2 mb-4 font-bold text-xl md:text-2xl">{KompasData.dataCara.heading}</p>
+        <div className="mt-4 sectionCara">
+          <p className="mt-2 mb-4 text-xl font-bold md:text-2xl">{KompasData.dataCara.heading}</p>
           <p className="mt-2">{KompasData.dataCara.paragraph}</p>
-          <div className="list-bagian mt-2">
+          <div className="mt-2 list-bagian">
             <ol>
               {KompasData.dataCara.list.map((list, index) => (
                 <li key={index}>{`${index + 1}. ${list}`}</li>
@@ -136,20 +136,20 @@ function KompasPage() {
             </ol>
           </div>
         </div>
-        <div className="sectionJenis mt-4">
-          <p className="mt-2 mb-4 font-bold text-xl md:text-2xl">{KompasData.dataJenis.heading}</p>
+        <div className="mt-4 sectionJenis">
+          <p className="mt-2 mb-4 text-xl font-bold md:text-2xl">{KompasData.dataJenis.heading}</p>
 
           <div>
             {KompasData.dataJenis.list.map((data, index) => (
-              <div key={index} className="mt-4 rounded overflow-hidden shadow-lg bg-card">
-                <div className="w-full px-6 py-4 flex items-center justify-between flex-wrap">
-                  <div className="min-w-250 font-semibold">{data.title}</div>
+              <div key={index} className="overflow-hidden mt-4 rounded shadow-lg bg-card">
+                <div className="flex flex-wrap justify-between items-center py-4 px-6 w-full">
+                  <div className="font-semibold min-w-250">{data.title}</div>
 
                   <button
                     onClick={() => {
                       handleCollapse(index)
                     }}
-                    className="bg-primary hover:bg-secondary text-button py-2 px-4 rounded inline-flex items-center"
+                    className="inline-flex items-center py-2 px-4 rounded bg-primary text-button hover:bg-secondary"
                   >
                     {collapsed === index ? 'Tutup detail' : 'Lihat detail'}
                     <svg
@@ -180,7 +180,7 @@ function KompasPage() {
                     <center>
                       <img className="w-56" src={data.image} alt="cara-kerja" />
                     </center>
-                    <p className="mt-4 mb-4 p-4">{data.desc}</p>
+                    <p className="p-4 mt-4 mb-4">{data.desc}</p>
                   </div>
                 </div>
               </div>

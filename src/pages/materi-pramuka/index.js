@@ -24,11 +24,11 @@ function MateriPramukaPage() {
       </Head>
 
       <div className="text-center">
-        <h1 className="mt-8 font-bold text-3xl md:text-4xl">Buku Saku Pramuka Digital</h1>
+        <h1 className="mt-8 text-3xl font-bold md:text-4xl">Buku Saku Pramuka Digital</h1>
       </div>
       <div className="text-left">
         <div>
-          <h2 className="mt-8 mb-4 font-medium text-xl md:text-2xl">{FilteredData.text}</h2>
+          <h2 className="mt-8 mb-4 text-xl font-medium md:text-2xl">{FilteredData.text}</h2>
           <ul>
             {FilteredData.children.map((babChild) => (
               <li className="mb-2" key={babChild.href}>

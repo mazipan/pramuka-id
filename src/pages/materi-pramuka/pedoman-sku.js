@@ -28,7 +28,7 @@ function PedomanSkuPage() {
                 <p className="font-bold">
                   {indexStep + 1}. {step.title}
                 </p>
-                <p className="ml-4 mb-4 mt-2 text-base">Artinya: {step.meaning}</p>
+                <p className="mt-2 mb-4 ml-4 text-base">Artinya: {step.meaning}</p>
               </li>
             ))}
           />

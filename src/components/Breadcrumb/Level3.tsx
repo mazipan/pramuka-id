@@ -42,7 +42,7 @@ function BreadcrumbLevel3({ text, href }: BreadcrumbLevel3Props) {
     <nav className="flex items-center">
       <Link href="/">
         <a title="Beranda">
-          <HomeIcon className="w-8 h-8 bg-primary rounded p-1" />
+          <HomeIcon className="p-1 w-8 h-8 rounded bg-primary" />
         </a>
       </Link>
 

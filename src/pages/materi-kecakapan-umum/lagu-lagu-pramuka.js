@@ -54,7 +54,7 @@ function LaguLaguPramuka() {
               href={song.youtube}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-red-600 font-bold hover:text-red-700"
+              className="font-bold text-red-600 hover:text-red-700"
             >
               YouTube
             </a>

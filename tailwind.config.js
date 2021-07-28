@@ -1,4 +1,6 @@
-const { theme } = require('tailwindcss/defaultConfig')
+const { theme } = require('tailwindcss/defaultConfig');
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   purge: ['./src/components/**/*.js', './src/pages/**/*.js'],
   theme: {
@@ -17,7 +19,10 @@ module.exports = {
         primary: 'var(--color-background-primary)',
         hover: 'var(--color-background-hover)',
         card: 'var(--color-background-card)'
-      }
+      },
+      fontFamily: {
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      },
     },
     inset: {
       0: 0,

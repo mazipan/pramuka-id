@@ -20,11 +20,11 @@ function SeragamPramukaPage() {
         {section.map(({ type, content }, idx) => {
           if (type === 'list') {
             return (
-              <ul className="list-disc ml-8 pb-4" key={idx}>
+              <ul className="pb-4 ml-8 list-disc" key={idx}>
                 {content.map(({ name, lists }, j) => (
                   <Fragment key={j}>
                     <li className="py-2">{name}</li>
-                    <ol className="list-disc ml-8">
+                    <ol className="ml-8 list-disc">
                       {lists && lists.map((list, k) => <li key={k}>{list}</li>)}
                     </ol>
                   </Fragment>

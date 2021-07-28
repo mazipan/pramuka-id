@@ -28,7 +28,7 @@ function TandaKecakapanKhusus() {
         <div className="mt-4">
           {TkkData.sections.map((section, sectionIndex) => (
             <div key={sectionIndex} className="mt-4">
-              <p className="font-bold w-full mb-1">{section.name}</p>
+              <p className="mb-1 w-full font-bold">{section.name}</p>
               <span>{section.description}</span>
 
               {section.groupType === 'array' && (
@@ -52,7 +52,7 @@ function TandaKecakapanKhusus() {
                         <>
                           <p className="mb-2">{group.description}</p>
 
-                          <ol className="list-decimal flex flex-col md:flex-row">
+                          <ol className="flex flex-col list-decimal md:flex-row">
                             {splitData(group.lists).map((split, splitIndex) => (
                               <div key={splitIndex} className="w-full">
                                 {split.map((list, listIndex) => (

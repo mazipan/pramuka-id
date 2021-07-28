@@ -41,7 +41,7 @@ function SalamPramukaPage() {
                     <ol className="list-disc">
                       {section.usage.map((usage) => (
                         <li
-                          className="ml-4 text-secondary text-base"
+                          className="ml-4 text-base text-secondary"
                           key={`${section.key}${usage}`}
                         >
                           {usage}
@@ -50,12 +50,12 @@ function SalamPramukaPage() {
                     </ol>
                   )}
 
-                  <p className="mt-4 text-secondary text-base">Cara Melakukan:</p>
+                  <p className="mt-4 text-base text-secondary">Cara Melakukan:</p>
                   {getHowTo(section.key).steps.map((step, index) => (
                     <>
                       {!step.conditions && (
                         <p
-                          className="mt-4 text-secondary text-base"
+                          className="mt-4 text-base text-secondary"
                           key={`${section.key}${step.title}-nocond`}
                         >
                           {step.title}
@@ -70,13 +70,13 @@ function SalamPramukaPage() {
                           <p className="mb-4 font-bold">
                             {index + 1}. {step.title}
                           </p>
-                          <ol className="list-lower-alpha ml-6">
+                          <ol className="ml-6 list-lower-alpha">
                             {step.conditions.map((cond) => (
                               <li key={`${section.key}${cond.title}`}>
                                 {cond.title}
                                 <ul>
                                   {cond.details.map((detail) => (
-                                    <li className="mb-4 pl-2" key={`${section.key}${detail}`}>
+                                    <li className="pl-2 mb-4" key={`${section.key}${detail}`}>
                                       {detail}
                                     </li>
                                   ))}

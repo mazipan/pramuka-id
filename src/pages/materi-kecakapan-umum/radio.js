@@ -39,15 +39,15 @@ function LambangPramukaPage() {
         <div>
           {RadioData.sections.map((section) => (
             <div key={section.key} className="mb-4">
-              <h3 className="font-bold text-xl">{section.title}</h3>
-              <div className="mb-4 flex items-center flex-wrap justify-center md:justify-start">
+              <h3 className="text-xl font-bold">{section.title}</h3>
+              <div className="flex flex-wrap justify-center items-center mb-4 md:justify-start">
                 {RadioData[section.key].map((item) => (
                   <div
                     key={item.text}
                     onClick={() => canSpeak && playAudio(item.code.toLowerCase())}
-                    className="w-1/2 md:w-1/5 flex items-center rounded overflow-hidden shadow-lg cursor-pointer"
+                    className="flex overflow-hidden items-center w-1/2 rounded shadow-lg cursor-pointer md:w-1/5"
                   >
-                    <div className="px-2 py-2 flex items-center w-full">
+                    <div className="flex items-center py-2 px-2 w-full">
                       <div className="w-10">{item.text}</div>{' '}
                       <div className="text-orange-500">{item.code}</div>
                       {canSpeak && (

@@ -74,18 +74,18 @@ function Layout({ children }: LayoutProps) {
       <div className={`flex flex-col min-h-screen text-primary`}>
         <Header />
 
-        <main className="flex-1 w-full max-w-4xl p-4 mx-auto mb-16 mt-14">
+        <main className="flex-1 p-4 mx-auto mt-14 mb-16 w-full max-w-4xl">
           {children}
         </main>
 
         <BottomNavigation />
 
         <button
-          className="fixed bg-card rounded-full shadow-lg p-2 focus:outline-none overflow-hidden"
+          className="overflow-hidden fixed p-2 rounded-full shadow-lg focus:outline-none bg-card"
           style={{ right: '1.5rem', bottom: '12%', ...upStyle }}
           onClick={() => scrollTo('__next')}
         >
-          <ChevronUpIcon className="h-6 w-6" />
+          <ChevronUpIcon className="w-6 h-6" />
         </button>
       </div>
     </>

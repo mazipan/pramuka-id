@@ -22,7 +22,7 @@ function TepukPramuka() {
         <div className="mt-4">
           {TepukData.sections.map((section, sectionIndex) => (
             <div key={sectionIndex} className="mt-4">
-              <p className="font-bold w-full mb-1">{section.name}</p>
+              <p className="mb-1 w-full font-bold">{section.name}</p>
               <span>{section.description}</span>
 
               {section.groupType === 'array' && (
@@ -44,7 +44,7 @@ function TepukPramuka() {
                       title={group.text}
                       value={
                         <>
-                          <ol className="list-decimal flex flex-col">
+                          <ol className="flex flex-col list-decimal">
                             {group.lists.map((list, listIndex) => (
                               <li key={listIndex} className="mb-1 ml-5">
                                 {list}

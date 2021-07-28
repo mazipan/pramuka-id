@@ -17,11 +17,11 @@ function DasaDharmaPage() {
       <ChapterTitle subTitle="Dasa Dharma" title="Materi Pramuka" />
 
       <div className="text-left">
-        <div className="mt-4 rounded overflow-hidden shadow-lg bg-card" id={DasaDharmaData.id}>
+        <div className="overflow-hidden mt-4 rounded shadow-lg bg-card" id={DasaDharmaData.id}>
           <div className="relative">
             <img className="w-full" src="/assets/5930.jpg" alt="Anak-anak berkemah" />
           </div>
-          <div className="px-6 py-4">
+          <div className="py-4 px-6">
             <p>{DasaDharmaData.preface}</p>
             <div className="mt-4">
               <p>Isi dan Arti {DasaDharmaData.title} adalah sebagai berikut :</p>

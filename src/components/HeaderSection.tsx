@@ -8,10 +8,10 @@ function Header() {
   const { NextThemeIcon, nextTheme, onSwitchTheme } = useTheme()
 
   return (
-    <header className="fixed top-0 w-full z-10 bg-pramuka">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl p-2 mx-auto md:flex-no-wrap">
+    <header className="fixed top-0 z-10 w-full bg-pramuka">
+      <div className="flex flex-wrap justify-between items-center p-2 mx-auto max-w-4xl md:flex-no-wrap">
         <div className="flex items-center">
-          <IconPramuka color="#fff" className="h-10 w-10 text-nav" />
+          <IconPramuka color="#fff" className="w-10 h-10 text-nav" />
 
           <Link href="/">
             <a className="text-xl font-bold text-nav">Buku Saku Pramuka</a>
@@ -20,7 +20,7 @@ function Header() {
 
         <div className="flex items-center">
           <button
-            className="hover:bg-opacity-10 focus:bg-opacity-10 font-bold py-2 px-4 rounded"
+            className="py-2 px-4 font-bold rounded hover:bg-opacity-10 focus:bg-opacity-10"
             onClick={onSwitchTheme}
             type="button"
             aria-label={`Switch to ${nextTheme}`}

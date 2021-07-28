@@ -16,19 +16,19 @@ function PancasilaPage() {
       <BreadcrumbLevel3 text="Pancasila" href={url} />
       <ChapterTitle subTitle="Pancasila" title="Materi Kenegaraan" />
 
-      <div className="flex flex-col items-center justify-center text-center">
+      <div className="flex flex-col justify-center items-center text-center">
         <img src="/assets/pancasila/garuda.png" className="w-40" alt="Garuda Pancasila" />
       </div>
 
-      <div className="text-left mt-8">
+      <div className="mt-8 text-left">
         <div className="mb-8">
           {PancasilaData.data.map((section, index) => (
             <div
               key={section}
-              className="mt-4 flex items-center rounded overflow-hidden shadow-lg bg-card"
+              className="flex overflow-hidden items-center mt-4 rounded shadow-lg bg-card"
             >
               <img className="min-w-80 min-h-80" src={`/assets/pancasila/${index + 1}.png`} />
-              <div className="px-6 py-4">
+              <div className="py-4 px-6">
                 <p>{section}</p>
               </div>
             </div>
@@ -39,9 +39,9 @@ function PancasilaPage() {
           {PancasilaData.meaning.data.map((section) => (
             <div
               key={section}
-              className="mt-4 flex items-center rounded overflow-hidden shadow-lg bg-card"
+              className="flex overflow-hidden items-center mt-4 rounded shadow-lg bg-card"
             >
-              <div className="px-6 py-4">
+              <div className="py-4 px-6">
                 <p>{section}</p>
               </div>
             </div>
