@@ -1,8 +1,10 @@
-const { theme } = require('tailwindcss/defaultConfig');
-const defaultTheme = require("tailwindcss/defaultTheme");
+const { theme } = require('tailwindcss/defaultConfig')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ['./src/components/**/*.js', './src/pages/**/*.js'],
+  mode: 'jit',
+  purge: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       textColor: {
@@ -21,8 +23,8 @@ module.exports = {
         card: 'var(--color-background-card)'
       },
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-      },
+        sans: ['Inter', ...defaultTheme.fontFamily.sans]
+      }
     },
     inset: {
       0: 0,
