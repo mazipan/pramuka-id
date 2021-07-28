@@ -5,8 +5,8 @@ import ChapterTitle from '../../components/ChapterTitle'
 import PancasilaData from '../../data/pancasila'
 import { BASE_PATH } from '../../constants'
 
-const title = 'Pancasila | Buku Saku Pramuka Digital'
-const desc = 'Isi dan Arti dari Pancasila di Buku Saku Pramuka Digital'
+const title = 'Pancasila'
+const desc = 'Isi dan Arti dari Pancasila di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-kenegaraan/pancasila/'
 
 function PancasilaPage() {

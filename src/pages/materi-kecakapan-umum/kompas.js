@@ -6,8 +6,8 @@ import ChapterTitle from '../../components/ChapterTitle'
 import KompasData from '../../data/kompas'
 import { BASE_PATH } from '../../constants'
 
-const title = 'Mengenal Kompas | Buku Saku Pramuka Digital'
-const desc = 'Kompas di Buku Saku Pramuka Digital'
+const title = 'Mengenal Kompas'
+const desc = 'Kompas di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-kecakapan-umum/kompas/'
 
 function KompasPage() {

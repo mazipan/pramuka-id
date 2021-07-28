@@ -6,8 +6,8 @@ import IconPramuka from '../../components/IconPramuka'
 import LambangPramuka from '../../data/lambang-pramuka'
 import { BASE_PATH } from '../../constants'
 
-const title = 'Lambang Pramuka | Buku Saku Pramuka Digital'
-const desc = 'Baca arti dan makna dari lambang pramuka di Buku Saku Pramuka Digital'
+const title = 'Lambang Pramuka'
+const desc = 'Baca arti dan makna dari lambang pramuka di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-pramuka/lambang-pramuka/'
 
 function LambangPramukaPage() {

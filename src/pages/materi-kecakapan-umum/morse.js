@@ -5,7 +5,7 @@ import ChapterTitle from '../../components/ChapterTitle'
 import MorseData from '../../data/morse'
 import { BASE_PATH } from '../../constants'
 
-const title = 'Kode Morse Lengkap | Buku Saku Pramuka Digital'
+const title = 'Kode Morse Lengkap'
 const desc = 'Daftar lengkap kode morse beserta cara menghafalnya'
 const url = BASE_PATH + '/materi-kecakapan-umum/morse/'
 

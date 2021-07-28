@@ -5,7 +5,7 @@ import ChapterTitle from '../../components/ChapterTitle'
 import { BASE_PATH } from '../../constants'
 import dataSemaphore from '../../data/kwartir'
 
-const title = 'Kwartir di Indonesia | Buku Saku Pramuka Digital'
+const title = 'Kwartir di Indonesia'
 const subtitle = 'Kwartir di Indonesia'
 const desc = 'Penjelasan lengkap mengenai kwartir di Indonesia'
 const url = BASE_PATH + '/materi-pramuka/kwartir/'

@@ -6,7 +6,7 @@ import TkkData from '../../data/tanda-kecakapan-khusus'
 import { BASE_PATH } from '../../constants'
 import Expansion from '../../components/Expansion'
 
-const title = `${TkkData.subtitle} | Buku Saku Pramuka Digital`
+const title = `${TkkData.subtitle}`
 const desc = TkkData.description
 const url = BASE_PATH + '/materi-kecakapan-umum/tanda-kecakapan-khusus/'
 

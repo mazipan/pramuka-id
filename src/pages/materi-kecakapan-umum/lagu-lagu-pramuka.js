@@ -6,7 +6,7 @@ import SongsData from '../../data/lagu-lagu-pramuka'
 import { BASE_PATH } from '../../constants'
 import Expansion from '../../components/Expansion'
 
-const title = `${SongsData.subtitle} | Buku Saku Pramuka Digital`
+const title = `${SongsData.subtitle}`
 const desc = SongsData.description
 const url = BASE_PATH + '/materi-kecakapan-umum/lagu-lagu-pramuka/'
 

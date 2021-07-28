@@ -5,8 +5,8 @@ import ChapterTitle from '../../components/ChapterTitle'
 import { BASE_PATH } from '../../constants'
 import dataSemaphore from '../../data/bendera-semaphore'
 
-const title = 'Bendera Semaphore | Buku Saku Pramuka Digital'
-const desc = 'Penjelasan lengkap mengenai Bendera Semaphore di Buku Saku Pramuka Digital'
+const title = 'Bendera Semaphore'
+const desc = 'Penjelasan lengkap mengenai Bendera Semaphore di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-kecakapan-umum/dasa-dharma/'
 
 const BenderaSemaphore = () => {

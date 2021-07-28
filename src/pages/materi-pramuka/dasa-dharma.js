@@ -5,8 +5,8 @@ import ChapterTitle from '../../components/ChapterTitle'
 import DasaDharmaData from '../../data/dasa-dharma'
 import { BASE_PATH } from '../../constants'
 
-const title = 'Dasa Dharma Pramuka | Buku Saku Pramuka Digital'
-const desc = 'Penjelasan lengkap mengenai Dasa Dharma Pramuka di Buku Saku Pramuka Digital'
+const title = 'Dasa Dharma Pramuka'
+const desc = 'Penjelasan lengkap mengenai Dasa Dharma Pramuka di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-pramuka/dasa-dharma/'
 
 function DasaDharmaPage() {

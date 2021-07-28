@@ -3,7 +3,7 @@ import Layout from '../components/MainLayout'
 import DataDaftarIsi from '../data/daftar-isi'
 import { reportCoreWebVitals, ReportCoreWebVitalsParams } from '../utils/index'
 
-import { BASE_PATH } from '../constants'
+import { BASE_PATH, BRAND_TITLE } from '../constants'
 
 import Head from 'next/head'
 
@@ -19,7 +19,7 @@ function DaftarIsiPage() {
                 '@context': 'http://schema.org',
                 '@type': 'WebSite',
                 id: BASE_PATH,
-                name: 'Buku Saku Pramuka',
+                name: BRAND_TITLE,
                 url: BASE_PATH
               })
             }}
@@ -27,7 +27,7 @@ function DaftarIsiPage() {
         </Head>
 
         <div className="text-center">
-          <h1 className="mt-8 text-3xl font-bold md:text-4xl">Buku Saku Pramuka Digital</h1>
+          <h1 className="mt-8 text-3xl font-bold md:text-4xl">{BRAND_TITLE}</h1>
         </div>
         <div className="text-left">
           {DataDaftarIsi.map((bab) => (

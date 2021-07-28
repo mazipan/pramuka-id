@@ -8,7 +8,7 @@ import { FaVolumeUp } from 'react-icons/fa'
 import { BASE_PATH } from '../../constants'
 import { useState } from 'react'
 
-const title = 'Kode Radio Lengkap | Buku Saku Pramuka Digital'
+const title = 'Kode Radio Lengkap'
 const desc = 'Daftar lengkap kode radio'
 const url = BASE_PATH + '/materi-kecakapan-umum/radio/'
 

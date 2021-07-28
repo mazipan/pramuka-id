@@ -7,8 +7,8 @@ import { reportCoreWebVitals, ReportCoreWebVitalsParams } from '../../utils/inde
 
 import DataDownload from '../../data/download-sku'
 
-const title = 'Download Buku SKU PDF | Buku Saku Pramuka Digital'
-const desc = 'Download buku saku dan panduan dalam bentuk PDF di Buku Saku Pramuka Digital'
+const title = 'Download Buku SKU PDF'
+const desc = 'Download buku saku dan panduan dalam bentuk PDF di Buku Saku Pramuka'
 const url = BASE_PATH + '/download/'
 
 function DwiDharmaPage() {

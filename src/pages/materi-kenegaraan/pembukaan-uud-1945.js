@@ -5,8 +5,8 @@ import ChapterTitle from '../../components/ChapterTitle'
 import Uud45Data from '../../data/uud45'
 import { BASE_PATH } from '../../constants'
 
-const title = 'UUD 1945 | Buku Saku Pramuka Digital'
-const desc = 'UUD 1945 di Buku Saku Pramuka Digital'
+const title = 'UUD 1945'
+const desc = 'UUD 1945 di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-kenegaraan/pembukaan-uud-1945/'
 
 function UUD45Page() {

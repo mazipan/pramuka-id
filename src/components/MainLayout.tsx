@@ -1,4 +1,3 @@
-
 import Head from 'next/head'
 import { useState, ReactChild } from 'react'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
@@ -7,12 +6,12 @@ import { ChevronUpIcon } from '@heroicons/react/solid'
 
 import Header from './HeaderSection'
 import BottomNavigation from './BottomNavigation'
-import { BASE_PATH } from '../constants'
+import { BASE_PATH, BRAND_TITLE } from '../constants'
 import { scrollTo } from '../utils'
 
-const title = 'Buku Saku Pramuka Digital'
+const title = BRAND_TITLE
 const desc =
-  'Buku saku pramuka digital dalam bentuk web, ✅ GRATIS, ✅ tanpa iklan, ❌ tidak perlu install Aplikasi lagi'
+  'Kumpulan informasi digital mengenai berbagai materi pramuka, materi kenegaraan dan materi kecakapan umum'
 const url = BASE_PATH
 const metaImg = BASE_PATH + '/assets/5930.jpg'
 const authorName = 'Irfan Maulana'
@@ -74,9 +73,7 @@ function Layout({ children }: LayoutProps) {
       <div className={`flex flex-col min-h-screen text-primary`}>
         <Header />
 
-        <main className="flex-1 p-4 mx-auto mt-14 mb-16 w-full max-w-4xl">
-          {children}
-        </main>
+        <main className="flex-1 p-4 mx-auto mt-14 mb-16 w-full max-w-4xl">{children}</main>
 
         <BottomNavigation />
 

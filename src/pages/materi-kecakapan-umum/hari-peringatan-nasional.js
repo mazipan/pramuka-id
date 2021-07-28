@@ -6,8 +6,8 @@ import hariNasionalData from '../../data/hari-peringatan-nasional'
 import { BASE_PATH } from '../../constants'
 import Expansion from '../../components/Expansion'
 
-const title = 'Hari Peringatan | Buku Saku Pramuka Digital'
-const desc = 'Hari peringatan nasional, baca selengkapnya di Buku Saku Pramuka Digital'
+const title = 'Hari Peringatan'
+const desc = 'Hari peringatan nasional, baca selengkapnya di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-kecakapan-umum/salam-pramuka/'
 
 function HariPeringatanNasionalPage() {

@@ -5,8 +5,8 @@ import ChapterTitle from '../../components/ChapterTitle'
 import HymneData from '../../data/hymne-pramuka'
 import { BASE_PATH } from '../../constants'
 
-const title = 'Hymne Pramuka | Buku Saku Pramuka Digital'
-const desc = 'Lirik beserta audio Hymne Pramuka di Buku Saku Pramuka Digital'
+const title = 'Hymne Pramuka'
+const desc = 'Lirik beserta audio Hymne Pramuka di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-pramuka/hymne-pramuka/'
 
 function HymnePramukaPage() {

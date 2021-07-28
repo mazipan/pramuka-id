@@ -5,8 +5,8 @@ import ChapterTitle from '../../components/ChapterTitle'
 import DwiSatyaData from '../../data/dwi-satya'
 import { BASE_PATH } from '../../constants'
 
-const title = 'Dwi Satya Pramuka | Buku Saku Pramuka Digital'
-const desc = 'Penjelasan lengkap mengenai Dwi Satya Pramuka di Buku Saku Pramuka Digital'
+const title = 'Dwi Satya Pramuka'
+const desc = 'Penjelasan lengkap mengenai Dwi Satya Pramuka di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-pramuka/dwi-satya/'
 
 function DwiSatyaPage() {

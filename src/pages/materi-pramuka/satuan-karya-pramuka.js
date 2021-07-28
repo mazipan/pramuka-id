@@ -6,7 +6,7 @@ import ChapterTitle from '../../components/ChapterTitle'
 import TkkData from '../../data/satuan-karya-pramuka'
 import { BASE_PATH } from '../../constants'
 
-const title = `${TkkData.subtitle} | Buku Saku Pramuka Digital`
+const title = `${TkkData.subtitle}`
 const desc = TkkData.description
 const url = BASE_PATH + '/materi-pramuka/satuan-karya-pramuka/'
 

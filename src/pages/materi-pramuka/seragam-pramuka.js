@@ -10,7 +10,7 @@ import Text from '../../components/Text'
 import Expansion from '../../components/Expansion'
 
 const { title, subtitle, desc, data } = SeragamPramukaData
-const title_ = `${subtitle} | Buku Saku Pramuka Digital`
+const title_ = `${subtitle}`
 const url = BASE_PATH + '/materi-pramuka/seragam-pramuka/'
 
 function SeragamPramukaPage() {

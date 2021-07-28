@@ -6,8 +6,8 @@ import SalamPramukaData from '../../data/salam-pramuka'
 import { BASE_PATH } from '../../constants'
 import Expansion from '../../components/Expansion'
 
-const title = 'Salam Pramuka | Buku Saku Pramuka Digital'
-const desc = 'Arti dan jenis salam pramuka, baca selengkapnya di Buku Saku Pramuka Digital'
+const title = 'Salam Pramuka'
+const desc = 'Arti dan jenis salam pramuka, baca selengkapnya di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-pramuka/salam-pramuka/'
 
 function SalamPramukaPage() {

@@ -1,13 +1,20 @@
 import Layout from '../components/MainLayout'
+import MetaHead from '../components/MetaHead'
+
 import Head from 'next/head'
 import { reportCoreWebVitals, ReportCoreWebVitalsParams } from '../utils/index'
 
-import { BASE_PATH } from '../constants'
+import { BASE_PATH, BRAND_TITLE } from '../constants'
+
+const title = `Tentang`
+const desc = `Tentang ${BRAND_TITLE}: Kumpulan informasi digital mengenai berbagai materi pramuka, materi kenegaraan dan materi kecakapan umum`
+const url = BASE_PATH + '/tentang'
 
 function AboutPage() {
   return (
     <Layout>
       <>
+        <MetaHead title={title} desc={desc} url={url} />
         <Head>
           <script
             type="application/ld+json"
@@ -21,7 +28,7 @@ function AboutPage() {
                       {
                         '@type': 'ListItem',
                         position: 1,
-                        name: 'Buku Saku Pramuka',
+                        name: 'Beranda',
                         item: BASE_PATH
                       },
                       {
@@ -31,17 +38,6 @@ function AboutPage() {
                         item: `${BASE_PATH}/tentang`
                       }
                     ]
-                  },
-                  {
-                    '@type': 'AboutPage',
-                    name: 'Tentang Buku Saku Pramuka',
-                    headline: 'Tentang Buku Saku Pramuka Digital',
-                    url: `${BASE_PATH}/tentang`,
-                    mainEntityOfPage: `${BASE_PATH}/tentang`,
-                    image: {
-                      '@type': 'ImageObject',
-                      url: `${BASE_PATH}/assets/5930.jpg`
-                    }
                   }
                 ]
               })

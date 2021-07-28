@@ -5,8 +5,8 @@ import ChapterTitle from '../../components/ChapterTitle'
 import SandiAmbalanData from '../../data/sandi-ambalan'
 import { BASE_PATH } from '../../constants'
 
-const title = 'Sandi Ambalan | Buku Saku Pramuka Digital'
-const desc = 'Sandi Ambalan di Buku Saku Pramuka Digital'
+const title = 'Sandi Ambalan'
+const desc = 'Sandi Ambalan di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-pramuka/sandi-ambalan/'
 
 function SandiAmbalanPage() {

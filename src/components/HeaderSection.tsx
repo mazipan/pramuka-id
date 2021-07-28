@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 import IconPramuka from './IconPramuka'
-
 import useTheme from '../hooks/useTheme'
+import { BRAND_TITLE } from '../constants'
 
 function Header() {
   const { NextThemeIcon, nextTheme, onSwitchTheme } = useTheme()
@@ -14,7 +14,9 @@ function Header() {
           <IconPramuka color="#fff" className="w-10 h-10 text-nav" />
 
           <Link href="/">
-            <a className="text-xl font-bold text-nav">Buku Saku Pramuka</a>
+            <a title={BRAND_TITLE} className="text-xl font-bold text-nav">
+              {BRAND_TITLE}
+            </a>
           </Link>
         </div>
 

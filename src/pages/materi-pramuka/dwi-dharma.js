@@ -5,8 +5,8 @@ import ChapterTitle from '../../components/ChapterTitle'
 import DwiDharmaData from '../../data/dwi-dharma'
 import { BASE_PATH } from '../../constants'
 
-const title = 'Dwi Dharma Pramuka | Buku Saku Pramuka Digital'
-const desc = 'Penjelasan lengkap mengenai Dwi Dharma Pramuka di Buku Saku Pramuka Digital'
+const title = 'Dwi Dharma Pramuka'
+const desc = 'Penjelasan lengkap mengenai Dwi Dharma Pramuka di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-pramuka/dwi-dharma/'
 
 function DwiDharmaPage() {

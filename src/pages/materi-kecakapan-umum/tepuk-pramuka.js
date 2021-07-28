@@ -6,9 +6,9 @@ import TepukData from '../../data/tepuk-pramuka'
 import { BASE_PATH } from '../../constants'
 import Expansion from '../../components/Expansion'
 
-const title = `${TepukData.subtitle} | Buku Saku Pramuka Digital`
+const title = `${TepukData.subtitle}`
 const desc = TepukData.description
-const url = BASE_PATH + '/materi-kecakapan-umum/tepuk-pramuka/'
+const url = BASE_PATH + '/materi-kecakapan-umum/tepuk-pramuka'
 
 function TepukPramuka() {
   return (

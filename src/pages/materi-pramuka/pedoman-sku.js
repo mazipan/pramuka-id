@@ -6,8 +6,8 @@ import PedomanSkuData from '../../data/pedoman-sku'
 import { BASE_PATH } from '../../constants'
 import Expansion from '../../components/Expansion'
 
-const title = 'Pedoman SKU | Buku Saku Pramuka Digital'
-const desc = 'Baca pedoman umum untuk menyelesaikan SKU di Buku Saku Pramuka Digital'
+const title = 'Pedoman SKU'
+const desc = 'Baca pedoman umum untuk menyelesaikan SKU di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-pramuka/pedoman-sku/'
 
 function PedomanSkuPage() {
