@@ -64,6 +64,7 @@ function HariPeringatanNasionalPage() {
                             {/*
                           // @ts-ignore */}
                             {renderList(
+                              // @ts-ignore
                               hariNasionalData[HARI_PENTING_LAINNYA][month.key],
                               `${HARI_PENTING_LAINNYA}-${month.key}`
                             )}
