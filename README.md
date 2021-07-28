@@ -8,11 +8,11 @@ https://buku-saku-pramuka.vercel.app/
 
 ## Public API
 
-https://buku-saku-pramuka.vercel.app/api/all
+https://buku-saku-pramuka.vercel.app/api
 
 ## Screenshots
 
-![Halaman daftar isi](screenshot.png)
+![Halaman daftar isi](screenshots/homepage.png)
 
 ## Credits
 
