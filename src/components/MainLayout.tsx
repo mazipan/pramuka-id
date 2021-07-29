@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { ReactChild, useState } from 'react'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 
-import { ChevronUpIcon } from '@heroicons/react/solid'
+import { FiChevronUp } from 'react-icons/fi'
 
 import Header from './HeaderSection'
 import FooterSection from './FooterSection'
@@ -87,7 +87,7 @@ function Layout({ children }: LayoutProps) {
           style={{ right: '1.5rem', bottom: '12%', ...upStyle }}
           onClick={() => scrollTo('__next')}
         >
-          <ChevronUpIcon className="w-6 h-6" />
+          <FiChevronUp className="w-6 h-6" />
         </button>
       </div>
     </>

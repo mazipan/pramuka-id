@@ -28,16 +28,12 @@ function LaguLaguPramuka() {
     if (song.lyric in SongsData.lyrics) {
       return (
         <div className="mb-6">
-          <p>Lirik:</p>
-          <hr className="mb-2" />
           {/*
-                            // @ts-ignore */}
+          // @ts-ignore */}
           {SongsData.lyrics[song.lyric]?.map((section, sectionIndex) => (
-            <div key={`section-${sectionIndex}`} className="mb-4">
+            <div key={`section-${sectionIndex}`} className="mb-4 italic text-center">
               {section.map((lyric: any, lyricIndex: number) => (
-                <p key={`section-${sectionIndex}-lyric-${lyricIndex}`} className="italic">
-                  {lyric}
-                </p>
+                <p key={`section-${sectionIndex}-lyric-${lyricIndex}`}>{lyric}</p>
               ))}
             </div>
           ))}
@@ -51,15 +47,15 @@ function LaguLaguPramuka() {
       return (
         <div>
           <hr className="mb-2" />
-          <p className="text-sm">
-            Lihat video {song.title} di{' '}
+          <p className="text-sm text-gray-400">
+            Tonton video{' '}
             <a
               href={song.youtube}
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold text-red-600 hover:text-red-700"
             >
-              YouTube
+              &quot;{song.title}&quot; di YouTube
             </a>
             .
           </p>
@@ -80,7 +76,7 @@ function LaguLaguPramuka() {
             {SongsData.songs.map((song, index) => (
               <Expansion
                 key={index}
-                index={index}
+                initialState={true}
                 title={song.title}
                 value={
                   <>

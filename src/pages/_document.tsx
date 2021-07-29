@@ -1,6 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
-import { BASE_PATH } from '../constants'
+import { BASE_PATH, BRAND_TITLE } from '../constants'
 
 class MyDocument extends Document {
   render() {
@@ -15,7 +15,10 @@ class MyDocument extends Document {
         <meta name="revisit-after" content="1 days" />
         <meta name="distribution" content="web" />
 
-        <meta name="google-site-verification" content="BBtZlBKBTEbm8atQF0aDRf1sxSqUMiojAB36tw0s4CU" />
+        <meta
+          name="google-site-verification"
+          content="BBtZlBKBTEbm8atQF0aDRf1sxSqUMiojAB36tw0s4CU"
+        />
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25065548-9" />
 
@@ -26,7 +29,7 @@ class MyDocument extends Document {
               '@context': 'http://schema.org',
               '@type': 'WebSite',
               id: BASE_PATH,
-              name: 'Buku Saku Pramuka',
+              name: BRAND_TITLE,
               url: BASE_PATH
             })
           }}
@@ -34,12 +37,7 @@ class MyDocument extends Document {
 
         <script
           dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-	          gtag('config', 'UA-25065548-9');
-        `
+            __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'UA-25065548-9');`
           }}
         />
 
@@ -64,7 +62,7 @@ class MyDocument extends Document {
               var preferredTheme;
               try {
                 preferredTheme = localStorage.getItem('theme');
-              } catch (err) { }
+              } catch (err) {}
               window.__setPreferredTheme = function(newTheme) {
                 setTheme(newTheme);
                 try {

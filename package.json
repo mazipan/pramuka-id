@@ -32,7 +32,6 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.3",
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "cors": "^2.8.5",
     "next": "11.0.1",

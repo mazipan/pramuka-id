@@ -47,7 +47,7 @@ function TandaKecakapanKhusus() {
                     {section.groups.map((group, index) => (
                       <Expansion
                         key={index}
-                        index={index}
+                        initialState={true}
                         // @ts-ignore
                         title={group?.text || ''}
                         value={

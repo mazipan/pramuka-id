@@ -19,8 +19,8 @@ function LambangPramukaPage() {
         <BreadcrumbLevel3 text="Lambang Pramuka" href="/materi-pramuka/lambang-pramuka/" />
         <ChapterTitle subTitle="Lambang Pramuka" title="Materi Pramuka" />
 
-        <div className="flex flex-col justify-center items-center text-center">
-          <IconPramuka color="#000" />
+        <div className="flex flex-col justify-center items-center text-center text-gray-900 dark:text-gray-100">
+          <IconPramuka />
         </div>
 
         <div className="text-left">

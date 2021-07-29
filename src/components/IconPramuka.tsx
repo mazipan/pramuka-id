@@ -1,4 +1,4 @@
-function IconPramuka({ color = '#fff', className = '' }) {
+function IconPramuka({ color = 'currentColor', className = '' }) {
   return (
     <svg
       clipRule="evenodd"

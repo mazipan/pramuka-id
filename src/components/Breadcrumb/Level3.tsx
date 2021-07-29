@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 
-import { ChevronRightIcon, HomeIcon } from '@heroicons/react/outline'
+import { FiChevronRight, FiHome } from 'react-icons/fi'
 
 import { BASE_PATH } from '../../constants'
 
@@ -79,14 +79,15 @@ function BreadcrumbLevel3({ text, href }: BreadcrumbLevel3Props) {
           }}
         />
       </Head>
+
       <nav className="flex items-center">
         <Link href="/">
           <a title="Beranda">
-            <HomeIcon className="p-1 w-8 h-8 rounded bg-primary" />
+            <FiHome className="p-1 w-6 h-6 rounded" />
           </a>
         </Link>
 
-        <ChevronRightIcon className="w-6 h-6" />
+        <FiChevronRight className="mx-2 text-sm text-gray-400" />
 
         <Link href={parent.href}>
           <a title={parent.text}>
@@ -94,7 +95,7 @@ function BreadcrumbLevel3({ text, href }: BreadcrumbLevel3Props) {
           </a>
         </Link>
 
-        <ChevronRightIcon className="w-6 h-6" />
+        <FiChevronRight className="mx-2 text-sm text-gray-400" />
 
         <Link href={href}>
           <a title={text}>

@@ -4,7 +4,7 @@ import MetaHead from '../../components/MetaHead'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
 import RadioData from '../../data/radio'
-import { FaVolumeUp } from 'react-icons/fa'
+import { FiVolume2 } from 'react-icons/fi'
 import { BASE_PATH } from '../../constants'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
@@ -43,27 +43,27 @@ function LambangPramukaPage() {
             {RadioData.sections.map((section) => (
               <div key={section.key} className="mb-4">
                 <h3 className="text-xl font-bold">{section.title}</h3>
-                <div className="flex flex-wrap justify-center items-center mb-4 md:justify-start">
+                <div className="grid grid-cols-1 gap-3 my-4 md:grid-cols-3">
                   {/*
                             // @ts-ignore */}
                   {RadioData[section.key].map((item) => (
                     <div
                       key={item.text}
                       onClick={() => canSpeak && playAudio(item.code.toLowerCase())}
-                      className="flex overflow-hidden items-center w-1/2 rounded shadow-lg cursor-pointer md:w-1/5"
+                      className="flex overflow-hidden items-center rounded shadow-lg dark:border cursor-pointerz dark:border-gray-30"
                     >
-                      <div className="flex items-center py-2 px-2 w-full">
-                        <div className="w-10">{item.text}</div>{' '}
-                        <div className="text-orange-500">{item.code}</div>
+                      <div className="flex items-center py-4 px-2 w-full">
+                        <div className="w-10 font-bold">{item.text}</div>{' '}
+                        <div className="text-yellow-500">{item.code}</div>
                         {canSpeak && (
                           <div
                             className={
                               isSpeak === item.code.toLowerCase()
-                                ? 'ml-auto text-orange-900'
+                                ? 'ml-auto text-yellow-900'
                                 : 'ml-auto text-gray-500'
                             }
                           >
-                            <FaVolumeUp />
+                            <FiVolume2 />
                           </div>
                         )}
                       </div>

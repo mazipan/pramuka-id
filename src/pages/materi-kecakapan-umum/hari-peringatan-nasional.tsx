@@ -39,7 +39,7 @@ function HariPeringatanNasionalPage() {
             {hariNasionalData.types.map((type, index) => (
               <Expansion
                 key={index}
-                index={index}
+                initialState={true}
                 title={type.title}
                 value={
                   <>

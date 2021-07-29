@@ -1,20 +1,16 @@
 import { ReactNode, useState } from 'react'
 
 interface ExpansionProps {
-  index: number
   title: string
   value: string | ReactNode
+  initialState: boolean
 }
 
-const Expansion = ({ index, title, value }: ExpansionProps) => {
-  const [collapsed, setCollapsed] = useState(-1)
+const Expansion = ({ title, value, initialState }: ExpansionProps) => {
+  const [collapsed, setCollapsed] = useState(initialState)
 
-  const handleCollapse = (index: number) => {
-    if (collapsed === index) {
-      setCollapsed(-1)
-    } else {
-      setCollapsed(index)
-    }
+  const handleCollapse = () => {
+    setCollapsed(!collapsed)
   }
 
   return (
@@ -24,14 +20,15 @@ const Expansion = ({ index, title, value }: ExpansionProps) => {
 
         <button
           onClick={() => {
-            handleCollapse(index)
+            handleCollapse()
           }}
-          className="inline-flex items-center py-2 px-4 rounded bg-primary text-button hover:bg-hover"
+          type="button"
+          aria-label={collapsed ? 'Tutup' : 'Buka'}
+          className="inline-flex items-center p-2 rounded-md bg-primary text-button hover:bg-hover"
         >
-          {collapsed === index ? 'Tutup detail' : 'Lihat detail'}
           <svg
-            className={`w-4 h-4 ml-2 transition ease-in-out duration-500 transform ${
-              collapsed === index ? '-rotate-180' : 'rotate-0'
+            className={`w-6 h-6 transition ease-in-out duration-500 transform ${
+              collapsed ? '-rotate-180' : 'rotate-0'
             }`}
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -47,11 +44,7 @@ const Expansion = ({ index, title, value }: ExpansionProps) => {
           </svg>
         </button>
       </div>
-      <div
-        className={`transition duration-150 ease-in-out ${
-          collapsed === index ? 'block' : 'hidden'
-        }`}
-      >
+      <div className={`transition duration-150 ease-in-out ${collapsed ? 'block' : 'hidden'}`}>
         <div className="py-4 px-6 w-full">
           <ul className="text-secondary">{value}</ul>
         </div>

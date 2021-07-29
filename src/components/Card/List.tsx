@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ChevronRightIcon } from '@heroicons/react/outline'
+import { FiChevronRight } from 'react-icons/fi'
 
 interface CardListProps {
   title: string
@@ -44,7 +44,7 @@ function CardList({ title, subtitle, href, external }: CardListProps) {
         </div>
       </div>
       <div className="px-2">
-        <ChevronRightIcon className="w-6 h-6" />
+        <FiChevronRight className="w-6 h-6" />
       </div>
     </div>
   )

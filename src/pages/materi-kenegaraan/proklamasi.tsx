@@ -34,7 +34,7 @@ function ProklamasiPage() {
           ))}
         </div>
 
-        <audio controls className="mt-8">
+        <audio controls className="mt-8 w-full">
           <source src={ProklamasiData.audio} type="audio/mpeg" />
         </audio>
 

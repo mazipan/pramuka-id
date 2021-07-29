@@ -42,7 +42,7 @@ function TepukPramuka() {
                     {section.groups.map((group, index) => (
                       <Expansion
                         key={index}
-                        index={index}
+                        initialState={true}
                         title={group.text}
                         value={
                           <>

@@ -120,19 +120,15 @@ const data: Kwartir = {
       text: 'Jawa Tengah'
     },
     {
-      img: 'https://upload.wikimedia.org/wikipedia/id/f/f9/Pramuka_Yogyakarta.png',
-      text: 'Yogyakarta'
-    },
-    {
       img: 'https://upload.wikimedia.org/wikipedia/id/b/b6/Pramuka_Jawa_Timur.png',
       text: 'Jawa Timur'
     }
   ],
   kalimantan: [
-    {
-      img: 'https://upload.wikimedia.org/wikipedia/id/2/28/Pramuka_Kalimantan_Barat.jpg',
-      text: 'Kalimantan Barat'
-    },
+    // {
+    //   img: 'https://upload.wikimedia.org/wikipedia/id/2/28/Pramuka_Kalimantan_Barat.jpg',
+    //   text: 'Kalimantan Barat'
+    // },
     {
       img: 'https://upload.wikimedia.org/wikipedia/id/f/f1/Pramuka_Kalimantan_Tengah.png',
       text: 'Kalimantan Tengah'

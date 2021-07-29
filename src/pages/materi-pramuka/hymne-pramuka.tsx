@@ -23,16 +23,16 @@ function HymnePramukaPage() {
             <div className="relative">
               <img className="w-full" src="/assets/6649.jpg" alt="Anak-anak bernyanyi" />
             </div>
-            <div className="py-4 px-6">
+            <div className="py-4 px-6 text-center">
               <ol>
                 {HymneData.data.lyrics.map((li) => (
-                  <li className="mb-2" key={li}>
+                  <li className="mb-2 italic" key={li}>
                     {li}
                   </li>
                 ))}
               </ol>
 
-              <audio controls className="mt-8">
+              <audio controls className="mt-8 w-full">
                 <source src={HymneData.data.audio} type="audio/mpeg" />
               </audio>
             </div>

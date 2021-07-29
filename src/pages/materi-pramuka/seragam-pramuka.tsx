@@ -69,7 +69,7 @@ function SeragamPramukaPage() {
           {data.map((item, index) => (
             <Expansion
               key={index}
-              index={index}
+              initialState={true}
               title={item.title}
               value={renderSection(item.section)}
             />

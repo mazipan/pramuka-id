@@ -2,38 +2,32 @@ import { createElement } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import {
-  BriefcaseIcon,
-  DownloadIcon,
-  GlobeAltIcon,
-  HandIcon,
-  HomeIcon
-} from '@heroicons/react/outline'
+import { FiHome, FiBriefcase, FiLayers, FiNavigation, FiDownload } from 'react-icons/fi'
 
 const items = [
   {
     text: 'Beranda',
-    icons: HomeIcon,
+    icons: FiHome,
     href: '/'
   },
   {
     text: 'Kenegaraan',
-    icons: BriefcaseIcon,
+    icons: FiBriefcase,
     href: '/materi-kenegaraan'
   },
   {
     text: 'Pramuka',
-    icons: GlobeAltIcon,
+    icons: FiLayers,
     href: '/materi-pramuka'
   },
   {
     text: 'Kecakapan',
-    icons: HandIcon,
+    icons: FiNavigation,
     href: '/materi-kecakapan-umum'
   },
   {
     text: 'Unduh',
-    icons: DownloadIcon,
+    icons: FiDownload,
     href: '/download'
   }
 ]

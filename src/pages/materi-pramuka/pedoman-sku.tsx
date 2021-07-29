@@ -23,7 +23,7 @@ function PedomanSkuPage() {
           {PedomanSkuDataJson.map((section, index) => (
             <Expansion
               key={index}
-              index={index}
+              initialState={true}
               title={section.typeDetail}
               value={section.data.map((step, indexStep) => (
                 <li key={step.title}>

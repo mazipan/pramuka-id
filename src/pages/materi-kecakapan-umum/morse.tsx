@@ -23,17 +23,17 @@ function LambangPramukaPage() {
             {MorseData.sections.map((section) => (
               <div key={section.key} className="mb-4">
                 <h3 className="text-xl font-bold">{section.title}</h3>
-                <div className="flex flex-wrap justify-center items-center mb-4 md:justify-start">
+                <div className="grid grid-cols-2 gap-3 my-4 md:grid-cols-3">
                   {/*
                             // @ts-ignore */}
                   {MorseData[section.key].map((item) => (
                     <div
                       key={item.text}
-                      className="flex overflow-hidden items-center w-1/2 rounded shadow-lg md:w-1/5"
+                      className="flex overflow-hidden items-center rounded shadow-lg dark:border dark:border-gray-30"
                     >
                       <div className="flex items-center py-2 px-2">
-                        <div className="w-10">{item.text}</div>{' '}
-                        <div className="text-orange-500">{item.code}</div>
+                        <div className="w-10 font-bold">{item.text}</div>{' '}
+                        <div className="text-yellow-500">{item.code}</div>
                       </div>
                     </div>
                   ))}

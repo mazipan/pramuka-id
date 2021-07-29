@@ -29,7 +29,7 @@ function SalamPramukaPage() {
             {SalamPramukaData.variant.map((section, index) => (
               <Expansion
                 key={index}
-                index={index}
+                initialState={true}
                 title={`${section.emoji} ${section.title}`}
                 value={
                   <>
@@ -54,7 +54,7 @@ function SalamPramukaPage() {
                       </ol>
                     )}
 
-                    <p className="mt-4 text-base text-secondary">Cara Melakukan:</p>
+                    <p className="mt-4 text-base text-secondary">Cara Melakukan {section.title}:</p>
                     {/*
                             // @ts-ignore */}
                     {getHowTo(section.key).steps.map((step, index) => (
@@ -73,13 +73,11 @@ function SalamPramukaPage() {
                             className="mt-4 text-secondary"
                             key={`${section.key}${step.title}-w-cond`}
                           >
-                            <p className="mb-4 font-bold">
-                              {index + 1}. {step.title}
-                            </p>
-                            <ol className="ml-6 list-lower-alpha">
+                            <p className="mb-4 italic">{step.title}</p>
+                            <ol className="mb-4 ml-6 list-lower-alpha">
                               {step.conditions.map((cond) => (
                                 <li key={`${section.key}${cond.title}`}>
-                                  {cond.title}
+                                  <p className="pl-2 mb-4 font-bold">{cond.title}</p>
                                   <ul>
                                     {cond.details.map((detail) => (
                                       <li className="pl-2 mb-4" key={`${section.key}${detail}`}>
