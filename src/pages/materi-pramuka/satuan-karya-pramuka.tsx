@@ -11,6 +11,7 @@ const title = `${TkkData.subtitle}`
 const desc = TkkData.description
 const url = BASE_PATH + '/materi-pramuka/satuan-karya-pramuka/'
 
+// @ts-ignore
 function renderSectionGroup(splitData, group) {
   return (
     <>
