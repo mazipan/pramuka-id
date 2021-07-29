@@ -1,14 +1,14 @@
-# 🌴 Buku Saku Pramuka
+# 🌴 [Pramuka.Online](https://pramuka.online)
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## Live Web
 
-https://buku-saku-pramuka.vercel.app/
+👉 https://pramuka.online
 
 ## Public API
 
-https://buku-saku-pramuka.vercel.app/api
+👉 https://pramuka.online/api
 
 ## Screenshots
 
