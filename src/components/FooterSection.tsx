@@ -4,7 +4,7 @@ function Footer() {
       <p>
         Dibuat oleh{' '}
         <a
-          href="https://mazipan.space/"
+          href="https://mazipan.space/?utm_source=pramuka"
           target="_blank"
           rel="noopenner noreferrer"
           className="font-bold text-link"
@@ -15,7 +15,7 @@ function Footer() {
       <p className="mt-2">
         Cek juga:{' '}
         <a
-          href="https://ksana.in/"
+          href="https://ksana.in/?utm_source=pramuka"
           target="_blank"
           rel="noopenner noreferrer"
           className="font-bold text-link"
@@ -24,7 +24,7 @@ function Footer() {
         </a>
         {', '}
         <a
-          href="https://www.baca-quran.id/"
+          href="https://www.baca-quran.id/?utm_source=pramuka"
           target="_blank"
           rel="noopenner noreferrer"
           className="font-bold text-link"
