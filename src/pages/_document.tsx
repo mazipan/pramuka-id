@@ -19,6 +19,7 @@ class MyDocument extends Document {
           content="u8olGi9rN_mzUhMWIqakLvCi-pQMluERfdUK_6bC4x4"
           name="google-site-verification"
         />
+        <meta name="google-site-verification" content="BBtZlBKBTEbm8atQF0aDRf1sxSqUMiojAB36tw0s4CU" />
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25065548-9" />
 
