@@ -61,7 +61,7 @@ function AboutPage() {
           </div>
 
           <div className="md:w-1/2">
-            <img alt="Berkemah" className="w-full rounded" src="/assets/5930.jpg" />
+            <img alt="Berkemah" className="w-full rounded" src="/assets/5930.jpeg" />
           </div>
         </div>
       </>

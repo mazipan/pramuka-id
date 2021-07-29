@@ -34,7 +34,7 @@ const BenderaSemaphore = () => {
                   // @ts-ignore */}
                   {dataSemaphore[section.key].map((item) => (
                     <div
-                      className="flex flex-col items-center p-2 rounded shadow-lg bg-card"
+                      className="flex flex-col items-center p-2 rounded-md shadow-lg dark:border bg-card dark:border-gray-30"
                       key={item.text}
                     >
                       <img src={item.img} alt={'Semaphore ' + item.text} />

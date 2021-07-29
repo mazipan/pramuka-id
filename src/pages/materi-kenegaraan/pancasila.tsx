@@ -27,7 +27,7 @@ function PancasilaPage() {
             {PancasilaData.data.map((section, index) => (
               <div
                 key={section}
-                className="flex overflow-hidden items-center mt-4 rounded shadow-lg bg-card"
+                className="flex overflow-hidden items-center mt-4 rounded-md shadow-lg dark:border bg-card dark:border-gray-30"
               >
                 <img className="min-w-80 min-h-80" src={`/assets/pancasila/${index + 1}.png`} />
                 <div className="py-4 px-6">
@@ -41,7 +41,7 @@ function PancasilaPage() {
             {PancasilaData.meaning.data.map((section) => (
               <div
                 key={section}
-                className="flex overflow-hidden items-center mt-4 rounded shadow-lg bg-card"
+                className="flex overflow-hidden items-center mt-4 rounded-md shadow-lg dark:border bg-card dark:border-gray-30"
               >
                 <div className="py-4 px-6">
                   <p>{section}</p>

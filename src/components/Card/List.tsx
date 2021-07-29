@@ -12,7 +12,7 @@ function CardList({ title, subtitle, href, external }: CardListProps) {
   const firstLetter = title.charAt(0).toUpperCase()
 
   return (
-    <div className="flex overflow-hidden justify-between items-center mt-4 w-full rounded-md shadow-lg dark:border dark:border-gray-30">
+    <div className="flex overflow-hidden justify-between items-center mt-4 w-full rounded-md shadow-lg dark:border bg-card dark:border-gray-30">
       <div className="flex w-full">
         <div className="flex justify-center items-center w-16 text-xl font-bold text-gray-100 bg-yellow-900 rounded-l-md">
           {firstLetter}

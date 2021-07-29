@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
+import Expansion from '../../components/Expansion'
 import KompasDataJson from '../../data/kompas'
 import { BASE_PATH } from '../../constants'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
@@ -12,16 +12,6 @@ const desc = 'Kompas di Buku Saku Pramuka'
 const url = BASE_PATH + '/materi-kecakapan-umum/kompas/'
 
 function KompasPage() {
-  const [collapsed, setCollapsed] = useState(-1)
-  const [tableOpen, setTable] = useState(false)
-
-  const handleCollapse = (index: number) => {
-    if (collapsed === index) {
-      setCollapsed(-1)
-    } else {
-      setCollapsed(index)
-    }
-  }
   return (
     <Layout>
       <>
@@ -60,38 +50,12 @@ function KompasPage() {
               <img src={KompasDataJson.dataCarKer.image} alt="cara-kerja" />
             </div>
             <p className="mt-2">{KompasDataJson.dataCarKer.paragraph}</p>
-            <div className="overflow-hidden mt-4 rounded shadow-lg bg-card">
-              <div className="flex flex-wrap justify-between items-center py-4 px-6 w-full">
-                <div className="font-semibold min-w-250">Tabel Arah Mata Angin</div>
-                <button
-                  onClick={() => {
-                    setTable(!tableOpen)
-                  }}
-                  className="inline-flex items-center py-2 px-4 rounded bg-primary text-button hover:bg-secondary"
-                >
-                  {tableOpen ? 'Tutup tabel' : 'Lihat tabel'}
-                  <svg
-                    className={`w-4 h-4 ml-2 transition ease-in-out duration-500 transform ${
-                      tableOpen ? '-rotate-180' : 'rotate-0'
-                    }`}
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
-                </button>
-              </div>
-              <div
-                className={`transition duration-150 ease-in-out ${tableOpen ? 'block' : 'hidden'}`}
-              >
-                <div className="py-4 px-6 w-full">
+
+            <Expansion
+              initialState={true}
+              title="Tabel Arah Mata Angin"
+              value={
+                <div className="overflow-auto py-4 px-6 w-full">
                   <table className="table-auto">
                     <thead>
                       <tr>
@@ -115,9 +79,10 @@ function KompasPage() {
                     </tbody>
                   </table>
                 </div>
-              </div>
-            </div>
+              }
+            />
           </div>
+
           <div className="mt-4 sectionBagian">
             <p className="mt-2 mb-4 text-xl font-bold md:text-2xl">
               {KompasDataJson.dataBagian.heading}
@@ -152,50 +117,20 @@ function KompasPage() {
             </p>
 
             <div>
-              {KompasDataJson.dataJenis.list.map((data, index) => (
-                <div key={index} className="overflow-hidden mt-4 rounded shadow-lg bg-card">
-                  <div className="flex flex-wrap justify-between items-center py-4 px-6 w-full">
-                    <div className="font-semibold min-w-250">{data.title}</div>
-
-                    <button
-                      onClick={() => {
-                        handleCollapse(index)
-                      }}
-                      className="inline-flex items-center py-2 px-4 rounded bg-primary text-button hover:bg-secondary"
-                    >
-                      {collapsed === index ? 'Tutup detail' : 'Lihat detail'}
-                      <svg
-                        className={`w-4 h-4 ml-2 transition ease-in-out duration-500 transform ${
-                          collapsed === index ? '-rotate-180' : 'rotate-0'
-                        }`}
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                      </svg>
-                    </button>
-                  </div>
-
-                  <div
-                    className={`transition duration-150 ease-in-out ${
-                      collapsed === index ? 'block' : 'hidden'
-                    }`}
-                  >
-                    <div key={'jenis-' + index}>
-                      <div>
-                        <img className="w-56" src={data.image} alt="cara-kerja" />
+              {KompasDataJson.dataJenis.list.map((data) => (
+                <Expansion
+                  initialState={true}
+                  title={data.title}
+                  value={
+                    <>
+                      <div className="flex justify-center w-full">
+                        <img className="w-56 rounded-md" src={data.image} alt="cara-kerja" />
                       </div>
                       <p className="p-4 mt-4 mb-4">{data.desc}</p>
-                    </div>
-                  </div>
-                </div>
+                    </>
+                  }
+                  key={data.title}
+                />
               ))}
             </div>
           </div>

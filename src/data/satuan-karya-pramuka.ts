@@ -24,7 +24,7 @@ export interface SatuanKaryaPramuka {
 
 const data: SatuanKaryaPramuka = {
   title: 'Materi Pramuka',
-  subtitle: 'Satuan Karya (Saka) Pramuka',
+  subtitle: 'Satuan Karya Pramuka',
   description: 'Penjelasan lengkap mengenai Satuan Karya (Saka) Pramuka',
   source: 'https://id.m.wikipedia.org/wiki/Satuan_Karya_Pramuka',
   meaning: `

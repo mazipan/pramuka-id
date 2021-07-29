@@ -19,9 +19,12 @@ function HymnePramukaPage() {
         <ChapterTitle subTitle="Hymne Pramuka" title="Materi Pramuka" />
 
         <div className="text-left">
-          <div className="overflow-hidden mt-4 rounded shadow-lg bg-card" id={HymneData.id}>
+          <div
+            className="overflow-hidden mt-4 rounded-md shadow-lg dark:border bg-card dark:border-gray-30"
+            id={HymneData.id}
+          >
             <div className="relative">
-              <img className="w-full" src="/assets/6649.jpg" alt="Anak-anak bernyanyi" />
+              <img className="w-full" src="/assets/6649.jpeg" alt="Anak-anak bernyanyi" />
             </div>
             <div className="py-4 px-6 text-center">
               <ol>

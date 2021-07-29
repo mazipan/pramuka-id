@@ -36,12 +36,12 @@ const data: ContentItem[] = [
     href: '/materi-pramuka/',
     children: [
       {
-        text: 'Dwi Satya (untuk Pramuka Siaga)',
+        text: 'Dwi Satya',
         href: '/materi-pramuka/dwi-satya/',
         api: '/api/dwi-satya'
       },
       {
-        text: 'Dwi Dharma (untuk Pramuka Siaga)',
+        text: 'Dwi Dharma',
         href: '/materi-pramuka/dwi-dharma/',
         api: '/api/dwi-dharma'
       },
@@ -76,7 +76,7 @@ const data: ContentItem[] = [
         api: '/api/salam-pramuka'
       },
       {
-        text: 'Pedoman Menyelesaikan SKU',
+        text: 'Pedoman SKU',
         href: '/materi-pramuka/pedoman-sku/',
         api: '/api/pedoman-sku'
       },
@@ -122,7 +122,7 @@ const data: ContentItem[] = [
         api: '/api/lagu-lagu-pramuka'
       },
       {
-        text: 'Tanda Kecakapan Khusus (TKK)',
+        text: 'Tanda Kecakapan Khusus',
         href: '/materi-kecakapan-umum/tanda-kecakapan-khusus/',
         api: '/api/tanda-kecakapan-khusus'
       },

@@ -50,7 +50,7 @@ function LambangPramukaPage() {
                     <div
                       key={item.text}
                       onClick={() => canSpeak && playAudio(item.code.toLowerCase())}
-                      className="flex overflow-hidden items-center rounded shadow-lg dark:border cursor-pointerz dark:border-gray-30"
+                      className="flex overflow-hidden items-center rounded-md shadow-lg dark:border bg-card cursor-pointerz dark:border-gray-30"
                     >
                       <div className="flex items-center py-4 px-2 w-full">
                         <div className="w-10 font-bold">{item.text}</div>{' '}

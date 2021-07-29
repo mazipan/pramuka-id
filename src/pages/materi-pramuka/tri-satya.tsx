@@ -19,9 +19,12 @@ function TriSatyaPage() {
         <ChapterTitle subTitle="Tri Satya" title="Materi Pramuka" />
 
         <div className="text-left">
-          <div className="overflow-hidden mt-4 rounded shadow-lg bg-card" id={TriSatyaDataJson.id}>
+          <div
+            className="overflow-hidden mt-4 rounded-md shadow-lg dark:border bg-card dark:border-gray-30"
+            id={TriSatyaDataJson.id}
+          >
             <div className="relative">
-              <img className="w-full" src="/assets/5766.jpg" alt="Anak-anak berkemah" />
+              <img className="w-full" src="/assets/5766.jpeg" alt="Anak-anak berkemah" />
             </div>
             <div className="py-4 px-6">
               <p>{TriSatyaDataJson.preface}</p>

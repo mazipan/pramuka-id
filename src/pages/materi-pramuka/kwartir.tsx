@@ -31,7 +31,7 @@ const KwartirPage = () => {
                             // @ts-ignore */}
                   {dataKwartirJson[section.key].map((item) => (
                     <div
-                      className="flex flex-col items-center p-2 rounded-md shadow-lg dark:border dark:border-gray-30"
+                      className="flex flex-col items-center p-2 rounded-md shadow-lg dark:border bg-card dark:border-gray-30"
                       key={item.text}
                     >
                       <img className="w-auto h-40" src={item.img} alt={item.text} />

@@ -23,7 +23,7 @@ function UUD45Page() {
             {Uud45Data.map((section) => (
               <div
                 key={section}
-                className="flex overflow-hidden items-center mt-4 rounded shadow-lg bg-card"
+                className="flex overflow-hidden items-center mt-4 rounded-md shadow-lg dark:border bg-card dark:border-gray-30"
               >
                 <div className="py-4 px-6">
                   <p>{section}</p>

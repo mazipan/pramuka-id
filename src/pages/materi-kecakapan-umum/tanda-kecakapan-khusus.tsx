@@ -21,7 +21,7 @@ function TandaKecakapanKhusus() {
     <Layout>
       <>
         <MetaHead title={title} desc={desc} url={url} />
-        <BreadcrumbLevel3 text={TkkData.subtitle} href={url} />
+        <BreadcrumbLevel3 text="Kecakapan Khusus" href={url} />
         <ChapterTitle subTitle={TkkData.subtitle} title={TkkData.title} />
 
         <div className="text-left">

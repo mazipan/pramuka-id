@@ -91,7 +91,7 @@ function BreadcrumbLevel3({ text, href }: BreadcrumbLevel3Props) {
 
         <Link href={parent.href}>
           <a title={parent.text}>
-            <span className="text-sm">{parent.text}</span>
+            <span className="text-sm truncate">{parent.text}</span>
           </a>
         </Link>
 
@@ -99,7 +99,7 @@ function BreadcrumbLevel3({ text, href }: BreadcrumbLevel3Props) {
 
         <Link href={href}>
           <a title={text}>
-            <span className="text-sm">{text}</span>
+            <span className="text-sm truncate">{text}</span>
           </a>
         </Link>
       </nav>

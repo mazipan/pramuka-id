@@ -14,9 +14,9 @@ const Expansion = ({ title, value, initialState }: ExpansionProps) => {
   }
 
   return (
-    <div className="overflow-hidden mt-4 rounded shadow-lg bg-card">
-      <div className="flex flex-wrap justify-between items-center py-4 px-6 w-full">
-        <div className="text-xl font-bold min-w-250">{title}</div>
+    <div className="overflow-hidden mt-4 rounded-md shadow-lg dark:border bg-card dark:border-gray-30">
+      <div className="flex justify-between items-center py-4 px-6 w-full">
+        <div className="text-xl font-bold">{title}</div>
 
         <button
           onClick={() => {

@@ -30,7 +30,7 @@ function LambangPramukaPage() {
             {LambangPramukaJson.meanings.map((section, index) => (
               <div
                 key={section}
-                className="flex overflow-hidden items-center mt-4 rounded shadow-lg bg-card"
+                className="flex overflow-hidden items-center mt-4 rounded-md shadow-lg dark:border bg-card dark:border-gray-30"
               >
                 <div className="flex justify-center items-center text-3xl font-bold text-center md:text-4xl min-w-80 min-h-80">
                   {index + 1}

@@ -27,7 +27,7 @@ function Header() {
 
           <div className="flex items-center">
             <button
-              className="py-2 px-4 font-bold rounded hover:bg-opacity-10 focus:bg-opacity-10"
+              className="py-2 px-4 font-bold rounded-md hover:bg-opacity-10 focus:bg-opacity-10"
               onClick={onSwitchTheme}
               type="button"
               aria-label={`Switch to ${nextTheme}`}

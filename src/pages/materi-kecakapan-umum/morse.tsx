@@ -29,7 +29,7 @@ function LambangPramukaPage() {
                   {MorseData[section.key].map((item) => (
                     <div
                       key={item.text}
-                      className="flex overflow-hidden items-center rounded shadow-lg dark:border dark:border-gray-30"
+                      className="flex overflow-hidden items-center rounded-md shadow-lg dark:border bg-card dark:border-gray-30"
                     >
                       <div className="flex items-center py-2 px-2">
                         <div className="w-10 font-bold">{item.text}</div>{' '}
