@@ -8,16 +8,16 @@ import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/inde
 
 import DataDownload from '../../data/download-sku'
 
-const title = 'Download Buku SKU PDF'
-const desc = 'Download buku saku dan panduan dalam bentuk PDF di Buku Saku Pramuka'
+const title = 'Download PDF Buku SKU Pramuka'
+const desc = 'Download PDF buku SKU pramuka dan buku panduan penyelesaian SKU lengkap. Tersedia untuk Pramuka Siaga, Penggalang, Penegak dan Pandega.'
 const url = BASE_PATH + '/download/'
 
-function DwiDharmaPage() {
+function DownloadPage() {
   return (
     <Layout>
       <>
         <MetaHead title={title} desc={desc} url={url} />
-        <ChapterTitle subTitle="Unduh Buku SKU dan Panduan" title="Unduh Materi" />
+        <ChapterTitle subTitle="Unduh SKU dan Panduan Penyelesaian" title="Unduh Materi" />
 
         <div className="text-left">
           <div className="mt-8 text-left">
@@ -49,4 +49,4 @@ export function reportWebVitals(param: ReportCoreWebVitalsParams) {
   reportCoreWebVitals(param)
 }
 
-export default DwiDharmaPage
+export default DownloadPage
