@@ -8,7 +8,6 @@ import Expansion from '../../components/Expansion'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = `${TepukData.subtitle}`
-const desc = TepukData.description
 const metaDesc = 'Penjelasan macam-macam tepuk pramuka beserta aturan cara mengerjakannya'
 const url = BASE_PATH + '/materi-kecakapan-umum/tepuk-pramuka'
 
