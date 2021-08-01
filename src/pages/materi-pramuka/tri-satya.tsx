@@ -7,7 +7,7 @@ import { BASE_PATH } from '../../constants'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = 'Tri Satya Pramuka'
-const desc = 'Penjelasan lengkap mengenai Tri Satya Pramuka di Buku Saku Pramuka'
+const desc = 'Penjelasan lengkap mengenai Tri Satya Pramuka untuk anggota pramuka'
 const url = BASE_PATH + '/materi-pramuka/tri-satya/'
 
 function TriSatyaPage() {

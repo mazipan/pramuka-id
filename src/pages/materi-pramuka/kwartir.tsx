@@ -8,7 +8,7 @@ import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/inde
 
 const title = 'Kwartir di Indonesia'
 const subtitle = 'Kwartir di Indonesia'
-const desc = 'Penjelasan lengkap mengenai kwartir di Indonesia'
+const desc = 'Penjelasan lengkap mengenai berbagai Kwartir Pramuka di Indonesia'
 const url = BASE_PATH + '/materi-pramuka/kwartir/'
 
 const KwartirPage = () => {

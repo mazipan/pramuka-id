@@ -8,7 +8,8 @@ import { BASE_PATH } from '../../constants'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = 'Mengenal Kompas'
-const desc = 'Kompas di Buku Saku Pramuka'
+const desc =
+  'Memahami Kompas: sejarah, fungsi, cara kerja dan jenis-jenis kompas untuk anggota pramuka'
 const url = BASE_PATH + '/materi-kecakapan-umum/kompas/'
 
 function KompasPage() {

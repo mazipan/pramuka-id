@@ -12,7 +12,7 @@ import Expansion from '../../components/Expansion'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = 'Hari Peringatan'
-const desc = 'Hari peringatan nasional, baca selengkapnya di Buku Saku Pramuka'
+const desc = 'Hari peringatan nasional dan hari penting lainnya'
 const url = BASE_PATH + '/materi-kecakapan-umum/salam-pramuka/'
 
 function HariPeringatanNasionalPage() {

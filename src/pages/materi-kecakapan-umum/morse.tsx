@@ -7,7 +7,7 @@ import { BASE_PATH } from '../../constants'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = 'Kode Morse Lengkap'
-const desc = 'Daftar lengkap kode morse beserta cara menghafalnya'
+const desc = 'Daftar lengkap kode morse untuk anggota pramuka dan umum, beserta cara menghafalnya'
 const url = BASE_PATH + '/materi-kecakapan-umum/morse/'
 
 function LambangPramukaPage() {

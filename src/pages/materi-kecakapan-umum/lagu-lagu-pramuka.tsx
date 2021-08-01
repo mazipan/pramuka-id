@@ -8,7 +8,8 @@ import Expansion from '../../components/Expansion'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = `${SongsData.subtitle}`
-const desc = SongsData.description
+const desc =
+  'Kumpulan lagu-lagu yang sering dinyanyikan pada saat kegiatan pramuka, disertai audio MP3'
 const url = BASE_PATH + '/materi-kecakapan-umum/lagu-lagu-pramuka/'
 
 function LaguLaguPramuka() {

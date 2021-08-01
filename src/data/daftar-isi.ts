@@ -61,24 +61,14 @@ const data: ContentItem[] = [
         api: '/api/hymne-pramuka'
       },
       {
-        text: 'Kwartir',
-        href: '/materi-pramuka/kwartir/',
-        api: '/api/kwartir'
+        text: 'Sandi Ambalan',
+        href: '/materi-pramuka/sandi-ambalan/',
+        api: '/api/sandi-ambalan'
       },
       {
         text: 'Lambang Pramuka',
         href: '/materi-pramuka/lambang-pramuka/',
         api: '/api/lambang-pramuka'
-      },
-      {
-        text: 'Salam Pramuka',
-        href: '/materi-pramuka/salam-pramuka/',
-        api: '/api/salam-pramuka'
-      },
-      {
-        text: 'Pedoman SKU',
-        href: '/materi-pramuka/pedoman-sku/',
-        api: '/api/pedoman-sku'
       },
       {
         text: 'Seragam Pramuka',
@@ -89,6 +79,11 @@ const data: ContentItem[] = [
         text: 'Satuan Karya Pramuka',
         href: '/materi-pramuka/satuan-karya-pramuka/',
         api: '/api/satuan-karya-pramuka'
+      },
+      {
+        text: 'Kwartir',
+        href: '/materi-pramuka/kwartir/',
+        api: '/api/kwartir'
       }
     ]
   },
@@ -96,6 +91,16 @@ const data: ContentItem[] = [
     text: 'Materi Kecakapan Umum',
     href: '/materi-kecakapan-umum/',
     children: [
+      {
+        text: 'Tepuk Pramuka',
+        href: '/materi-kecakapan-umum/tepuk-pramuka/',
+        api: '/api/tepuk-pramuka'
+      },
+      {
+        text: 'Salam Pramuka',
+        href: '/materi-kecakapan-umum/salam-pramuka/',
+        api: '/api/salam-pramuka'
+      },
       {
         text: 'Bendera Semaphore',
         href: '/materi-kecakapan-umum/bendera-semaphore/',
@@ -112,9 +117,9 @@ const data: ContentItem[] = [
         api: '/api/radio'
       },
       {
-        text: 'Hari Peringatan Nasional',
-        href: '/materi-kecakapan-umum/hari-peringatan-nasional/',
-        api: '/api/hari-peringatan-nasional'
+        text: 'Kompas',
+        href: '/materi-kecakapan-umum/kompas/',
+        api: '/api/kompas'
       },
       {
         text: 'Lagu-Lagu Pramuka',
@@ -122,19 +127,19 @@ const data: ContentItem[] = [
         api: '/api/lagu-lagu-pramuka'
       },
       {
+        text: 'Pedoman SKU',
+        href: '/materi-kecakapan-umum/pedoman-sku/',
+        api: '/api/pedoman-sku'
+      },
+      {
         text: 'Tanda Kecakapan Khusus',
         href: '/materi-kecakapan-umum/tanda-kecakapan-khusus/',
         api: '/api/tanda-kecakapan-khusus'
       },
       {
-        text: 'Tepuk Pramuka',
-        href: '/materi-kecakapan-umum/tepuk-pramuka/',
-        api: '/api/tepuk-pramuka'
-      },
-      {
-        text: 'Kompas',
-        href: '/materi-kecakapan-umum/kompas/',
-        api: '/api/kompas'
+        text: 'Hari Peringatan Nasional',
+        href: '/materi-kecakapan-umum/hari-peringatan-nasional/',
+        api: '/api/hari-peringatan-nasional'
       }
     ]
   }

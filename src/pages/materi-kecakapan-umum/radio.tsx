@@ -11,7 +11,7 @@ import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/inde
 import { useState } from 'react'
 
 const title = 'Kode Radio Lengkap'
-const desc = 'Daftar lengkap kode radio'
+const desc = 'Daftar lengkap kode radio untuk anggota pramuka dan umum, dilengkapi dengan audio'
 const url = BASE_PATH + '/materi-kecakapan-umum/radio/'
 
 function LambangPramukaPage() {

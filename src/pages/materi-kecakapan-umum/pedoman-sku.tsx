@@ -9,7 +9,7 @@ import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/inde
 
 const title = 'Pedoman SKU'
 const desc = 'Baca pedoman umum untuk menyelesaikan SKU di Buku Saku Pramuka'
-const url = BASE_PATH + '/materi-pramuka/pedoman-sku/'
+const url = BASE_PATH + '/materi-kecakapan-umum/pedoman-sku/'
 
 function PedomanSkuPage() {
   return (

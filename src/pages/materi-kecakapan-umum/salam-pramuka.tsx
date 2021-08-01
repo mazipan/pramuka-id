@@ -8,8 +8,9 @@ import Expansion from '../../components/Expansion'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = 'Salam Pramuka'
-const desc = 'Penjelasan jenis-jenis salam pramuka beserta artinya, kepada siapa disampaikan serta cara-cara memberikan salam.'
-const url = BASE_PATH + '/materi-pramuka/salam-pramuka/'
+const desc =
+  'Penjelasan jenis-jenis salam pramuka beserta artinya, kepada siapa disampaikan serta cara-cara memberikan salam.'
+const url = BASE_PATH + '/materi-kecakapan-umum/salam-pramuka/'
 
 function SalamPramukaPage() {
   const getHowTo = (key: string) => {

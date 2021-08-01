@@ -7,7 +7,7 @@ import { BASE_PATH } from '../../constants'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = 'Sandi Ambalan'
-const desc = 'Sandi Ambalan di Buku Saku Pramuka'
+const desc = 'Sandi ambalan bagi anggota pramuka'
 const url = BASE_PATH + '/materi-pramuka/sandi-ambalan/'
 
 function SandiAmbalanPage() {

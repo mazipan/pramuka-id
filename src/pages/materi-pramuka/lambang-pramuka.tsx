@@ -8,7 +8,7 @@ import { BASE_PATH } from '../../constants'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = 'Lambang Pramuka'
-const desc = 'Baca arti dan makna dari lambang pramuka di Buku Saku Pramuka'
+const desc = 'Penjelasan lengkap arti dan makna dari lambang pramuka'
 const url = BASE_PATH + '/materi-pramuka/lambang-pramuka/'
 
 function LambangPramukaPage() {

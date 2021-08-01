@@ -7,7 +7,7 @@ import { BASE_PATH } from '../../constants'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = 'Hymne Pramuka'
-const desc = 'Lirik beserta audio Hymne Pramuka di Buku Saku Pramuka'
+const desc = 'Lirik beserta audio Hymne Pramuka, lagu wajib bagi seluruh anggota pramuka'
 const url = BASE_PATH + '/materi-pramuka/hymne-pramuka/'
 
 function HymnePramukaPage() {

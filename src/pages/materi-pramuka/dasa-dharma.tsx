@@ -7,7 +7,7 @@ import { BASE_PATH } from '../../constants'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = 'Dasa Dharma Pramuka'
-const desc = 'Penjelasan lengkap mengenai Dasa Dharma Pramuka di Buku Saku Pramuka'
+const desc = 'Penjelasan lengkap mengenai Dasa Dharma Pramuka untuk anggota pramuka'
 const url = BASE_PATH + '/materi-pramuka/dasa-dharma/'
 
 function DasaDharmaPage() {
