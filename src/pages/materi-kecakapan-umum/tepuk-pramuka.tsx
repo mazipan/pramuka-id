@@ -9,13 +9,14 @@ import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/inde
 
 const title = `${TepukData.subtitle}`
 const desc = TepukData.description
+const metaDesc = 'Penjelasan macam-macam tepuk pramuka beserta aturan cara mengerjakannya'
 const url = BASE_PATH + '/materi-kecakapan-umum/tepuk-pramuka'
 
 function TepukPramuka() {
   return (
     <Layout>
       <>
-        <MetaHead title={title} desc={desc} url={url} />
+        <MetaHead title={title} desc={metaDesc} url={url} />
         <BreadcrumbLevel3 text={TepukData.subtitle} href={url} />
         <ChapterTitle subTitle={TepukData.subtitle} title={TepukData.title} />
 
