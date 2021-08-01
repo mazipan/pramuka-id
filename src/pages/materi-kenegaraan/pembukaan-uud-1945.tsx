@@ -2,12 +2,13 @@ import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
+import SeoText from '../../components/SeoText'
 import Uud45Data from '../../data/uud45'
 import { BASE_PATH } from '../../constants'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
-const title = 'UUD 1945'
-const desc = 'UUD 1945 di Buku Saku Pramuka'
+const title = 'Pembukaan UUD 1945'
+const desc = 'Bacaan lengkap pembukaan Undang-Undang Dasar (UUD) 1945'
 const url = BASE_PATH + '/materi-kenegaraan/pembukaan-uud-1945/'
 
 function UUD45Page() {
@@ -32,6 +33,7 @@ function UUD45Page() {
             ))}
           </div>
         </div>
+        <SeoText text={desc} />
       </>
     </Layout>
   )

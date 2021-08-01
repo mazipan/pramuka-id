@@ -2,12 +2,14 @@ import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
+import SeoText from '../../components/SeoText'
 import PancasilaData from '../../data/pancasila'
 import { BASE_PATH } from '../../constants'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = 'Pancasila'
-const desc = 'Isi dan Arti dari Pancasila di Buku Saku Pramuka'
+const desc =
+  'Isi dan Arti dari Pancasila beserta lambang gambar dan arti dari jumlah bulu pada burung garuda'
 const url = BASE_PATH + '/materi-kenegaraan/pancasila/'
 
 function PancasilaPage() {
@@ -50,6 +52,7 @@ function PancasilaPage() {
             ))}
           </div>
         </div>
+        <SeoText text={desc} />
       </>
     </Layout>
   )

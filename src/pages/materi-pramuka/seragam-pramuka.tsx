@@ -4,6 +4,7 @@ import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
+import SeoText from '../../components/SeoText'
 import SeragamPramukaDataJson from '../../data/seragam-pramuka'
 import { BASE_PATH } from '../../constants'
 import Text from '../../components/Text'
@@ -11,6 +12,7 @@ import Expansion from '../../components/Expansion'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const { title, subtitle, description, data } = SeragamPramukaDataJson
+const desc = description
 const title_ = `${subtitle}`
 const url = BASE_PATH + '/materi-pramuka/seragam-pramuka/'
 
@@ -75,6 +77,8 @@ function SeragamPramukaPage() {
             />
           ))}
         </div>
+
+        <SeoText text={desc} />
       </>
     </Layout>
   )

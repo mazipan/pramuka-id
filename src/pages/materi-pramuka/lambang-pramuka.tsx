@@ -2,6 +2,7 @@ import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
+import SeoText from '../../components/SeoText'
 import IconPramuka from '../../components/IconPramuka'
 import LambangPramukaJson from '../../data/lambang-pramuka'
 import { BASE_PATH } from '../../constants'
@@ -46,6 +47,8 @@ function LambangPramukaPage() {
           <p className="mt-4">{LambangPramukaJson.overall_meaning}</p>
           <p className="mt-4">{LambangPramukaJson.usage}</p>
         </div>
+
+        <SeoText text={desc} />
       </>
     </Layout>
   )

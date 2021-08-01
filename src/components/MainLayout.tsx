@@ -7,6 +7,7 @@ import { FiChevronUp } from 'react-icons/fi'
 import Header from './HeaderSection'
 import FooterSection from './FooterSection'
 import BottomNavigation from './BottomNavigation'
+import SubmitGhIssue from './SubmitGhIssue'
 import { BASE_PATH } from '../constants'
 import { scrollTo } from '../utils'
 
@@ -55,6 +56,7 @@ function Layout({ children }: LayoutProps) {
         <main className="flex-1 p-4 mx-auto mt-14 mb-16 w-full sm:max-w-xl">
           <>
             {children}
+            <SubmitGhIssue />
             <FooterSection />
           </>
         </main>

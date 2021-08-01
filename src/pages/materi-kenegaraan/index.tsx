@@ -1,6 +1,6 @@
 import Layout from '../../components/MainLayout'
+import SeoText from '../../components/SeoText'
 import CardList from '../../components/Card/List'
-import SubmitGhIssue from '../../components/SubmitGhIssue'
 import DataDaftarIsi, { ContentItem } from '../../data/daftar-isi'
 
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
@@ -32,9 +32,8 @@ function MateriKenegaraanPage() {
               </li>
             ))}
           </ul>
-
-          <SubmitGhIssue />
         </div>
+        <SeoText text={desc} />
       </>
     </Layout>
   )

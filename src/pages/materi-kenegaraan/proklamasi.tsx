@@ -2,12 +2,13 @@ import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
+import SeoText from '../../components/SeoText'
 import ProklamasiData from '../../data/proklamasi'
 import { BASE_PATH } from '../../constants'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = 'Proklamasi'
-const desc = 'Teks proklamasi di Buku Saku Pramuka'
+const desc = 'Teks dan audio proklamasi yang dibacakan pada saat kemerdekaan Indonesia'
 const url = BASE_PATH + '/materi-kenegaraan/proklamasi/'
 
 function ProklamasiPage() {
@@ -45,6 +46,7 @@ function ProklamasiPage() {
             alt="Naskah proklamasi"
           />
         </div>
+        <SeoText text={desc} />
       </>
     </Layout>
   )

@@ -2,6 +2,7 @@ import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
+import SeoText from '../../components/SeoText'
 import SongsData, { Song } from '../../data/lagu-lagu-pramuka'
 import { BASE_PATH } from '../../constants'
 import Expansion from '../../components/Expansion'
@@ -90,6 +91,7 @@ function LaguLaguPramuka() {
             ))}
           </div>
         </div>
+        <SeoText text={desc} />
       </>
     </Layout>
   )

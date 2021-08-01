@@ -3,6 +3,7 @@ import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
+import SeoText from '../../components/SeoText'
 import RadioData from '../../data/radio'
 import { FiVolume2 } from 'react-icons/fi'
 import { BASE_PATH } from '../../constants'
@@ -74,6 +75,7 @@ function LambangPramukaPage() {
             ))}
           </div>
         </div>
+        <SeoText text={desc} />
       </>
     </Layout>
   )

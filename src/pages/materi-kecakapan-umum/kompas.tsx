@@ -2,6 +2,7 @@ import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
+import SeoText from '../../components/SeoText'
 import Expansion from '../../components/Expansion'
 import KompasDataJson from '../../data/kompas'
 import { BASE_PATH } from '../../constants'
@@ -136,6 +137,7 @@ function KompasPage() {
             </div>
           </div>
         </div>
+        <SeoText text={desc} />
       </>
     </Layout>
   )

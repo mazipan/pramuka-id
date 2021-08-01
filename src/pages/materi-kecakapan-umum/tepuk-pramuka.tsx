@@ -2,20 +2,21 @@ import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
+import SeoText from '../../components/SeoText'
 import TepukData from '../../data/tepuk-pramuka'
 import { BASE_PATH } from '../../constants'
 import Expansion from '../../components/Expansion'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/index'
 
 const title = `${TepukData.subtitle}`
-const metaDesc = 'Penjelasan macam-macam tepuk pramuka beserta aturan cara mengerjakannya'
+const desc = 'Penjelasan macam-macam tepuk pramuka beserta aturan cara mengerjakannya'
 const url = BASE_PATH + '/materi-kecakapan-umum/tepuk-pramuka'
 
 function TepukPramuka() {
   return (
     <Layout>
       <>
-        <MetaHead title={title} desc={metaDesc} url={url} />
+        <MetaHead title={title} desc={desc} url={url} />
         <BreadcrumbLevel3 text={TepukData.subtitle} href={url} />
         <ChapterTitle subTitle={TepukData.subtitle} title={TepukData.title} />
 
@@ -63,6 +64,7 @@ function TepukPramuka() {
             ))}
           </div>
         </div>
+        <SeoText text={desc} />
       </>
     </Layout>
   )

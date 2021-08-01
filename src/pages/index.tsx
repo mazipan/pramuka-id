@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Layout from '../components/MainLayout'
-import SubmitGhIssue from '../components/SubmitGhIssue'
 import DataDaftarIsi from '../data/daftar-isi'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../utils/index'
 
@@ -38,8 +37,6 @@ function DaftarIsiPage() {
               )}
             </div>
           ))}
-
-          <SubmitGhIssue />
         </div>
       </>
     </Layout>

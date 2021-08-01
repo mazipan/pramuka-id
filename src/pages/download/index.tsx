@@ -1,6 +1,7 @@
 import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
 import ChapterTitle from '../../components/ChapterTitle'
+import SeoText from '../../components/SeoText'
 import CardList from '../../components/Card/List'
 import { BASE_PATH } from '../../constants'
 
@@ -41,6 +42,7 @@ function DownloadPage() {
             </div>
           </div>
         </div>
+        <SeoText text={desc} />
       </>
     </Layout>
   )
