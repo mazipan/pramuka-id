@@ -40,6 +40,7 @@ function findParent(str: string): BreadcrumbLevel3Props {
 
 function BreadcrumbLevel3({ text, href }: BreadcrumbLevel3Props) {
   const parent = findParent(href)
+  const isHaveBasePath = href.indexOf(BASE_PATH) >= 0
 
   return (
     <>
@@ -70,7 +71,7 @@ function BreadcrumbLevel3({ text, href }: BreadcrumbLevel3Props) {
                       '@type': 'ListItem',
                       position: 2,
                       name: text,
-                      item: href
+                      item: isHaveBasePath ? href : BASE_PATH + href
                     }
                   ]
                 }
