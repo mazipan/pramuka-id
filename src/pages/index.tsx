@@ -1,5 +1,7 @@
-import Link from 'next/link'
 import Layout from '../components/MainLayout'
+import SeoText from '../components/SeoText'
+import CardList from '../components/Card/List'
+
 import DataDaftarIsi from '../data/daftar-isi'
 import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../utils/index'
 
@@ -21,16 +23,14 @@ function DaftarIsiPage() {
         <div className="text-left">
           {DataDaftarIsi.map((bab) => (
             <div key={bab.text}>
-              <h2 className="mt-8 mb-4 text-xl font-medium md:text-2xl">{bab.text}</h2>
+              <h2 className="mt-8 mb-4 text-xl font-medium font-bold text-center md:text-2xl">
+                {bab.text}
+              </h2>
               {bab.children && bab.children.length > 0 && (
                 <ul>
                   {bab.children.map((babChild) => (
                     <li className="mb-2" key={babChild.href}>
-                      <h3 className="mb-2 font-medium text-link">
-                        <Link href={babChild.href}>
-                          <a title={babChild.text}>{babChild.text}</a>
-                        </Link>
-                      </h3>
+                      <CardList title={babChild.text} href={babChild.href} />
                     </li>
                   ))}
                 </ul>
@@ -38,6 +38,8 @@ function DaftarIsiPage() {
             </div>
           ))}
         </div>
+
+        <SeoText text={desc} />
       </>
     </Layout>
   )
