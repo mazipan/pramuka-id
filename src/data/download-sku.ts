@@ -22,7 +22,7 @@ const data: DownloadSku = {
       key: 'sku'
     },
     {
-      title: 'Buku Panduan SKU',
+      title: 'Buku Panduan Penyelesaian SKU',
       key: 'panduan'
     }
   ],
