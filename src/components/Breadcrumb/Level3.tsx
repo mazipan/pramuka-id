@@ -64,7 +64,7 @@ function BreadcrumbLevel3({ text, href }: BreadcrumbLevel3Props) {
                       '@type': 'ListItem',
                       position: 2,
                       name: parent.text,
-                      item: parent.href
+                      item: BASE_PATH + parent.href
                     },
                     {
                       '@type': 'ListItem',
