@@ -41,9 +41,8 @@ function DownloadPage() {
                           <tr key={type} className="text-left border-b border-gray-300">
                             <td className="py-3 px-4 capitalize">{type}</td>
                             <td className="flex justify-center py-3 px-4 text-yellow-700">
-                              {/*
-                          // @ts-ignore */}
                               <a
+                                // @ts-ignore
                                 href={DataDownload[section.key][type]}
                                 target="_blank"
                                 rel="nofollow noopener noreferrer"
