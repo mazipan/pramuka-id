@@ -4,7 +4,7 @@
     "module": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
-    "jsx": "react",
+    "jsx": "preserve",
     "removeComments": true,
     "noEmit": true,
     "isolatedModules": true,
@@ -30,6 +30,6 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true
   },
-  "include": ["src/**/*", "node_modules/@types"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
   "exclude": ["node_modules", ".next"]
 }
