@@ -1,8 +1,11 @@
 const withPrefesh = require('@prefresh/next')
+const withPWA = require('next-pwa')
+
+const workboxConfig = require('./wb.config')
 
 const configs = {
   poweredByHeader: false,
-
+  pwa: workboxConfig,
   webpack(config, { dev, isServer }) {
     const splitChunks = config.optimization && config.optimization.splitChunks
     if (splitChunks) {
@@ -44,4 +47,4 @@ const configs = {
   }
 }
 
-module.exports = withPrefesh(configs)
+module.exports = withPWA(withPrefesh(configs))

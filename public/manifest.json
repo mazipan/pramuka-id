@@ -1,0 +1,23 @@
+{
+  "name": "Pramuka.Online",
+  "short_name": "Pramuka",
+  "description": "Kumpulan informasi digital mengenai berbagai materi pramuka, materi kenegaraan dan materi kecakapan umum",
+  "start_url": "/?source=pwa",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "theme_color": "#7B341E",
+  "background_color": "#7B341E",
+  "display": "standalone"
+}

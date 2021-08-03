@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import { FiMoon, FiSun } from 'react-icons/fi'
+
 const useTheme = () => {
   const isWindow = typeof window !== 'undefined'
   const currentTheme = isWindow && (localStorage.getItem('theme') || 'light')
@@ -16,7 +18,7 @@ const useTheme = () => {
   return {
     theme,
     nextTheme: theme === 'light' ? 'dark' : 'light',
-    NextThemeIcon: theme === 'light' ? '🌜' : '☀️',
+    NextThemeIcon: theme === 'light' ? FiMoon : FiSun,
     onSwitchTheme
   }
 }
