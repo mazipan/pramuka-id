@@ -45,8 +45,14 @@ function Layout({ children }: LayoutProps) {
       <Head>
         <meta name="author" content={authorName} />
 
+        <link rel="apple-touch-icon" sizes="72x72" href={`${url}/favicon-72x72.png`} />
+
+        <link rel="icon" type="image/png" sizes="96x96" href={`${url}/favicon-96x96.png`} />
+        <link rel="icon" type="image/png" sizes="48x48" href={`${url}/favicon-48x48.png`} />
         <link rel="icon" type="image/png" sizes="32x32" href={`${url}/favicon-32x32.png`} />
         <link rel="icon" type="image/png" sizes="16x16" href={`${url}/favicon-16x16.png`} />
+
+        <meta name="msapplication-TileImage" content={`${url}/favicon-128x128.png`} />
 
         <link rel="manifest" href={`${url}/manifest.json`} />
       </Head>

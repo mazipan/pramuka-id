@@ -65,6 +65,7 @@ function Header() {
     <>
       <Head>
         <meta name="theme-color" content={theme === 'light' ? '#7B341E' : '#101623'} />
+        <meta name="msapplication-TileColor" content={theme === 'light' ? '#7B341E' : '#101623'} />
       </Head>
       <header className="fixed top-0 z-10 w-full bg-pramuka">
         <div className="flex flex-wrap justify-between items-center p-2 mx-auto sm:max-w-xl md:flex-no-wrap">
