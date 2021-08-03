@@ -1,6 +1,6 @@
 # 🌴 [Pramuka.Online](https://pramuka.online)
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)  ![Website Up](https://img.shields.io/website-up-down-brightgreen-red/https/pramuka.online.svg)
 
 ## Live Web
 
