@@ -10,12 +10,6 @@
 
 👉 https://pramuka.online/api
 
-## Screenshots
-
-|               Home                |                Pancasila                |           Sandi Morse           |
-| :-------------------------------: | :-------------------------------------: | :-----------------------------: |
-| ![Home](screenshots/homepage.png) | ![Pancasila](screenshots/pancasila.png) | ![Morse](screenshots/morse.png) |
-
 ## Credits
 
 - Starter: [Next Starter Tailwind by Oddstronaut](https://github.com/oddstronaut/next-starter-tailwind)
