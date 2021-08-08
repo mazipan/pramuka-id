@@ -8,7 +8,7 @@ import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../utils/index'
 import MetaHead from '../components/MetaHead'
 import { BASE_PATH, BRAND_TITLE, BRAND_LONG_DESC } from '../constants'
 
-const title = `Beranda`
+const title = `Beranda | Materi Pramuka, Materi Kecakapan Umum & Materi Kenegaraan`
 const desc = BRAND_LONG_DESC
 const url = `${BASE_PATH}`
 
