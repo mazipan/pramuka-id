@@ -50,7 +50,7 @@ function BottomNavigation() {
                 <a
                   title={item.text}
                   className={`inline-flex flex-col items-center justify-center text-center h-12 rounded-md ${
-                    isActive(item.href) ? 'text-yellow-700' : 'text-gray-400'
+                    isActive(item.href) ? 'text-yellow-900' : 'text-gray-600 dark:text-gray-100'
                   } font-semibold`}
                 >
                   {createElement(item.icons, {
