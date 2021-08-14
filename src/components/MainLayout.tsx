@@ -70,6 +70,7 @@ function Layout({ children }: LayoutProps) {
         <BottomNavigation />
 
         <button
+          type="button"
           className="overflow-hidden fixed p-2 rounded-full shadow-lg focus:outline-none bg-card"
           style={{ right: '1.5rem', bottom: '12%', ...upStyle }}
           onClick={() => scrollTo('__next')}
