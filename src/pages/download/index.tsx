@@ -10,9 +10,10 @@ import { ReportCoreWebVitalsParams, reportCoreWebVitals } from '../../utils/inde
 
 import DataDownload from '../../data/download-sku'
 
-const title = 'Download PDF Buku SKU Pramuka'
+const year = new Date().getYear()
+const title = `Download Buku SKU Pramuka Terlengkap & Terbaru $year (PDF)`
 const desc =
-  'Download PDF buku SKU pramuka dan buku panduan penyelesaian SKU lengkap. Tersedia untuk Pramuka Siaga, Penggalang, Penegak dan Pandega.'
+  'Download PDF: Buku SKU Pramuka & Buku Panduan Penyelesaian SKU. Tersedia untuk Pramuka Siaga, Penggalang, Penegak dan Pandega.'
 const url = BASE_PATH + '/download/'
 
 function DownloadPage() {
