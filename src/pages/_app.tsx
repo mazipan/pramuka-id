@@ -5,7 +5,6 @@ import NProgress from 'nprogress'
 import { DefaultSeo } from 'next-seo'
 
 import 'nprogress/nprogress.css'
-import 'typeface-inter'
 import '../css/index.css'
 
 import { BRAND_TITLE, BRAND_LONG_DESC, BASE_PATH } from '../constants'
