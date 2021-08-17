@@ -7,7 +7,7 @@ function SubmitGhIssue() {
         href="https://github.com/mazipan/pramuka.online/issues/new"
         target="_blank"
         rel="noopenner noreferrer"
-        className="text-link-secondary"
+        className="text-link"
       >
         Github issue
       </a>

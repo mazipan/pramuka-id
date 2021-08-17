@@ -9,8 +9,8 @@
   --color-text-secondary: #2d3748; /*gray 800*/
   --color-text-nav: #fff; /*white*/
   --color-text-button: #fff; /*white*/
-  --color-text-link: #7b341e; /*orange 900*/
-  --color-text-link-secondary: #ed8936; /*orange 600*/
+  --color-text-link: #b45308; /*orange 700*/
+  --color-text-link-secondary: #d97706; /*orange 600*/
 }
 
 .dark {
@@ -24,6 +24,9 @@
   --color-text-secondary: #a0aec0; /*gray 500*/
   --color-text-nav: #cbd5e0; /*gray 400*/
   --color-text-button: #a0aec0; /*gray 500*/
+
+  --color-text-link: #f59e0d; /*orange 700*/
+  --color-text-link-secondary: #b45308; /*orange 600*/
   background-color: #1a202c;
 }
 
