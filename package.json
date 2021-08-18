@@ -43,7 +43,7 @@
     "react": "npm:@preact/compat@0.0.4",
     "react-dom": "npm:@preact/compat@0.0.4",
     "react-icons": "^4.2.0",
-    "react-ssr-prepass": "npm:preact-ssr-prepass@1.2.0"
+    "react-ssr-prepass": "1.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
