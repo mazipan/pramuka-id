@@ -21,7 +21,7 @@ const data: DwiSatya = {
     origin: {
       preface: 'Demi kehormatanku aku berjanji akan bersungguh-sungguh :',
       data: [
-        'Menjalankan kewajibanku terhadap Tuhan, Negara Kesatuan Republik Indonesia, dan mengikuti tata krama keluarga.',
+        'Menjalankan kewajibanku terhadap Tuhan, Negara Kesatuan Republik Indonesia, dan mengikuti aturan keluarga.',
         'Setiap hari berbuat kebaikan.'
       ]
     }
