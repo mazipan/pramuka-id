@@ -17,8 +17,7 @@ function ActionNavigation({ title, text, url }: ActionNavigationProps) {
   useEffect (() =>
 
   useEffect (() => {
-    const isSupport: boolean =
-    typeof window !== 'undefined' ? navigator.share !== undefined : false
+    const isSupport: boolean = typeof window !== 'undefined' ? navigator.share !== undefined : false
     setSupportShare(isSupport)
   }, [])
 
