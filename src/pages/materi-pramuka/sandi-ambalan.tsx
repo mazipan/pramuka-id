@@ -1,5 +1,6 @@
 import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
+import ActionNavigation from '../../components/ActionNavigation'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
 import SeoText from '../../components/SeoText'
@@ -18,6 +19,7 @@ function SandiAmbalanPage() {
         <MetaHead title={title} desc={desc} url={url} />
         <BreadcrumbLevel3 text="Sandi Ambalan" href={url} />
         <ChapterTitle subTitle="Sandi Ambalan" title={SandiAmbalanData.title} />
+        <ActionNavigation title={title} text={desc} url={url} />
 
         <div className="text-left">
           <div className="mt-4" id={SandiAmbalanData.id}>

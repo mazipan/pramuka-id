@@ -1,5 +1,6 @@
 import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
+import ActionNavigation from '../../components/ActionNavigation'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
 import SeoText from '../../components/SeoText'
@@ -24,6 +25,7 @@ function TandaKecakapanKhusus() {
         <MetaHead title={title} desc={desc} url={url} />
         <BreadcrumbLevel3 text="Kecakapan Khusus" href={url} />
         <ChapterTitle subTitle={TkkData.subtitle} title={TkkData.title} />
+        <ActionNavigation title={title} text={desc} url={url} />
 
         <div className="text-left">
           <p>{TkkData.meaning}</p>

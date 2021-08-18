@@ -1,5 +1,6 @@
 import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
+import ActionNavigation from '../../components/ActionNavigation'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
 import SeoText from '../../components/SeoText'
@@ -19,6 +20,7 @@ function PancasilaPage() {
         <MetaHead title={title} desc={desc} url={url} />
         <BreadcrumbLevel3 text="Pancasila" href={url} />
         <ChapterTitle subTitle="Pancasila" title="Materi Kenegaraan" />
+        <ActionNavigation title={title} text={desc} url={url} />
 
         <div className="flex flex-col justify-center items-center text-center">
           <img src="/assets/pancasila/garuda.png" className="w-40" alt="Garuda Pancasila" />

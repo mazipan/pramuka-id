@@ -2,6 +2,7 @@ import { FiDownload } from 'react-icons/fi'
 
 import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
+import ActionNavigation from '../../components/ActionNavigation'
 import ChapterTitle from '../../components/ChapterTitle'
 import SeoText from '../../components/SeoText'
 import { BASE_PATH } from '../../constants'
@@ -22,6 +23,7 @@ function DownloadPage() {
       <>
         <MetaHead title={title} desc={desc} url={url} />
         <ChapterTitle subTitle="Unduh SKU dan Panduan Penyelesaian SKU" title="Unduh Materi" />
+        <ActionNavigation title={title} text={desc} url={url} />
 
         <div className="text-left">
           <div className="mt-8 text-left">

@@ -1,5 +1,6 @@
 import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
+import ActionNavigation from '../../components/ActionNavigation'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
 import SeoText from '../../components/SeoText'
@@ -20,6 +21,8 @@ function KompasPage() {
         <MetaHead title={title} desc={desc} url={url} />
         <BreadcrumbLevel3 text="Mengenal Kompas" href={url} />
         <ChapterTitle subTitle="Mengenal Kompas" title={KompasDataJson.title} />
+        <ActionNavigation title={title} text={desc} url={url} />
+
         <div className="text-left">
           <div className="mt-4 sectionIntro" id={KompasDataJson.id}>
             <div className="mt-6">

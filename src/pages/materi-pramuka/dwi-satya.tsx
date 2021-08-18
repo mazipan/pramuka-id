@@ -1,5 +1,6 @@
 import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
+import ActionNavigation from '../../components/ActionNavigation'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
 import SeoText from '../../components/SeoText'
@@ -18,6 +19,7 @@ function DwiSatyaPage() {
         <MetaHead title={title} desc={desc} url={url} />
         <BreadcrumbLevel3 text="Dwi Satya" href="/materi-pramuka/dwi-satya/" />
         <ChapterTitle subTitle="Dwi Satya" title="Materi Pramuka" />
+        <ActionNavigation title={title} text={desc} url={url} />
 
         <div className="text-left">
           <div

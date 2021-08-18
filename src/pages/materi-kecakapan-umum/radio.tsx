@@ -1,5 +1,6 @@
 import { useSpeechAPI } from '../../hooks/useSpeechAPI'
 import Layout from '../../components/MainLayout'
+import ActionNavigation from '../../components/ActionNavigation'
 import MetaHead from '../../components/MetaHead'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
@@ -38,6 +39,7 @@ function LambangPramukaPage() {
         <MetaHead title={title} desc={desc} url={url} />
         <BreadcrumbLevel3 text="Kode Radio" href={url} />
         <ChapterTitle subTitle="Kode Radio" title="Materi Kecakapan Umum" />
+        <ActionNavigation title={title} text={desc} url={url} />
 
         <div className="text-center md:text-left">
           <div>

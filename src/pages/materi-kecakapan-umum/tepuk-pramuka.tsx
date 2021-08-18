@@ -1,5 +1,6 @@
 import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
+import ActionNavigation from '../../components/ActionNavigation'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
 import SeoText from '../../components/SeoText'
@@ -19,6 +20,7 @@ function TepukPramuka() {
         <MetaHead title={title} desc={desc} url={url} />
         <BreadcrumbLevel3 text={TepukData.subtitle} href={url} />
         <ChapterTitle subTitle={TepukData.subtitle} title={TepukData.title} />
+        <ActionNavigation title={title} text={desc} url={url} />
 
         <div className="text-left">
           <p>{TepukData.meaning}</p>

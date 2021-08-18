@@ -1,5 +1,6 @@
 import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
+import ActionNavigation from '../../components/ActionNavigation'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
 import SeoText from '../../components/SeoText'
@@ -19,6 +20,7 @@ function LambangPramukaPage() {
         <MetaHead title={title} desc={desc} url={url} />
         <BreadcrumbLevel3 text="Lambang Pramuka" href="/materi-pramuka/lambang-pramuka/" />
         <ChapterTitle subTitle="Lambang Pramuka" title="Materi Pramuka" />
+        <ActionNavigation title={title} text={desc} url={url} />
 
         <div className="flex flex-col justify-center items-center text-center text-gray-900 dark:text-gray-100">
           <IconPramuka />

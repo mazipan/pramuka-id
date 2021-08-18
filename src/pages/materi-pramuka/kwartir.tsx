@@ -1,5 +1,6 @@
 import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
+import ActionNavigation from '../../components/ActionNavigation'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
 import SeoText from '../../components/SeoText'
@@ -19,6 +20,8 @@ const KwartirPage = () => {
         <MetaHead title={title} desc={desc} url={url} />
         <BreadcrumbLevel3 text="Kwartir" href="/materi-pramuka/kwartir/" />
         <ChapterTitle subTitle={subtitle} title="Materi Pramuka" />
+        <ActionNavigation title={title} text={desc} url={url} />
+
         <div className="text-center md:text-left">
           <div className="mb-2">
             <p className="text-justify">{dataKwartirJson.description}</p>

@@ -1,5 +1,6 @@
 import Layout from '../../components/MainLayout'
 import MetaHead from '../../components/MetaHead'
+import ActionNavigation from '../../components/ActionNavigation'
 import BreadcrumbLevel3 from '../../components/Breadcrumb/Level3'
 import ChapterTitle from '../../components/ChapterTitle'
 import SeoText from '../../components/SeoText'
@@ -17,6 +18,8 @@ const BenderaSemaphore = () => {
         <MetaHead title={title} desc={desc} url={url} />
         <BreadcrumbLevel3 text="Bendera Semaphore" href={url} />
         <ChapterTitle subTitle="Bendera Semaphore" title="Materi Kecakapan Umum" />
+        <ActionNavigation title={title} text={desc} url={url} />
+
         <div className="text-center md:text-left">
           <div className="mb-2">
             <img
