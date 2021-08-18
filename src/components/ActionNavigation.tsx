@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { FiShare, FiLoader } from 'react-icons/fi'
 import { SiWhatsapp, SiFacebook, SiTwitter } from 'react-icons/si'
 
@@ -12,9 +12,15 @@ type Provider = 'whatsapp' | 'twitter' | 'facebook'
 
 function ActionNavigation({ title, text, url }: ActionNavigationProps) {
   const [isLoadingShare, setLoadingShare] = useState<boolean>(false)
+  const [isSupportShare, setSupportShare] = useState<boolean>(false)
 
-  const isSupportShare: boolean =
+  useEffect (() =>
+
+  useEffect (() => {
+    const isSupport: boolean =
     typeof window !== 'undefined' ? navigator.share !== undefined : false
+    setSupportShare(isSupport)
+  }, [])
 
   const handleShare = async () => {
     if (isSupportShare) {
