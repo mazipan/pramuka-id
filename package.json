@@ -34,7 +34,7 @@
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "cors": "^2.8.5",
-    "next": "11.1.0",
+    "next": "12.1.0",
     "next-pwa": "5.2.24",
     "next-seo": "^4.26.0",
     "nprogress": "^0.2.0",
