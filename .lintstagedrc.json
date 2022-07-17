@@ -3,6 +3,6 @@
   "*.{js,jsx,ts,tsx}": [
     "rustywind --write .",
     "prettier --ignore-path .gitignore --write",
-    "eslint --ignore-path .gitignore --quiet --fix"
+    "eslint --ignore-path .eslintignore --quiet --fix"
   ]
 }

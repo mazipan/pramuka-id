@@ -1,5 +1,6 @@
-const withPrefesh = require('@prefresh/next')
+// const withPrefesh = require('@prefresh/next')
 const withPWA = require('next-pwa')
+const withPreact = require('next-plugin-preact')
 
 const workboxConfig = require('./wb.config')
 
@@ -18,10 +19,9 @@ const configs = {
           cacheGroups.preact = Object.assign({}, cacheGroups.framework, {
             test: preactModules
           })
-          cacheGroups.commons.name = 'framework'
         } else {
           cacheGroups.preact = {
-            name: 'commons',
+            name: 'framework',
             chunks: 'all',
             test: preactModules
           }
@@ -47,4 +47,4 @@ const configs = {
   }
 }
 
-module.exports = withPWA(withPrefesh(configs))
+module.exports = withPreact(withPWA(configs))

@@ -44,21 +44,28 @@ function Header() {
 
   const handleClick = async () => {
     setLoading(true)
-    // Show the install prompt
-    deferredPrompt.current?.prompt()
-    // Wait for the user to respond to the prompt
-    const { outcome } = await deferredPrompt.current?.userChoice
-    // Optionally, send analytics event with outcome of user choice
-    // eslint-disable-next-line no-console
-    console.info(`User response to the install prompt: ${outcome}`)
-    // We've used the prompt, and can't use it again, throw it away
-    deferredPrompt.current = null
-    // manual delay the process
-    setTimeout(() => {
-      setLoading(false)
-      // Hide the app provided install promotion
-      setShowInstallBtn(false)
-    }, 1000)
+    const curr = deferredPrompt.current
+    if (curr) {
+      try {
+        // Show the install prompt
+        curr.prompt()
+        // Wait for the user to respond to the prompt
+        const { outcome } = await curr.userChoice
+        // Optionally, send analytics event with outcome of user choice
+        // eslint-disable-next-line no-console
+        console.info(`User response to the install prompt: ${outcome}`)
+        // We've used the prompt, and can't use it again, throw it away
+        deferredPrompt.current = null
+        // manual delay the process
+        setTimeout(() => {
+          setLoading(false)
+          // Hide the app provided install promotion
+          setShowInstallBtn(false)
+        }, 1000)
+      } catch {
+        // do nothing
+      }
+    }
   }
 
   return (

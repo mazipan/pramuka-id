@@ -34,6 +34,8 @@ function TepukPramuka() {
                   <ul className="list-disc">
                     {section.groups.map((list, index) => (
                       <li key={index} className="ml-6">
+                        {/*
+                              // @ts-ignore */}
                         {list}
                       </li>
                     ))}
