@@ -14,7 +14,6 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'standard',
     'prettier'
   ],
   parser: '@typescript-eslint/parser',

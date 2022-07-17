@@ -61,7 +61,7 @@ function SalamPramukaPage() {
                     <p className="mt-4 text-base text-secondary">Cara Melakukan {section.title}:</p>
                     {/*
                             // @ts-ignore */}
-                    {getHowTo(section.key).steps.map((step, index) => (
+                    {getHowTo(section.key).steps.map((step) => (
                       <>
                         {!step.conditions && (
                           <p
