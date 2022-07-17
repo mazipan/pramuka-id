@@ -8,6 +8,7 @@ import 'nprogress/nprogress.css'
 import '../css/index.css'
 
 import { BRAND_TITLE, BRAND_LONG_DESC, BASE_PATH } from '../constants'
+import Script from 'next/script'
 
 const metaImg = BASE_PATH + '/assets/5930.jpeg'
 
@@ -63,6 +64,12 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       />
 
       <Component {...pageProps} />
+
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5442972248172818"
+        crossOrigin="anonymous"
+      />
     </>
   )
 }
