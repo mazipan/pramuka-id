@@ -80,5 +80,8 @@
     "overrides": {
       "minimist@<1.2.6": "^1.2.6"
     }
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
