@@ -10,6 +10,7 @@ import BottomNavigation from './BottomNavigation'
 import SubmitGhIssue from './SubmitGhIssue'
 import { BASE_PATH } from '../constants'
 import { scrollTo } from '../utils'
+import Script from 'next/script'
 
 const url = BASE_PATH
 const authorName = 'Irfan Maulana'
@@ -64,6 +65,25 @@ function Layout({ children }: LayoutProps) {
             {children}
             <SubmitGhIssue />
             <FooterSection />
+            <Script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5442972248172818"
+              crossOrigin="anonymous"
+            />
+            <ins
+              className="adsbygoogle"
+              // @ts-ignore
+              style="display:block"
+              data-ad-format="fluid"
+              data-ad-layout-key="-gu-18+5g-2f-83"
+              data-ad-client="ca-pub-5442972248172818"
+              data-ad-slot="6146990157"
+            ></ins>
+            <Script
+              dangerouslySetInnerHTML={{
+                __html: `(adsbygoogle = window.adsbygoogle || []).push({});`
+              }}
+            />
           </>
         </main>
 
