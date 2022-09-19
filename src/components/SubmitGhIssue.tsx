@@ -4,7 +4,7 @@ function SubmitGhIssue() {
       Tidak menemukan yang kamu cari? Kamu bisa membuat permintaan penambahan data baru melalui
       {` `}
       <a
-        href="https://github.com/mazipan/pramuka.space/issues/new"
+        href="https://github.com/mazipan/pramuka.online/issues/new"
         target="_blank"
         rel="noopenner noreferrer"
         className="text-link"
