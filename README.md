@@ -1,6 +1,6 @@
 # 🌴 [Pramuka Online](https://pramuka-id.vercel.app)
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) ![https://vercel.com/mazipan/buku-saku-pramuka/deployments](https://img.shields.io/github/deployments/mazipan/pramuka.space/production?label=vercel&logo=vercel&logoColor=white) ![Website Up](https://img.shields.io/website-up-down-brightgreen-red/https/pramuka.space.svg)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) ![https://vercel.com/mazipan/pramuka-online/deployments](https://img.shields.io/github/deployments/mazipan/pramuka.online/production?label=vercel&logo=vercel&logoColor=white) ![Website Up](https://img.shields.io/website-up-down-brightgreen-red/https/pramuka-id.vercel.app.svg)
 
 ## Live Web
 
