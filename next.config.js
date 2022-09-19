@@ -29,6 +29,8 @@ const configs = {
       }
     }
 
+    config.resolve.fallback = { fs: false, path: false, stream: false, constants: false }
+
     // Install webpack aliases:
     const aliases = config.resolve.alias || (config.resolve.alias = {})
     aliases.react = aliases['react-dom'] = 'preact/compat'
