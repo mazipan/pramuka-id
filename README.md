@@ -1,14 +1,14 @@
-# 🌴 [Pramuka.Space](https://pramuka.space)
+# 🌴 [Pramuka.Online](https://pramuka-online.vercel.app)
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) ![https://vercel.com/mazipan/buku-saku-pramuka/deployments](https://img.shields.io/github/deployments/mazipan/pramuka.space/production?label=vercel&logo=vercel&logoColor=white) ![Website Up](https://img.shields.io/website-up-down-brightgreen-red/https/pramuka.space.svg)
 
 ## Live Web
 
-👉 https://pramuka.space
+👉 https://pramuka-online.vercel.app
 
 ## Public API
 
-👉 https://pramuka.space/api
+👉 https://pramuka-online.vercel.app/api
 
 ## Credits
 
