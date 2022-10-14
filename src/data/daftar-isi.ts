@@ -140,6 +140,11 @@ const data: ContentItem[] = [
         text: 'Hari Peringatan Nasional',
         href: '/materi-kecakapan-umum/hari-peringatan-nasional/',
         api: '/api/hari-peringatan-nasional'
+      },
+      {
+        text: 'Tali - Temali',
+        href: '/materi-kecakapan-umum/tali-temali/',
+        api: '/api/tali-temali'
       }
     ]
   }
