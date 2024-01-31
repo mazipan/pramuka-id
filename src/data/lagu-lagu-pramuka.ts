@@ -39,21 +39,21 @@ const data: LaguPramuka = {
       title: 'Alam Bebas',
       key: 'alam-bebas',
       lyric: 'alam_bebas',
-      audio: '/audio/alam-bebas.mp3',
+      audio: 'https://github.com/mazipan/pramuka.online/raw/master/public/audio/alam-bebas.mp3',
       youtube: 'https://www.youtube.com/watch?v=KCn4-_7qeg4'
     },
     {
       title: 'Di sini Kita Bertemu',
       key: 'di-sini-kita-bertemu',
       lyric: 'di_sini_kita_bertemu',
-      audio: '/audio/di-sini-kita-bertemu.mp3',
+      audio: 'https://github.com/mazipan/pramuka.online/raw/master/public/audio/di-sini-kita-bertemu.mp3',
       youtube: 'https://www.youtube.com/watch?v=9fuDUDdd6IQ'
     },
     {
       title: 'Pisah Hanya di Lahirnya',
       key: 'pisah-hanya-di-lahirnya',
       lyric: 'pisah_hanya_dilahirnya',
-      audio: '/audio/pisah-hanya-dilahirnya.mp3',
+      audio: 'https://github.com/mazipan/pramuka.online/raw/master/public/audio/pisah-hanya-dilahirnya.mp3',
       youtube: 'https://www.youtube.com/watch?v=ZfhweSRPuFI'
     }
   ],
