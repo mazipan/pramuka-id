@@ -32,7 +32,7 @@ const data: LaguPramuka = {
       title: 'Hymne Pramuka',
       key: 'hymne-pramuka',
       lyric: 'hymne_pramuka',
-      audio: '/audio/hymne-pramuka.mp3',
+      audio: 'https://github.com/mazipan/pramuka.online/raw/master/public/audio/hymne-pramuka.mp3',
       youtube: 'https://www.youtube.com/watch?v=fo0Hoo6jnm0'
     },
     {
