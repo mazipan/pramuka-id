@@ -17,7 +17,7 @@ const data: Proklamasi = {
     'Atas nama bangsa Indonesia.',
     'Soekarno/Hatta.'
   ],
-  audio: '/audio/proklamasi.mp3',
+  audio: 'https://github.com/mazipan/pramuka.online/raw/master/public/audio/proklamasi.mp3',
   images: [
     {
       alt: 'Soekarno membaca teks proklamasi',
