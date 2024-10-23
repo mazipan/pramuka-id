@@ -20,6 +20,12 @@
 - Data: [kakfasta.com](https://www.kakfasta.com/2018/01/buku-sku-dan-panduan-siaga-penggalang.html)
 - Data: [infojempol.com](https://www.infojempol.com/2012/02/buku-saku-pramuka-lengkap.html)
 
+## Contributors
+
+Thanks goes to these wonderful people!
+
+![Contributors](https://contrib.rocks/image?repo=mazipan/pramuka-id)
+
 ## Support me
 
 - 👉 🇮🇩 [Trakteer](https://trakteer.id/mazipan?utm_source=github)
