@@ -2,6 +2,18 @@
 User-agent: *
 Allow: /
 
+#
+# Disallow decidedly bad actors…
+#
+User-agent: undici
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: CCBot
+User-agent: Google-Extended
+User-agent: Omgilibot
+User-Agent: FacebookBot
+Disallow: /
+
 # Host
 Host: https://pramuka-id.vercel.app
 
