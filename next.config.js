@@ -7,6 +7,13 @@ const workboxConfig = require('./wb.config')
 const configs = {
   poweredByHeader: false,
   pwa: workboxConfig,
+  redirects: [
+    {
+      source: '/audio/:slug*',
+      destination: 'https://github.com/mazipan/pramuka.online/raw/master/public/audio/:slug*',
+      permanent: true,
+    }
+  ],
   webpack(config, { dev, isServer }) {
     const splitChunks = config.optimization && config.optimization.splitChunks
     if (splitChunks) {
