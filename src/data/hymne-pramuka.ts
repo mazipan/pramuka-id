@@ -21,7 +21,7 @@ const data: HymnePramuka = {
       'Indonesia Tanah Airku',
       'Kami Jadi Pandumu'
     ],
-    audio: 'https://github.com/mazipan/pramuka.online/raw/master/public/audio/hymne-pramuka.mp3'
+    audio: 'https://github.com/mazipan/pramuka.online/raw/master/audio/hymne-pramuka.mp3'
   }
 }
 
